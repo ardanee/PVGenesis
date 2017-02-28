@@ -1,0 +1,227 @@
+   02/02/2017 14:16:32      MCTIPROGRA8   El nombre de objeto 'x' no es válido.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery) en C:\Sistemas San Diego\PV\PV\PV\DB\ClsDb.cs:línea 156
+   en PV.Form1.Form1_Load(Object sender, EventArgs e) en C:\Sistemas San Diego\PV\PV\PV\Form1.cs:línea 25
+
+   02/02/2017 14:17:07      MCTIPROGRA8   El nombre de objeto 'x' no es válido.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery) en C:\Sistemas San Diego\PV\PV\PV\DB\ClsDb.cs:línea 156
+   en PV.Form1.Form1_Load(Object sender, EventArgs e) en C:\Sistemas San Diego\PV\PV\PV\Form1.cs:línea 25
+
+   03/02/2017 9:12:06      MCTIPROGRA8   El nombre de objeto 'TblRol' no es válido.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery) en C:\Sistemas San Diego\PV\PV\PV\DB\ClsDb.cs:línea 156
+   en PV.BL.ClsSeguridad.seleccionarRol() en C:\Sistemas San Diego\PV\PV\PV\BL\ClsSeguridad.cs:línea 18
+   en PV.FrmRol.cargarComboRol() en C:\Sistemas San Diego\PV\PV\PV\Vistas\FrmRol.cs:línea 28
+
+   03/02/2017 9:32:46      MCTIPROGRA8   El nombre de objeto 'TblSecRol' no es válido.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery) en C:\Sistemas San Diego\PV\PV\PV\DB\ClsDb.cs:línea 156
+   en PV.BL.ClsSeguridad.seleccionarRol() en C:\Sistemas San Diego\PV\PV\PV\BL\ClsSeguridad.cs:línea 18
+   en PV.FrmRol.cargarComboRol() en C:\Sistemas San Diego\PV\PV\PV\Vistas\FrmRol.cs:línea 28
+
+   03/02/2017 12:43:47      MCTIPROGRA8   Procedure or function 'SpFormulariosRol' expects parameter '@PidRol', which was not supplied.   consultarTabla      en PV.ClsDb.consultarTabla(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en C:\Sistemas San Diego\PV\PV\PV\DB\ClsDb.cs:línea 187
+   en PV.BL.ClsSeguridad.selecFormulariosRol(Int32 idRol) en C:\Sistemas San Diego\PV\PV\PV\BL\ClsSeguridad.cs:línea 29
+   en PV.FrmRol.cboRol_SelectionChangeCommitted(Object sender, EventArgs e) en C:\Sistemas San Diego\PV\PV\PV\Vistas\FrmRol.cs:línea 51
+
+   03/02/2017 15:38:58      MCTIPROGRA8   La cadena de entrada no tiene el formato correcto.   StringToNumber      en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   en System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   en System.Convert.ToInt16(String value)
+   en PV.FrmRol.btnGrabar_Click(Object sender, EventArgs e) en C:\Sistemas San Diego\PV\PV\PV\Vistas\FrmRol.cs:línea 113
+
+   03/02/2017 15:49:08      MCTIPROGRA8   La cadena de entrada no tiene el formato correcto.   StringToNumber      en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   en System.Convert.ToInt32(String value)
+   en PV.FrmRol.btnGrabar_Click(Object sender, EventArgs e)
+
+   06/02/2017 11:36:02      MCTIPROGRA8   ExecuteScalar requiere una Connection abierta y disponible. El estado actual de la conexión es cerrada.   consultarEscalar      en PV.ClsDb.consultarEscalar(String sqlQuery, SqlConnection cn) en C:\Sistemas San Diego\PV\PV\PV\DB\ClsDb.cs:línea 239
+   en PV.BL.ClsSeguridad.existeNombreRol(String nombre) en C:\Sistemas San Diego\PV\PV\PV\BL\ClsSeguridad.cs:línea 65
+   en PV.Vistas.FrmNuevoRol.btnGrabar_Click(Object sender, EventArgs e) en C:\Sistemas San Diego\PV\PV\PV\Vistas\FrmNuevoRol.cs:línea 25
+
+   06/02/2017 16:39:43      MCTIPROGRA8   Referencia a objeto no establecida como instancia de un objeto.   fNull      en PV.ClsDb.fNull(String xstring) en C:\Sistemas San Diego\PV\PV\PV\DB\ClsDb.cs:línea 34
+   en PV.ClsDb.Parametro(String nombre, String valor) en C:\Sistemas San Diego\PV\PV\PV\DB\ClsDb.cs:línea 313
+   en PV.BL.ClsSeguridad.grabarModificarUsuario(String idUsuario, String nombre, String usuario, String fechaNacimiento, String descripcion, String activo, String cambiarContrasena) en C:\Sistemas San Diego\PV\PV\PV\BL\ClsSeguridad.cs:línea 92
+   en PV.Vistas.FrmUsuario.btnGrabar_Click(Object sender, EventArgs e) en C:\Sistemas San Diego\PV\PV\PV\Vistas\FrmUsuario.cs:línea 38
+
+   06/02/2017 16:40:45      MCTIPROGRA8   Referencia a objeto no establecida como instancia de un objeto.   fNull      en PV.ClsDb.fNull(String xstring) en C:\Sistemas San Diego\PV\PV\PV\DB\ClsDb.cs:línea 34
+   en PV.ClsDb.Parametro(String nombre, String valor) en C:\Sistemas San Diego\PV\PV\PV\DB\ClsDb.cs:línea 313
+   en PV.BL.ClsSeguridad.grabarModificarUsuario(String idUsuario, String nombre, String usuario, String fechaNacimiento, String descripcion, String activo, String cambiarContrasena) en C:\Sistemas San Diego\PV\PV\PV\BL\ClsSeguridad.cs:línea 92
+   en PV.Vistas.FrmUsuario.btnGrabar_Click(Object sender, EventArgs e) en C:\Sistemas San Diego\PV\PV\PV\Vistas\FrmUsuario.cs:línea 38
+
+   6/02/2017 20:21:02      KKROT-PC   Error al convertir el tipo de datos nvarchar a date.   ejecutarSP      en PV.ClsDb.ejecutarSP(String spNombre, SqlConnection cn, SqlParameter[] arrParam)
+   en PV.BL.ClsSeguridad.grabarModificarUsuario(String idUsuario, String nombre, String usuario, String fechaNacimiento, String descripcion, String activo, String cambiarContrasena)
+   en PV.Vistas.FrmUsuario.btnGrabar_Click(Object sender, EventArgs e)
+
+   09/02/2017 8:58:59      MCTIPROGRA8   Referencia a objeto no establecida como instancia de un objeto.   fNull      en PV.ClsDb.fNull(String xstring) en C:\Sistemas San Diego\PV\PV\PV\DB\ClsDb.cs:línea 34
+   en PV.ClsDb.Parametro(String nombre, String valor) en C:\Sistemas San Diego\PV\PV\PV\DB\ClsDb.cs:línea 313
+   en PV.BL.ClsSeguridad.cargarRolUsuario(String idUsuario) en C:\Sistemas San Diego\PV\PV\PV\BL\ClsSeguridad.cs:línea 121
+   en PV.Vistas.FrmRolUsuario.FrmRolUsuario_Load(Object sender, EventArgs e) en C:\Sistemas San Diego\PV\PV\PV\Vistas\seguridad\FrmRolUsuario.cs:línea 27
+
+   09/02/2017 9:10:51      MCTIPROGRA8   Procedure or function 'SpAsignarDesasignarRol' expects parameter '@PidUsuario', which was not supplied.   ejecutarSP      en PV.ClsDb.ejecutarSP(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en C:\Sistemas San Diego\PV\PV\PV\DB\ClsDb.cs:línea 287
+   en PV.BL.ClsSeguridad.asignarDesasignarRol(String idUsuario, String idRol, String acceso) en C:\Sistemas San Diego\PV\PV\PV\BL\ClsSeguridad.cs:línea 133
+   en PV.Vistas.FrmRolUsuario.btnGrabar_Click(Object sender, EventArgs e) en C:\Sistemas San Diego\PV\PV\PV\Vistas\seguridad\FrmRolUsuario.cs:línea 43
+
+   09/02/2017 15:10:55      MCTIPROGRA8   Could not find stored procedure 'SpStipoVehiculo'.   consultarTabla      en PV.ClsDb.consultarTabla(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en C:\Sistemas San Diego\PV\PV\PV\DB\ClsDb.cs:línea 187
+   en PV.BL.ClsTipoVehiculo.seleccionar(String criterio) en C:\Sistemas San Diego\PV\PV\PV\BL\ClsTipoVehiculo.cs:línea 35
+   en PV.Vistas.frmTipoVehiculo.buscar() en C:\Sistemas San Diego\PV\PV\PV\Vistas\maestros\frmTipoVehiculo.cs:línea 44
+   en PV.Vistas.frmTipoVehiculo.frmTipoVehiculo_Load(Object sender, EventArgs e) en C:\Sistemas San Diego\PV\PV\PV\Vistas\maestros\frmTipoVehiculo.cs:línea 26
+
+   16/02/2017 9:47:59      SOPORTE-PC   No se pudo encontrar la columna denominada idMarcaCol.
+Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   en PV.Vistas.maestros.frmMarcaV.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\maestros\frmMarcaV.cs:línea 74
+
+   16/02/2017 10:02:24      SOPORTE-PC   No se pudo encontrar la columna denominada idMarcaCol.
+Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   en PV.Vistas.maestros.frmMarcaV.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\maestros\frmMarcaV.cs:línea 74
+
+   16/02/2017 10:04:31      SOPORTE-PC   No se pudo encontrar la columna denominada idMarcaCol.
+Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   en PV.Vistas.maestros.frmMarcaV.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\maestros\frmMarcaV.cs:línea 74
+
+   16/02/2017 10:04:41      SOPORTE-PC   No se pudo encontrar la columna denominada idMarcaCol.
+Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   en PV.Vistas.maestros.frmMarcaV.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\maestros\frmMarcaV.cs:línea 74
+
+   16/02/2017 10:05:13      SOPORTE-PC   No se pudo encontrar la columna denominada idMarcaCol.
+Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   en PV.Vistas.maestros.frmMarcaV.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\maestros\frmMarcaV.cs:línea 74
+
+   16/02/2017 10:05:50      SOPORTE-PC   Referencia a objeto no establecida como instancia de un objeto.   grdExistentes_CellClick      en PV.Vistas.maestros.frmMarcaV.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\maestros\frmMarcaV.cs:línea 74
+
+   16/02/2017 10:06:05      SOPORTE-PC   Referencia a objeto no establecida como instancia de un objeto.   grdExistentes_CellClick      en PV.Vistas.maestros.frmMarcaV.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\maestros\frmMarcaV.cs:línea 81
+
+   21/02/2017 21:54:28      KKROT-PC   No se puede borrar esta lista.   System.Collections.IList.Clear      en System.Data.DataView.System.Collections.IList.Clear()
+   en System.Windows.Forms.DataGridViewRowCollection.Clear()
+   en PV.FrmPago.cargarListaPagos() en D:\github\PV\PV\PV\Vistas\movimientos\FrmPago.cs:línea 75
+
+   22/02/2017 00:47:04      KKROT-PC   Referencia a objeto no establecida como instancia de un objeto.   fNull      en PV.ClsDb.fNull(String xstring)
+   en PV.ClsDb.Parametro(String nombre, String valor)
+   en PV.BL.ClsPago.grabarPago(String idVenta, String monto, String idMetodoPago, String observaciones, String rutaAdjunto)
+   en PV.FrmNuevoPago.btnGrabar_Click(Object sender, EventArgs e)
+
+   22/02/2017 00:48:01      KKROT-PC   Referencia a objeto no establecida como instancia de un objeto.   fNull      en PV.ClsDb.fNull(String xstring)
+   en PV.ClsDb.Parametro(String nombre, String valor)
+   en PV.BL.ClsPago.grabarPago(String idVenta, String monto, String idMetodoPago, String observaciones, String rutaAdjunto)
+   en PV.FrmNuevoPago.btnGrabar_Click(Object sender, EventArgs e)
+
+   22/02/2017 00:52:23      KKROT-PC   Referencia a objeto no establecida como instancia de un objeto.   fNull      en PV.ClsDb.fNull(String xstring)
+   en PV.ClsDb.Parametro(String nombre, String valor)
+   en PV.BL.ClsPago.grabarPago(String idVenta, String monto, String idMetodoPago, String observaciones, String rutaAdjunto)
+   en PV.FrmNuevoPago.btnGrabar_Click(Object sender, EventArgs e)
+
+   22/02/2017 01:05:26      KKROT-PC   El procedimiento o la función 'SpGrabarPago' esperaba el parámetro '@Pusuario', que no se ha especificado.   ejecutarSP      en PV.ClsDb.ejecutarSP(String spNombre, SqlConnection cn, SqlParameter[] arrParam)
+   en PV.BL.ClsPago.grabarPago(String idVenta, String monto, String idMetodoPago, String observaciones, String rutaAdjunto)
+   en PV.FrmNuevoPago.btnGrabar_Click(Object sender, EventArgs e)
+
+   22/02/2017 01:07:09      KKROT-PC   Error al convertir una cadena de caracteres en fecha y/u hora.   ejecutarSP      en PV.ClsDb.ejecutarSP(String spNombre, SqlConnection cn, SqlParameter[] arrParam)
+   en PV.BL.ClsPago.grabarPago(String idVenta, String monto, String idMetodoPago, String observaciones, String rutaAdjunto)
+   en PV.FrmNuevoPago.btnGrabar_Click(Object sender, EventArgs e)
+
+   22/02/2017 01:14:42      KKROT-PC   El pago debe ser un número positivo   ejecutarSP      en PV.ClsDb.ejecutarSP(String spNombre, SqlConnection cn, SqlParameter[] arrParam)
+   en PV.BL.ClsPago.grabarPago(String idVenta, String monto, String idMetodoPago, String observaciones, String rutaAdjunto)
+   en PV.FrmNuevoPago.btnGrabar_Click(Object sender, EventArgs e)
+
+   22/02/2017 01:15:54      KKROT-PC   El pago debe estar entre Q1.00 y 1733.33 Para completar la cuota pendiente   ejecutarSP      en PV.ClsDb.ejecutarSP(String spNombre, SqlConnection cn, SqlParameter[] arrParam)
+   en PV.BL.ClsPago.grabarPago(String idVenta, String monto, String idMetodoPago, String observaciones, String rutaAdjunto)
+   en PV.FrmNuevoPago.btnGrabar_Click(Object sender, EventArgs e)
+
+   22/02/2017 01:17:06      KKROT-PC   El pago debe ser un número positivo   ejecutarSP      en PV.ClsDb.ejecutarSP(String spNombre, SqlConnection cn, SqlParameter[] arrParam)
+   en PV.BL.ClsPago.grabarPago(String idVenta, String monto, String idMetodoPago, String observaciones, String rutaAdjunto)
+   en PV.FrmNuevoPago.btnGrabar_Click(Object sender, EventArgs e)
+
+   23/02/2017 11:54:08      MCTIPROGRA8   Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: SQL Network Interfaces, error: 26 - Error al buscar el servidor o instancia especificado)   consultarTabla      en PV.ClsDb.consultarTabla(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en C:\gitRepos\PV\PV\PV\DB\ClsDb.cs:línea 187
+   en PV.BL.ClsPago.buscarVentaEncabezado(String criterio) en C:\gitRepos\PV\PV\PV\BL\ClsPago.cs:línea 23
+   en PV.FrmPago.btnBuscar_Click(Object sender, EventArgs e) en C:\gitRepos\PV\PV\PV\Vistas\movimientos\FrmPago.cs:línea 30
+
+   23/02/2017 18:31:48   aramirez   KKROT-PC   El pago debe estar entre Q1.00 y 1713.33 Para completar la cuota pendiente   ejecutarSP      en PV.ClsDb.ejecutarSP(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en D:\github\PV\PV\PV\DB\ClsDb.cs:línea 287
+   en PV.BL.ClsPago.grabarPago(String idVenta, String monto, String idMetodoPago, String observaciones, String rutaAdjunto) en D:\github\PV\PV\PV\BL\ClsPago.cs:línea 69
+   en PV.FrmNuevoPago.btnGrabar_Click(Object sender, EventArgs e) en D:\github\PV\PV\PV\Vistas\movimientos\FrmNuevoPago.cs:línea 101
+
+   23/02/2017 18:32:08   aramirez   KKROT-PC   El pago debe estar entre Q1.00 y 1713.33 Para completar la cuota pendiente   ejecutarSP      en PV.ClsDb.ejecutarSP(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en D:\github\PV\PV\PV\DB\ClsDb.cs:línea 287
+   en PV.BL.ClsPago.grabarPago(String idVenta, String monto, String idMetodoPago, String observaciones, String rutaAdjunto) en D:\github\PV\PV\PV\BL\ClsPago.cs:línea 69
+   en PV.FrmNuevoPago.btnGrabar_Click(Object sender, EventArgs e) en D:\github\PV\PV\PV\Vistas\movimientos\FrmNuevoPago.cs:línea 101
+
+   23/02/2017 19:10:00   aramirez   KKROT-PC   El pago debe estar entre Q1.00 y 3666.66   ejecutarSP      en PV.ClsDb.ejecutarSP(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en D:\github\PV\PV\PV\DB\ClsDb.cs:línea 287
+   en PV.BL.ClsPago.grabarPago(String idVenta, String monto, String idMetodoPago, String observaciones, String rutaAdjunto) en D:\github\PV\PV\PV\BL\ClsPago.cs:línea 69
+   en PV.FrmNuevoPago.btnGrabar_Click(Object sender, EventArgs e) en D:\github\PV\PV\PV\Vistas\movimientos\FrmNuevoPago.cs:línea 101
+
+   23/02/2017 19:10:32   aramirez   KKROT-PC   El pago debe estar entre Q1.00 y 3666.66   ejecutarSP      en PV.ClsDb.ejecutarSP(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en D:\github\PV\PV\PV\DB\ClsDb.cs:línea 287
+   en PV.BL.ClsPago.grabarPago(String idVenta, String monto, String idMetodoPago, String observaciones, String rutaAdjunto) en D:\github\PV\PV\PV\BL\ClsPago.cs:línea 69
+   en PV.FrmNuevoPago.btnGrabar_Click(Object sender, EventArgs e) en D:\github\PV\PV\PV\Vistas\movimientos\FrmNuevoPago.cs:línea 101
+
+   23/02/2017 19:11:27   aramirez   KKROT-PC   El pago debe estar entre Q1.00 y 3666.66   ejecutarSP      en PV.ClsDb.ejecutarSP(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en D:\github\PV\PV\PV\DB\ClsDb.cs:línea 287
+   en PV.BL.ClsPago.grabarPago(String idVenta, String monto, String idMetodoPago, String observaciones, String rutaAdjunto) en D:\github\PV\PV\PV\BL\ClsPago.cs:línea 69
+   en PV.FrmNuevoPago.btnGrabar_Click(Object sender, EventArgs e) en D:\github\PV\PV\PV\Vistas\movimientos\FrmNuevoPago.cs:línea 101
+
+   23/02/2017 19:14:28   aramirez   KKROT-PC   El pago debe estar entre Q1.00 y 0.00   ejecutarSP      en PV.ClsDb.ejecutarSP(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en D:\github\PV\PV\PV\DB\ClsDb.cs:línea 287
+   en PV.BL.ClsPago.grabarPago(String idVenta, String monto, String idMetodoPago, String observaciones, String rutaAdjunto) en D:\github\PV\PV\PV\BL\ClsPago.cs:línea 69
+   en PV.FrmNuevoPago.btnGrabar_Click(Object sender, EventArgs e) en D:\github\PV\PV\PV\Vistas\movimientos\FrmNuevoPago.cs:línea 101
+
+   23/02/2017 19:30:12   aramirez   KKROT-PC   El pago debe estar entre Q1.00 y 833.33 Para completar la cuota pendiente   ejecutarSP      en PV.ClsDb.ejecutarSP(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en D:\github\PV\PV\PV\DB\ClsDb.cs:línea 287
+   en PV.BL.ClsPago.grabarPago(String idVenta, String monto, String idMetodoPago, String observaciones, String rutaAdjunto) en D:\github\PV\PV\PV\BL\ClsPago.cs:línea 69
+   en PV.FrmNuevoPago.btnGrabar_Click(Object sender, EventArgs e) en D:\github\PV\PV\PV\Vistas\movimientos\FrmNuevoPago.cs:línea 101
+
+   23/02/2017 21:07:50      KKROT-PC   El objeto de origen de datos del informe debe ser de tipo System.Data.DataTable, System.Collections.IEnumerable, System.Windows.Forms.BindingSource o System.Type.   set_Value      en Microsoft.Reporting.WinForms.ReportDataSource.set_Value(Object value)
+   en Microsoft.Reporting.WinForms.ReportDataSource..ctor(String name, Object dataSourceValue)
+   en PV.FrmReporte.cargarReporte(String nombreReporte, Object origenDatos) en D:\github\PV\PV\PV\Reportes\FrmReporte.cs:línea 46
+
+   23/02/2017 21:09:38      KKROT-PC   El objeto de origen de datos del informe debe ser de tipo System.Data.DataTable, System.Collections.IEnumerable, System.Windows.Forms.BindingSource o System.Type.   set_Value      en Microsoft.Reporting.WinForms.ReportDataSource.set_Value(Object value)
+   en Microsoft.Reporting.WinForms.ReportDataSource..ctor(String name, Object dataSourceValue)
+   en PV.FrmReporte.cargarReporte(String nombreReporte, Object origenDatos)
+
+   23/02/2017 23:58:44      KKROT-PC   La actual contraseña no coincide   ejecutarSP      en PV.ClsDb.ejecutarSP(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en D:\github\PV\PV\PV\DB\ClsDb.cs:línea 287
+   en PV.BL.ClsSeguridad.cambiarContrasena(String usuario, String antigua, String nueva) en D:\github\PV\PV\PV\BL\ClsSeguridad.cs:línea 160
+   en PV.FrmCambiarContrasena.btnIniciar_Click(Object sender, EventArgs e) en D:\github\PV\PV\PV\Vistas\seguridad\FrmCambiarContrasena.cs:línea 38
+
+   24/02/2017 01:09:16      KKROT-PC   Acceso denegado a la ruta de acceso 'D:\temp'.   WinIOError      en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   en System.IO.File.Create(String path)
+   en PV.FrmCrearBackup.btnCrearCopia_Click(Object sender, EventArgs e) en D:\github\PV\PV\PV\Vistas\backups\FrmCrearBackup.cs:línea 40
+
+   24/02/2017 01:10:20      KKROT-PC   Acceso denegado a la ruta de acceso 'C:\Users\Kkrot\Desktop\bak'.   WinIOError      en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   en System.IO.File.Create(String path)
+   en PV.FrmCrearBackup.btnCrearCopia_Click(Object sender, EventArgs e) en D:\github\PV\PV\PV\Vistas\backups\FrmCrearBackup.cs:línea 40
+
+   24/02/2017 01:11:11      KKROT-PC   Acceso denegado a la ruta de acceso 'C:\Users\Kkrot\Desktop\bak'.   WinIOError      en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   en System.IO.File.Create(String path)
+   en PV.FrmCrearBackup.btnCrearCopia_Click(Object sender, EventArgs e) en D:\github\PV\PV\PV\Vistas\backups\FrmCrearBackup.cs:línea 40
+
+   24/02/2017 01:13:49      KKROT-PC   Sintaxis incorrecta cerca de la palabra clave 'TO'.   ejecutarConsulta      en PV.ClsDb.ejecutarConsulta(String sqlQuery, SqlConnection cn) en D:\github\PV\PV\PV\DB\ClsDb.cs:línea 260
+   en PV.FrmCrearBackup.btnCrearCopia_Click(Object sender, EventArgs e) en D:\github\PV\PV\PV\Vistas\backups\FrmCrearBackup.cs:línea 54
+
+   24/02/2017 01:19:28      KKROT-PC   Sintaxis incorrecta cerca de la palabra clave 'TO'.   ejecutarConsulta      en PV.ClsDb.ejecutarConsulta(String sqlQuery, SqlConnection cn)
+   en PV.FrmCrearBackup.btnCrearCopia_Click(Object sender, EventArgs e)
+
+   24/02/2017 01:23:05      KKROT-PC   No se puede abrir el dispositivo de copia de seguridad 'C:\Users\Kkrot\Desktop\bakDbPV24-2-2017-1.22.45.bak'. Error de sistema operativo 5(failed to retrieve text for this error. Reason: 15100).
+Fin anómalo de BACKUP DATABASE.   ejecutarConsulta      en PV.ClsDb.ejecutarConsulta(String sqlQuery, SqlConnection cn)
+   en PV.FrmCrearBackup.btnCrearCopia_Click(Object sender, EventArgs e)
+
+   24/02/2017 01:27:56      KKROT-PC   No se puede abrir el dispositivo de copia de seguridad 'C:\Users\Kkrot\Desktop\bak\DbPV24-2-2017-1.27.19.bak'. Error de sistema operativo 5(failed to retrieve text for this error. Reason: 15105).
+Fin anómalo de BACKUP DATABASE.   ejecutarConsulta      en PV.ClsDb.ejecutarConsulta(String sqlQuery, SqlConnection cn) en D:\github\PV\PV\PV\DB\ClsDb.cs:línea 260
+   en PV.FrmCrearBackup.btnCrearCopia_Click(Object sender, EventArgs e) en D:\github\PV\PV\PV\Vistas\backups\FrmCrearBackup.cs:línea 54
+
+   26/02/2017 15:41:36   aramirez   KKROT-PC   Referencia a objeto no establecida como instancia de un objeto.   mostrarMenu      en PV.FrmMain.mostrarMenu() en D:\github\PV\PV\PV\Vistas\FrmMain.cs:línea 57
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en D:\github\PV\PV\PV\Vistas\FrmMain.cs:línea 33
+
+   26/02/2017 15:43:31   aramirez   KKROT-PC   Referencia a objeto no establecida como instancia de un objeto.   mostrarMenu      en PV.FrmMain.mostrarMenu() en D:\github\PV\PV\PV\Vistas\FrmMain.cs:línea 57
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en D:\github\PV\PV\PV\Vistas\FrmMain.cs:línea 33
+
+   26/02/2017 16:05:50   aramirez   KKROT-PC   La expresión contiene una llamada a la función sin definir LTRIM().   .ctor      en System.Data.FunctionNode..ctor(DataTable table, String name)
+   en System.Data.ExpressionParser.Parse()
+   en System.Data.DataExpression..ctor(DataTable table, String expression, Type type)
+   en System.Data.DataTable.Select(String filterExpression)
+   en PV.FrmMain.ribbon_ItemClick(Object sender, ItemClickEventArgs e)
+
+   26/02/2017 16:08:54   aramirez   KKROT-PC   Referencia a objeto no establecida como instancia de un objeto.   ribbon_ItemClick      en PV.FrmMain.ribbon_ItemClick(Object sender, ItemClickEventArgs e)
+
+   26/02/2017 16:26:39   aramirez   KKROT-PC   Referencia a objeto no establecida como instancia de un objeto.   ribbon_ItemClick      en PV.FrmMain.ribbon_ItemClick(Object sender, ItemClickEventArgs e) en D:\github\PV\PV\PV\Vistas\FrmMain.cs:línea 75
+
+   26/02/2017 16:29:56   aramirez   KKROT-PC   Referencia a objeto no establecida como instancia de un objeto.   mostrarMenu      en PV.FrmMain.mostrarMenu() en D:\github\PV\PV\PV\Vistas\FrmMain.cs:línea 60
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en D:\github\PV\PV\PV\Vistas\FrmMain.cs:línea 35
+
+   26/02/2017 16:37:03   aramirez   KKROT-PC   Referencia a objeto no establecida como instancia de un objeto.   ribbon_ItemClick      en PV.FrmMain.ribbon_ItemClick(Object sender, ItemClickEventArgs e) en D:\github\PV\PV\PV\Vistas\FrmMain.cs:línea 75
+
+   27/02/2017 19:24:24   aramirez   KKROT-PC   Referencia a objeto no establecida como instancia de un objeto.   ribbon_ItemClick      en PV.FrmMain.ribbon_ItemClick(Object sender, ItemClickEventArgs e) en D:\github\PV\PV\PV\Vistas\FrmMain.cs:línea 107
+
+   27/02/2017 19:24:31   aramirez   KKROT-PC   Referencia a objeto no establecida como instancia de un objeto.   ribbon_ItemClick      en PV.FrmMain.ribbon_ItemClick(Object sender, ItemClickEventArgs e) en D:\github\PV\PV\PV\Vistas\FrmMain.cs:línea 107
+
+   27/02/2017 19:24:33   aramirez   KKROT-PC   Referencia a objeto no establecida como instancia de un objeto.   ribbon_ItemClick      en PV.FrmMain.ribbon_ItemClick(Object sender, ItemClickEventArgs e) en D:\github\PV\PV\PV\Vistas\FrmMain.cs:línea 107
+
