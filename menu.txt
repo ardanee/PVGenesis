@@ -1,0 +1,33 @@
+MAESTROS
+
+	Vehiculos
+----------------
+mnuTipoVehiculo
+mnuMarca
+mnuLinea
+
+-----------------------
+	Otros Maestros
+mnucliente
+mnuTiposCosto
+------------------------------------------------------------------------------------
+
+MOVIMIENTOS
+mnuIngresoVehiculo
+mnuCotizacion
+mnuVenta
+mnuPago
+
+-----------------------------
+REPORTES
+mnuReporteVenta
+mnuReporteClientesAtrasados
+
+-----------------------------
+SEGURIDAD
+mnuUsuario
+mnuRol
+mnuBackUp
+mnuRestaurar
+-----------------------------
+
