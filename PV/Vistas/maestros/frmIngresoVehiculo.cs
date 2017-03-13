@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PV.Vistas.maestros
 {
-    public partial class frmIngresoVehiculo : Form
+    public partial class FrmIngresoVehiculo : Form
     {
-        public frmIngresoVehiculo()
+        public FrmIngresoVehiculo()
         {
             InitializeComponent();
             cargarComboTipoVehiculo();

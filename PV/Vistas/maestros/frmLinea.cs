@@ -8,14 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PV.Vistas.maestros
+namespace PV
 {
-    public partial class frmLinea : Form
+    public partial class FrmLinea : Form
     {
         private BL.ClsLinea clsLinea = new BL.ClsLinea();
         private string idLinea = "0";
 
-        public frmLinea()
+        public FrmLinea()
         {
             InitializeComponent();
             txtNombre.Enabled = false;

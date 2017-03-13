@@ -53,6 +53,7 @@
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -62,15 +63,24 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BL\ClsCliente.cs" />
+    <Compile Include="BL\ClsCorreo.cs" />
+    <Compile Include="BL\ClsCosto.cs" />
+    <Compile Include="BL\ClsCotizacion.cs" />
     <Compile Include="BL\ClsLinea.cs" />
+    <Compile Include="BL\ClsMarca.cs" />
     <Compile Include="BL\ClsMarcaV.cs" />
     <Compile Include="BL\ClsMetodoPago.cs" />
     <Compile Include="BL\ClsPago.cs" />
     <Compile Include="BL\ClsReportes.cs" />
     <Compile Include="BL\ClsSeguridad.cs" />
+    <Compile Include="BL\ClsTipoCosto.cs" />
     <Compile Include="BL\ClsTipoVehiculo.cs" />
+    <Compile Include="BL\ClsVehiculo.cs" />
+    <Compile Include="BL\ClsVenta.cs" />
     <Compile Include="DB\ClsDb.cs" />
     <Compile Include="Helpers\ClsScanner.cs" />
     <Compile Include="Reportes\DtsEstadoCuenta.Designer.cs">
@@ -120,23 +130,53 @@
     <Compile Include="Vistas\FrmScanner.Designer.cs">
       <DependentUpon>FrmScanner.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\maestros\frmIngresoVehiculo.cs">
+    <Compile Include="Vistas\maestros\FrmCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\maestros\frmIngresoVehiculo.Designer.cs">
-      <DependentUpon>frmIngresoVehiculo.cs</DependentUpon>
+    <Compile Include="Vistas\maestros\FrmCliente.Designer.cs">
+      <DependentUpon>FrmCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\maestros\frmLinea.cs">
+    <Compile Include="Vistas\maestros\FrmClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\maestros\frmLinea.Designer.cs">
-      <DependentUpon>frmLinea.cs</DependentUpon>
+    <Compile Include="Vistas\maestros\FrmClientes.Designer.cs">
+      <DependentUpon>FrmClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\maestros\frmMarcaV.cs">
+    <Compile Include="Vistas\maestros\FrmIngresoVehiculo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\maestros\frmMarcaV.Designer.cs">
-      <DependentUpon>frmMarcaV.cs</DependentUpon>
+    <Compile Include="Vistas\maestros\FrmIngresoVehiculo.Designer.cs">
+      <DependentUpon>FrmIngresoVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\maestros\FrmLinea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\maestros\FrmLinea.Designer.cs">
+      <DependentUpon>FrmLinea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\maestros\FrmMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\maestros\FrmMarca.Designer.cs">
+      <DependentUpon>FrmMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\maestros\FrmMarcaV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\maestros\FrmMarcaV.Designer.cs">
+      <DependentUpon>FrmMarcaV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\maestros\FrmTipoCosto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\maestros\FrmTipoCosto.Designer.cs">
+      <DependentUpon>FrmTipoCosto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\movimientos\FrmCotizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\movimientos\FrmCotizacion.Designer.cs">
+      <DependentUpon>FrmCotizacion.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\movimientos\FrmNuevoPago.cs">
       <SubType>Form</SubType>
@@ -149,6 +189,66 @@
     </Compile>
     <Compile Include="Vistas\movimientos\FrmPago.Designer.cs">
       <DependentUpon>FrmPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\movimientos\FrmVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\movimientos\FrmVehiculo.Designer.cs">
+      <DependentUpon>FrmVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\movimientos\FrmVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\movimientos\FrmVenta.Designer.cs">
+      <DependentUpon>FrmVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\parciales\FrmClienteCotizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\parciales\FrmClienteCotizacion.Designer.cs">
+      <DependentUpon>FrmClienteCotizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\parciales\PfrmCotizacionBusqueda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\parciales\PfrmCotizacionBusqueda.Designer.cs">
+      <DependentUpon>PfrmCotizacionBusqueda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\parciales\PfrmCotizacionResultado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\parciales\PfrmCotizacionResultado.Designer.cs">
+      <DependentUpon>PfrmCotizacionResultado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\parciales\PfrmVehiculoLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\parciales\PfrmVehiculoLista.Designer.cs">
+      <DependentUpon>PfrmVehiculoLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\parciales\PfrmVehiculoNuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\parciales\PfrmVehiculoNuevo.Designer.cs">
+      <DependentUpon>PfrmVehiculoNuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\parciales\PfrmVentaLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\parciales\PfrmVentaLista.Designer.cs">
+      <DependentUpon>PfrmVentaLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\parciales\PfrmVentaNueva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\parciales\PfrmVentaNueva.Designer.cs">
+      <DependentUpon>PfrmVentaNueva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\parciales\_FrmSeleccionAuto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\parciales\_FrmSeleccionAuto.Designer.cs">
+      <DependentUpon>_FrmSeleccionAuto.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\seguridad\FrmCambiarContrasena.cs">
       <SubType>Form</SubType>
@@ -232,20 +332,65 @@
     <EmbeddedResource Include="Vistas\FrmScanner.resx">
       <DependentUpon>FrmScanner.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\maestros\frmIngresoVehiculo.resx">
-      <DependentUpon>frmIngresoVehiculo.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\maestros\FrmCliente.resx">
+      <DependentUpon>FrmCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\maestros\frmLinea.resx">
-      <DependentUpon>frmLinea.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\maestros\FrmClientes.resx">
+      <DependentUpon>FrmClientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\maestros\frmMarcaV.resx">
-      <DependentUpon>frmMarcaV.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\maestros\FrmIngresoVehiculo.resx">
+      <DependentUpon>FrmIngresoVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\maestros\FrmLinea.resx">
+      <DependentUpon>FrmLinea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\maestros\FrmMarca.resx">
+      <DependentUpon>FrmMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\maestros\FrmMarcaV.resx">
+      <DependentUpon>FrmMarcaV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\maestros\FrmTipoCosto.resx">
+      <DependentUpon>FrmTipoCosto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\movimientos\FrmCotizacion.resx">
+      <DependentUpon>FrmCotizacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\movimientos\FrmNuevoPago.resx">
       <DependentUpon>FrmNuevoPago.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\movimientos\FrmPago.resx">
       <DependentUpon>FrmPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\movimientos\FrmVehiculo.resx">
+      <DependentUpon>FrmVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\movimientos\FrmVenta.resx">
+      <DependentUpon>FrmVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\parciales\FrmClienteCotizacion.resx">
+      <DependentUpon>FrmClienteCotizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\parciales\PfrmCotizacionBusqueda.resx">
+      <DependentUpon>PfrmCotizacionBusqueda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\parciales\PfrmCotizacionResultado.resx">
+      <DependentUpon>PfrmCotizacionResultado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\parciales\PfrmVehiculoLista.resx">
+      <DependentUpon>PfrmVehiculoLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\parciales\PfrmVehiculoNuevo.resx">
+      <DependentUpon>PfrmVehiculoNuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\parciales\PfrmVentaLista.resx">
+      <DependentUpon>PfrmVentaLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\parciales\PfrmVentaNueva.resx">
+      <DependentUpon>PfrmVentaNueva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\parciales\_FrmSeleccionAuto.resx">
+      <DependentUpon>_FrmSeleccionAuto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\seguridad\FrmCambiarContrasena.resx">
       <DependentUpon>FrmCambiarContrasena.cs</DependentUpon>
@@ -437,6 +582,34 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\restore_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Add List_24px.png" />
+    <Content Include="Resources\Add Property_24px.png" />
+    <Content Include="Resources\Add Shopping Cart_24px.png" />
+    <None Include="Resources\anadir.png" />
+    <Content Include="Resources\Back_24px.png" />
+    <Content Include="Resources\Broom_24px.png" />
+    <Content Include="Resources\Buy_24px.png" />
+    <Content Include="Resources\Calculator_24px.png" />
+    <Content Include="Resources\Checkmark_24px.png" />
+    <Content Include="Resources\Circled Chevron Right_48px.png" />
+    <Content Include="Resources\Circled Left_48px.png" />
+    <Content Include="Resources\Circled Right_24px.png" />
+    <Content Include="Resources\Clear Filters_24px.png" />
+    <Content Include="Resources\Delete Property_24px.png" />
+    <Content Include="Resources\Deletee_24px.png" />
+    <Content Include="Resources\Detective_24px.png" />
+    <Content Include="Resources\Error_24px.png" />
+    <Content Include="Resources\Exit_24px.png" />
+    <Content Include="Resources\Forward_24px.png" />
+    <Content Include="Resources\Plus_24px.png" />
+    <Content Include="Resources\POS Terminal_24px.png" />
+    <Content Include="Resources\Print_24px.png" />
+    <Content Include="Resources\Restart_24px.png" />
+    <Content Include="Resources\Scanner_24px.png" />
+    <Content Include="Resources\Shipped_96px.png" />
+    <Content Include="Resources\Visible_24px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

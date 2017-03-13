@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PV.Vistas.maestros
 {
-    public partial class frmMarcaV : Form
+    public partial class FrmMarcaV : Form
     {
-        public frmMarcaV()
+        public FrmMarcaV()
         {
             InitializeComponent();
         }
