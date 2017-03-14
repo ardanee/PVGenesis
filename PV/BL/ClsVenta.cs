@@ -20,7 +20,7 @@ namespace PV.BL
            string r3Nombre, string r3Telefono, string r3Direccion,
            string rutaDocumento1, string rutaDocumento2,
            string clNombre,string clNit,string clDPI, string clDireccion,
-           string clTelefono, string clCorreo, string clDPIUp
+           string clTelefono, string clCorreo, string clDPIUp,string fecha
            )
         {
             DataTable res = new DataTable();
@@ -47,7 +47,8 @@ namespace PV.BL
                     Parametro("@PclDireccion", clDireccion), 
                     Parametro("@PclTelefono", clTelefono), 
                     Parametro("@PclCorreo", clCorreo),
-                    Parametro("@PcldpiU", clDPIUp)
+                    Parametro("@PcldpiU", clDPIUp),
+                    Parametro("@Pfecha",fecha)
                     );
 
                 //ejecutarSP("SpIuTipoVehiculo", null, Parametro("@PidTipoVehiculo", idTipoVehiculo), Parametro("@Pnombre", nombre), Parametro("@Pusuario", ClsGlobals.usuario));

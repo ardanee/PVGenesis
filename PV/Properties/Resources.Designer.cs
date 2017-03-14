@@ -83,6 +83,16 @@ namespace PV.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Add_Database_28 {
+            get {
+                object obj = ResourceManager.GetObject("Add Database-28", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Add_List_24px {
             get {
                 object obj = ResourceManager.GetObject("Add_List_24px", resourceCulture);
@@ -96,6 +106,16 @@ namespace PV.Properties {
         internal static System.Drawing.Bitmap Add_Property_24px {
             get {
                 object obj = ResourceManager.GetObject("Add_Property_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Add_Rule_24px {
+            get {
+                object obj = ResourceManager.GetObject("Add Rule_24px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -373,6 +393,16 @@ namespace PV.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap espalda {
+            get {
+                object obj = ResourceManager.GetObject("espalda", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Exit_24px {
             get {
                 object obj = ResourceManager.GetObject("Exit_24px", resourceCulture);
@@ -386,6 +416,36 @@ namespace PV.Properties {
         internal static System.Drawing.Bitmap Ferrari_Badge_96px {
             get {
                 object obj = ResourceManager.GetObject("Ferrari_Badge_96px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap flecha_derecha {
+            get {
+                object obj = ResourceManager.GetObject("flecha-derecha", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap flecha_derecha__1_ {
+            get {
+                object obj = ResourceManager.GetObject("flecha-derecha (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap flecha_hacia_la_izquierda {
+            get {
+                object obj = ResourceManager.GetObject("flecha-hacia-la-izquierda", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -416,6 +476,16 @@ namespace PV.Properties {
         internal static System.Drawing.Bitmap ingresoVehiculos_48px {
             get {
                 object obj = ResourceManager.GetObject("ingresoVehiculos_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap jugar {
+            get {
+                object obj = ResourceManager.GetObject("jugar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

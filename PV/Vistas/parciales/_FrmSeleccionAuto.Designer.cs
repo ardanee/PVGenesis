@@ -47,6 +47,7 @@
             this.lblExistentes = new System.Windows.Forms.ToolStripStatusLabel();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
+            this.lblTitulo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grdExistentes)).BeginInit();
             this.statusExistentes.SuspendLayout();
             this.SuspendLayout();
@@ -92,7 +93,7 @@
             this.grdExistentes.DefaultCellStyle = dataGridViewCellStyle3;
             this.grdExistentes.EnableHeadersVisualStyles = false;
             this.grdExistentes.GridColor = System.Drawing.Color.LightGray;
-            this.grdExistentes.Location = new System.Drawing.Point(0, 74);
+            this.grdExistentes.Location = new System.Drawing.Point(0, 87);
             this.grdExistentes.MultiSelect = false;
             this.grdExistentes.Name = "grdExistentes";
             this.grdExistentes.ReadOnly = true;
@@ -113,7 +114,7 @@
             this.grdExistentes.RowTemplate.Height = 30;
             this.grdExistentes.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.grdExistentes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdExistentes.Size = new System.Drawing.Size(1003, 353);
+            this.grdExistentes.Size = new System.Drawing.Size(1003, 340);
             this.grdExistentes.TabIndex = 39;
             this.grdExistentes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdExistentes_CellClick);
             // 
@@ -171,7 +172,7 @@
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(12, 30);
+            this.txtNombre.Location = new System.Drawing.Point(4, 57);
             this.txtNombre.MaxLength = 50;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(235, 24);
@@ -181,7 +182,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(12, 13);
+            this.label4.Location = new System.Drawing.Point(4, 40);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(52, 15);
             this.label4.TabIndex = 40;
@@ -214,7 +215,7 @@
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
             this.btnCancelar.Image = global::PV.Properties.Resources.Error_24px;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCancelar.Location = new System.Drawing.Point(355, 30);
+            this.btnCancelar.Location = new System.Drawing.Point(347, 57);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(99, 24);
             this.btnCancelar.TabIndex = 42;
@@ -235,7 +236,7 @@
             this.btnBuscar.ForeColor = System.Drawing.Color.White;
             this.btnBuscar.Image = global::PV.Properties.Resources.Search_24px;
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBuscar.Location = new System.Drawing.Point(253, 30);
+            this.btnBuscar.Location = new System.Drawing.Point(245, 57);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(96, 24);
             this.btnBuscar.TabIndex = 38;
@@ -244,18 +245,33 @@
             this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
+            // lblTitulo
+            // 
+            this.lblTitulo.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.lblTitulo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.lblTitulo.ForeColor = System.Drawing.Color.White;
+            this.lblTitulo.Location = new System.Drawing.Point(0, 0);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(1005, 34);
+            this.lblTitulo.TabIndex = 43;
+            this.lblTitulo.Text = "Vehiculos disponibles";
+            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // _FrmSeleccionAuto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1005, 426);
+            this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.statusExistentes);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.grdExistentes);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.txtNombre);
+            this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(1021, 464);
             this.Name = "_FrmSeleccionAuto";
             this.Text = "_FrmSeleccionAuto";
@@ -284,5 +300,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn fechaIngresoCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn observacionesCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn precioCol;
+        private System.Windows.Forms.Label lblTitulo;
     }
 }

@@ -39,15 +39,15 @@
             this.btnGrabar = new System.Windows.Forms.Button();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.grdExistentes = new System.Windows.Forms.DataGridView();
+            this.editarCol = new System.Windows.Forms.DataGridViewImageColumn();
+            this.eliminarCol = new System.Windows.Forms.DataGridViewImageColumn();
+            this.idTipoVehiculoCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusExistentes = new System.Windows.Forms.StatusStrip();
             this.lblExistentes = new System.Windows.Forms.ToolStripStatusLabel();
             this.label4 = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.editarCol = new System.Windows.Forms.DataGridViewImageColumn();
-            this.eliminarCol = new System.Windows.Forms.DataGridViewImageColumn();
-            this.idTipoVehiculoCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grdExistentes)).BeginInit();
             this.statusExistentes.SuspendLayout();
             this.SuspendLayout();
@@ -62,11 +62,14 @@
             this.btnCAncelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCAncelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCAncelar.ForeColor = System.Drawing.Color.White;
-            this.btnCAncelar.Location = new System.Drawing.Point(472, 92);
+            this.btnCAncelar.Image = global::PV.Properties.Resources.Error_24px;
+            this.btnCAncelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCAncelar.Location = new System.Drawing.Point(501, 55);
             this.btnCAncelar.Name = "btnCAncelar";
-            this.btnCAncelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCAncelar.Size = new System.Drawing.Size(97, 23);
             this.btnCAncelar.TabIndex = 3;
             this.btnCAncelar.Text = "Cancelar";
+            this.btnCAncelar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCAncelar.UseVisualStyleBackColor = false;
             this.btnCAncelar.Click += new System.EventHandler(this.btnCAncelar_Click);
             // 
@@ -80,18 +83,21 @@
             this.btnGrabar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGrabar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGrabar.ForeColor = System.Drawing.Color.White;
-            this.btnGrabar.Location = new System.Drawing.Point(396, 92);
+            this.btnGrabar.Image = global::PV.Properties.Resources.Save_as_24px;
+            this.btnGrabar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnGrabar.Location = new System.Drawing.Point(412, 55);
             this.btnGrabar.Name = "btnGrabar";
-            this.btnGrabar.Size = new System.Drawing.Size(75, 23);
+            this.btnGrabar.Size = new System.Drawing.Size(83, 23);
             this.btnGrabar.TabIndex = 2;
             this.btnGrabar.Text = "Grabar";
+            this.btnGrabar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGrabar.UseVisualStyleBackColor = false;
             this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
             // 
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(2, 92);
+            this.txtNombre.Location = new System.Drawing.Point(2, 57);
             this.txtNombre.MaxLength = 50;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(317, 21);
@@ -135,7 +141,7 @@
             this.grdExistentes.DefaultCellStyle = dataGridViewCellStyle4;
             this.grdExistentes.EnableHeadersVisualStyles = false;
             this.grdExistentes.GridColor = System.Drawing.Color.LightGray;
-            this.grdExistentes.Location = new System.Drawing.Point(0, 136);
+            this.grdExistentes.Location = new System.Drawing.Point(0, 86);
             this.grdExistentes.MultiSelect = false;
             this.grdExistentes.Name = "grdExistentes";
             this.grdExistentes.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -155,66 +161,9 @@
             this.grdExistentes.RowTemplate.Height = 30;
             this.grdExistentes.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.grdExistentes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdExistentes.Size = new System.Drawing.Size(568, 192);
+            this.grdExistentes.Size = new System.Drawing.Size(612, 342);
             this.grdExistentes.TabIndex = 4;
             this.grdExistentes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdExistentes_CellClick);
-            // 
-            // statusExistentes
-            // 
-            this.statusExistentes.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lblExistentes});
-            this.statusExistentes.Location = new System.Drawing.Point(0, 331);
-            this.statusExistentes.Name = "statusExistentes";
-            this.statusExistentes.Size = new System.Drawing.Size(566, 22);
-            this.statusExistentes.TabIndex = 5;
-            this.statusExistentes.Text = "statusStrip1";
-            // 
-            // lblExistentes
-            // 
-            this.lblExistentes.Name = "lblExistentes";
-            this.lblExistentes.Size = new System.Drawing.Size(0, 17);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(-1, 75);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 15);
-            this.label4.TabIndex = 30;
-            this.label4.Text = "Nombre";
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnBuscar.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.btnBuscar.FlatAppearance.BorderSize = 0;
-            this.btnBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.ForeColor = System.Drawing.Color.White;
-            this.btnBuscar.Location = new System.Drawing.Point(320, 92);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
-            this.btnBuscar.TabIndex = 1;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = false;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
-            // 
-            // lblTitulo
-            // 
-            this.lblTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTitulo.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.lblTitulo.Font = new System.Drawing.Font("Roboto", 10F, System.Drawing.FontStyle.Bold);
-            this.lblTitulo.ForeColor = System.Drawing.Color.White;
-            this.lblTitulo.Location = new System.Drawing.Point(0, 0);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(566, 34);
-            this.lblTitulo.TabIndex = 31;
-            this.lblTitulo.Text = "Tipos de Vehículo";
-            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // editarCol
             // 
@@ -256,12 +205,72 @@
             this.nombreCol.HeaderText = "Nombre";
             this.nombreCol.Name = "nombreCol";
             // 
-            // frmTipoVehiculo
+            // statusExistentes
+            // 
+            this.statusExistentes.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lblExistentes});
+            this.statusExistentes.Location = new System.Drawing.Point(0, 431);
+            this.statusExistentes.Name = "statusExistentes";
+            this.statusExistentes.Size = new System.Drawing.Size(610, 22);
+            this.statusExistentes.TabIndex = 5;
+            this.statusExistentes.Text = "statusStrip1";
+            // 
+            // lblExistentes
+            // 
+            this.lblExistentes.Name = "lblExistentes";
+            this.lblExistentes.Size = new System.Drawing.Size(0, 17);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(-1, 40);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(52, 15);
+            this.label4.TabIndex = 30;
+            this.label4.Text = "Nombre";
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnBuscar.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnBuscar.FlatAppearance.BorderSize = 0;
+            this.btnBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.Color.White;
+            this.btnBuscar.Image = global::PV.Properties.Resources.Search_24px;
+            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBuscar.Location = new System.Drawing.Point(325, 55);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(81, 23);
+            this.btnBuscar.TabIndex = 1;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTitulo.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.lblTitulo.ForeColor = System.Drawing.Color.White;
+            this.lblTitulo.Location = new System.Drawing.Point(0, 0);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(610, 34);
+            this.lblTitulo.TabIndex = 31;
+            this.lblTitulo.Text = "Tipos de Vehículo";
+            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // FrmTipoVehiculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(566, 353);
+            this.ClientSize = new System.Drawing.Size(610, 453);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.label4);
@@ -270,8 +279,9 @@
             this.Controls.Add(this.btnCAncelar);
             this.Controls.Add(this.btnGrabar);
             this.Controls.Add(this.txtNombre);
-            this.Name = "frmTipoVehiculo";
-            this.Text = "frmTipoVehiculo";
+            this.MaximizeBox = false;
+            this.Name = "FrmTipoVehiculo";
+            this.Text = "FrmTipoVehiculo";
             this.Load += new System.EventHandler(this.frmTipoVehiculo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdExistentes)).EndInit();
             this.statusExistentes.ResumeLayout(false);

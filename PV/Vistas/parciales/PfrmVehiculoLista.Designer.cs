@@ -33,12 +33,14 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PfrmVehiculoLista));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label4 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.grdExistentes = new System.Windows.Forms.DataGridView();
+            this.editarCol = new System.Windows.Forms.DataGridViewImageColumn();
+            this.eliminarCol = new System.Windows.Forms.DataGridViewImageColumn();
             this.idVehiculoCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipoCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.marcaCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,8 +56,6 @@
             this.lblExistentes = new System.Windows.Forms.ToolStripStatusLabel();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.editarCol = new System.Windows.Forms.DataGridViewImageColumn();
-            this.eliminarCol = new System.Windows.Forms.DataGridViewImageColumn();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnGrabar = new System.Windows.Forms.Button();
@@ -129,7 +129,7 @@
             this.grdExistentes.DefaultCellStyle = dataGridViewCellStyle4;
             this.grdExistentes.EnableHeadersVisualStyles = false;
             this.grdExistentes.GridColor = System.Drawing.Color.LightGray;
-            this.grdExistentes.Location = new System.Drawing.Point(0, 87);
+            this.grdExistentes.Location = new System.Drawing.Point(0, 72);
             this.grdExistentes.MultiSelect = false;
             this.grdExistentes.Name = "grdExistentes";
             this.grdExistentes.ReadOnly = true;
@@ -150,9 +150,36 @@
             this.grdExistentes.RowTemplate.Height = 30;
             this.grdExistentes.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.grdExistentes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdExistentes.Size = new System.Drawing.Size(960, 353);
+            this.grdExistentes.Size = new System.Drawing.Size(960, 368);
             this.grdExistentes.TabIndex = 36;
             this.grdExistentes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdExistentes_CellClick);
+            // 
+            // editarCol
+            // 
+            this.editarCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle3.NullValue")));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            this.editarCol.DefaultCellStyle = dataGridViewCellStyle3;
+            this.editarCol.FillWeight = 121.8274F;
+            this.editarCol.HeaderText = "";
+            this.editarCol.Image = global::PV.Properties.Resources.Pencil_Tip_24px;
+            this.editarCol.MinimumWidth = 30;
+            this.editarCol.Name = "editarCol";
+            this.editarCol.ReadOnly = true;
+            this.editarCol.Width = 30;
+            // 
+            // eliminarCol
+            // 
+            this.eliminarCol.FillWeight = 53.33205F;
+            this.eliminarCol.HeaderText = "";
+            this.eliminarCol.Image = global::PV.Properties.Resources.Delete_24px;
+            this.eliminarCol.MinimumWidth = 30;
+            this.eliminarCol.Name = "eliminarCol";
+            this.eliminarCol.ReadOnly = true;
             // 
             // idVehiculoCol
             // 
@@ -287,33 +314,6 @@
             this.dataGridViewImageColumn2.ReadOnly = true;
             this.dataGridViewImageColumn2.Width = 40;
             // 
-            // editarCol
-            // 
-            this.editarCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle3.NullValue")));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            this.editarCol.DefaultCellStyle = dataGridViewCellStyle3;
-            this.editarCol.FillWeight = 121.8274F;
-            this.editarCol.HeaderText = "";
-            this.editarCol.Image = global::PV.Properties.Resources.Pencil_Tip_24px;
-            this.editarCol.MinimumWidth = 30;
-            this.editarCol.Name = "editarCol";
-            this.editarCol.ReadOnly = true;
-            this.editarCol.Width = 30;
-            // 
-            // eliminarCol
-            // 
-            this.eliminarCol.FillWeight = 53.33205F;
-            this.eliminarCol.HeaderText = "";
-            this.eliminarCol.Image = global::PV.Properties.Resources.Delete_24px;
-            this.eliminarCol.MinimumWidth = 30;
-            this.eliminarCol.Name = "eliminarCol";
-            this.eliminarCol.ReadOnly = true;
-            // 
             // btnBuscar
             // 
             this.btnBuscar.BackColor = System.Drawing.Color.DodgerBlue;
@@ -347,7 +347,7 @@
             this.btnLimpiar.ForeColor = System.Drawing.Color.White;
             this.btnLimpiar.Image = global::PV.Properties.Resources.Delete_Property_24px;
             this.btnLimpiar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLimpiar.Location = new System.Drawing.Point(534, 28);
+            this.btnLimpiar.Location = new System.Drawing.Point(433, 28);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(94, 24);
             this.btnLimpiar.TabIndex = 34;
@@ -368,7 +368,7 @@
             this.btnGrabar.ForeColor = System.Drawing.Color.White;
             this.btnGrabar.Image = global::PV.Properties.Resources.Add_Property_24px;
             this.btnGrabar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGrabar.Location = new System.Drawing.Point(433, 28);
+            this.btnGrabar.Location = new System.Drawing.Point(533, 28);
             this.btnGrabar.Name = "btnGrabar";
             this.btnGrabar.Size = new System.Drawing.Size(95, 24);
             this.btnGrabar.TabIndex = 33;
@@ -377,7 +377,7 @@
             this.btnGrabar.UseVisualStyleBackColor = false;
             this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
             // 
-            // PfrmListaVehiculo
+            // PfrmVehiculoLista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -390,7 +390,7 @@
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnGrabar);
             this.Controls.Add(this.txtNombre);
-            this.Name = "PfrmListaVehiculo";
+            this.Name = "PfrmVehiculoLista";
             this.Text = "frmPListaVehiculos";
             this.Load += new System.EventHandler(this.PfrmListaVehiculo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdExistentes)).EndInit();

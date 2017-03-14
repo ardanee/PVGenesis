@@ -1,8 +1,5 @@
 go
--- Procedimiento para insertar tabla marca
-IF OBJECT_ID('DBPV.SpIuLinea', 'P') IS NOT NULL
-	DROP PROCEDURE dbpv.SpIuLinea;
-GO
+-- Procedimiento para insertar tabla linea
 CREATE PROCEDURE [dbo].[SpIuLinea]
 	@PidLinea int,
 	@Pnombre varchar(50),
@@ -25,11 +22,8 @@ go
 
 
 
- go
--- Procedimiento para seleccionar tabla marca
-IF OBJECT_ID('DBPV.SpsLinea', 'P') IS NOT NULL
-	DROP PROCEDURE dbpv.SpsMarca;
-GO
+go
+-- Procedimiento para seleccionar en tabla linea
 CREATE PROCEDURE [dbo].[SpsLinea]
 	@Pcriterio varchar(50)
 AS
@@ -45,7 +39,7 @@ go
  
  
  go
--- PROCEDIMIENTO PARA ELIMINAR  TABLA MARCA
+-- PROCEDIMIENTO PARA ELIMINAR EN TABLA LINEA
 CREATE PROCEDURE [DBO].[SpdLinea]
 	@PidLinea int
 AS
@@ -53,11 +47,27 @@ BEGIN
 --Verifica si hay vehículos relacionados con el actual registro antes de borrar
 	IF EXISTS(SELECT 1 FROM TblVehiculo WHERE idLinea= @PidLinea)
 	BEGIN
-		RAISERROR ('No se puede eliminar porque actualmente hay vehículos que tienen asignado este tipo',16,1);
+		RAISERROR ('No se puede eliminar porque actualmente hay vehículos que tienen asignado esta linea',16,1);
 	END
 	ELSE
 	BEGIN
 		DELETE TblLinea WHERE idLinea = @PidLinea
 	END
+END;
+go
+
+
+
+-- PROCEDIMIENTO PARA SELECCIONAR LINEAS DE UNA MARCA
+go
+create procedure SpSLineaMarca
+	@idMarca int
+AS 
+BEGIN
+	SELECT tbLinea.idLinea as idLinea,tbLinea.nombre as linea, tbMarca.nombre as marca, tbMarca.idMarca as idMarca
+	 FROM TblLinea as tbLinea
+	 JOIN TblMarca as tbMarca
+	 ON tbLinea.idMarca = tbMarca.idMarca
+	 WHERE tbLinea.idMarca = @idMarca order by tbLinea.nombre ASC 
 END;
 go

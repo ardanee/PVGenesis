@@ -35,8 +35,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMarca));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.statusExistentes = new System.Windows.Forms.StatusStrip();
             this.lblExistentes = new System.Windows.Forms.ToolStripStatusLabel();
@@ -51,43 +49,18 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnCAncelar = new System.Windows.Forms.Button();
             this.btnGrabar = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.lblTitulo = new System.Windows.Forms.Label();
             this.statusExistentes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdExistentes)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(0, -1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(657, 32);
-            this.panel1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(186, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Marcas de Vehiculos";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(4, 40);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 15);
+            this.label4.Size = new System.Drawing.Size(61, 15);
             this.label4.TabIndex = 37;
             this.label4.Text = "NOMBRE";
             // 
@@ -95,10 +68,10 @@
             // 
             this.statusExistentes.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblExistentes});
-            this.statusExistentes.Location = new System.Drawing.Point(0, 306);
+            this.statusExistentes.Location = new System.Drawing.Point(0, 463);
             this.statusExistentes.Name = "statusExistentes";
             this.statusExistentes.Padding = new System.Windows.Forms.Padding(1, 0, 12, 0);
-            this.statusExistentes.Size = new System.Drawing.Size(656, 22);
+            this.statusExistentes.Size = new System.Drawing.Size(605, 22);
             this.statusExistentes.TabIndex = 36;
             this.statusExistentes.Text = "statusStrip1";
             // 
@@ -133,7 +106,7 @@
             this.grdExistentes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -147,7 +120,7 @@
             this.nombreCol});
             this.grdExistentes.EnableHeadersVisualStyles = false;
             this.grdExistentes.GridColor = System.Drawing.Color.LightGray;
-            this.grdExistentes.Location = new System.Drawing.Point(1, 82);
+            this.grdExistentes.Location = new System.Drawing.Point(1, 91);
             this.grdExistentes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grdExistentes.MultiSelect = false;
             this.grdExistentes.Name = "grdExistentes";
@@ -155,7 +128,7 @@
             this.grdExistentes.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -169,7 +142,7 @@
             this.grdExistentes.RowTemplate.Height = 30;
             this.grdExistentes.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.grdExistentes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdExistentes.Size = new System.Drawing.Size(656, 227);
+            this.grdExistentes.Size = new System.Drawing.Size(605, 375);
             this.grdExistentes.TabIndex = 38;
             this.grdExistentes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdExistentes_CellClick);
             // 
@@ -260,9 +233,10 @@
             this.btnBuscar.Location = new System.Drawing.Point(291, 49);
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(98, 26);
+            this.btnBuscar.Size = new System.Drawing.Size(85, 26);
             this.btnBuscar.TabIndex = 32;
             this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click_1);
             // 
@@ -276,14 +250,15 @@
             this.btnCAncelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCAncelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCAncelar.ForeColor = System.Drawing.Color.White;
-            this.btnCAncelar.Image = global::PV.Properties.Resources.Cancel_File_24px;
+            this.btnCAncelar.Image = global::PV.Properties.Resources.Error_24px;
             this.btnCAncelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCAncelar.Location = new System.Drawing.Point(498, 49);
+            this.btnCAncelar.Location = new System.Drawing.Point(468, 49);
             this.btnCAncelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCAncelar.Name = "btnCAncelar";
-            this.btnCAncelar.Size = new System.Drawing.Size(105, 26);
+            this.btnCAncelar.Size = new System.Drawing.Size(101, 26);
             this.btnCAncelar.TabIndex = 34;
             this.btnCAncelar.Text = "Cancelar";
+            this.btnCAncelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCAncelar.UseVisualStyleBackColor = false;
             this.btnCAncelar.Click += new System.EventHandler(this.btnCAncelar_Click_1);
             // 
@@ -299,21 +274,36 @@
             this.btnGrabar.ForeColor = System.Drawing.Color.White;
             this.btnGrabar.Image = global::PV.Properties.Resources.Save_as_24px;
             this.btnGrabar.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnGrabar.Location = new System.Drawing.Point(395, 49);
+            this.btnGrabar.Location = new System.Drawing.Point(382, 49);
             this.btnGrabar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGrabar.Name = "btnGrabar";
-            this.btnGrabar.Size = new System.Drawing.Size(98, 26);
+            this.btnGrabar.Size = new System.Drawing.Size(80, 26);
             this.btnGrabar.TabIndex = 33;
             this.btnGrabar.Text = "Grabar";
+            this.btnGrabar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGrabar.UseVisualStyleBackColor = false;
             this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click_1);
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.lblTitulo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.lblTitulo.ForeColor = System.Drawing.Color.White;
+            this.lblTitulo.Location = new System.Drawing.Point(0, 0);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(605, 34);
+            this.lblTitulo.TabIndex = 39;
+            this.lblTitulo.Text = "Marcas de Vehículo";
+            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // FrmMarca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(656, 328);
+            this.ClientSize = new System.Drawing.Size(605, 485);
+            this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.grdExistentes);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.label4);
@@ -321,15 +311,14 @@
             this.Controls.Add(this.btnCAncelar);
             this.Controls.Add(this.btnGrabar);
             this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.panel1);
-            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "FrmMarca";
-            this.Text = "frmMarcaV";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "FrmMarca";
             this.Load += new System.EventHandler(this.frmMarca_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.statusExistentes.ResumeLayout(false);
             this.statusExistentes.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdExistentes)).EndInit();
@@ -339,9 +328,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.StatusStrip statusExistentes;
@@ -356,5 +342,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn nombreCol;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
+        private System.Windows.Forms.Label lblTitulo;
     }
 }

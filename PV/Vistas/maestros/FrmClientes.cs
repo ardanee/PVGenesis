@@ -12,7 +12,6 @@ namespace PV
 {
     public partial class FrmClientes : Form
     {
-            
         //private 
         private BL.ClsCliente clsCliente = new BL.ClsCliente();
         private string dpiCliente = "0";
@@ -23,7 +22,7 @@ namespace PV
         }
 
 
-        private void FrmClientes_Load(object obj, EventArgs e)
+        private void FrmCliente_Load(object obj, EventArgs e)
         {
             try
             {
@@ -38,16 +37,23 @@ namespace PV
 
         public void limpiarControles()
         {
-            this.txtNit.Clear();
-            this.txtDireccion.Clear();
-            this.txtDpi.Clear();
-            this.txtTelefonos.Clear();
-            this.txtDireccion.Clear();
-            this.txtCorreoElectronico.Clear();
-            this.txtNombre.Clear();
-            this.dpiCliente = "0";
-            //this.buscar();
-            this.txtNit.Focus();
+            try
+            {
+                this.txtNit.Clear();
+                this.txtDireccion.Clear();
+                this.txtDpi.Clear();
+                this.txtTelefonos.Clear();
+                this.txtDireccion.Clear();
+                this.txtCorreoElectronico.Clear();
+                this.txtNombre.Clear();
+                this.dpiCliente = "0";
+                this.buscar();
+                this.txtNit.Focus();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         private void btnCAncelar_Click(object sender, EventArgs e)
@@ -75,7 +81,7 @@ namespace PV
                 else if(this.txtNombre.Text.Trim() != "")
                     strQuery = this.txtNombre.Text.Trim();
                 //MessageBox.Show("queri: " + strQuery);
-                grdExistentes.DataSource = this.clsCliente.seleccionar(strQuery);
+                grdExistentes.DataSource = this.clsCliente.seleccionar("");
                 lblExistentes.Text = grdExistentes.Rows.Count.ToString() + " Registro(s)";
                 this.limpiarControles();
             }
@@ -160,21 +166,21 @@ namespace PV
                     MessageBox.Show("Ingresar DPI Cliente");
                     return false;
                 }
+
+                else
+                    return true;
             }
-            catch(Exception){
+            catch (Exception)
+            {
                 throw;
             }
-            
-                    return true;
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             try
             {
-                grdExistentes.DataSource = this.clsCliente.seleccionar("");
-                lblExistentes.Text = grdExistentes.Rows.Count.ToString() + " Registro(s)";
-                this.limpiarControles();
+                this.buscar();
             }
             catch (Exception ex)
             {

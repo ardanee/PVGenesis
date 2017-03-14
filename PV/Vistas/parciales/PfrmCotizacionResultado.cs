@@ -133,7 +133,7 @@ namespace PV.Vistas.parciales
                     double cuotaM = Math.Round((double.Parse(txtPrecioNegociado.Text.Trim()) - double.Parse(txtEnganche.Text.Trim())) / double.Parse(txtCuotas.Text.Trim()), 2);
                     //txtCuotaMensual.Text = Math.Round(((precioVenta - enganche) / cantidadCuotas), 2).ToString();
                     txtCuotaMensual.Text = cuotaM.ToString();
-                    totalpagar = Math.Round(cuotaM * double.Parse(txtCuotas.Text.Trim()),2);
+                    totalpagar = Math.Round((cuotaM * double.Parse(txtCuotas.Text.Trim())) +double.Parse(txtEnganche.Text),2);
                     txtTotal.Text = totalpagar.ToString().Trim();
                 }
                             
@@ -195,22 +195,20 @@ namespace PV.Vistas.parciales
                     //MessageBox.Show(": " + cmbForma.SelectedIndex.ToString());
                     double t = 0.00;
                     if (cmbForma.SelectedIndex == 1)
-                        t = (Math.Round((Double.Parse(txtPrecioNegociado.Text.Trim()) - double.Parse(txtEnganche.Text.Trim())) / Double.Parse(txtCuotas.Text.Trim()), 2)) * int.Parse(txtCuotas.Text.Trim());
+                        t = Math.Round((double.Parse(txtCuotaMensual.Text.Trim()) * double.Parse(txtCuotas.Text)) + Math.Round(double.Parse(txtEnganche.Text),2),2);
 
                     double cmp = Math.Round(t - totalpagar, 2);
-
+                    //MessageBox.Show("val: " + t +" voll: " + totalpagar);
                     if (cmp == 0)
                     {
-
                         FrmVenta frmVenta = new FrmVenta();
-
                         frmVenta.Show();
                         frmVenta.cargarFormNuevaVenta();
                         frmVenta.frmNuevaVenta.setVehiculo(idVehiculo, lblTipoAuto.Text + "," + lblMarca.Text + ", " + lblLinea.Text +
-
-                            lblModelo.Text + ", cc: " + lblCilindros.Text + ", cc:" + lblCc.Text, lblPlaca.Text, lblPrecio.Text);
+                                lblModelo.Text + ", cc: " + lblCilindros.Text + ", cc:" + lblCc.Text, lblPlaca.Text, lblPrecio.Text);
                         frmVenta.frmNuevaVenta.agregarFinanciamiento(cmbForma.SelectedIndex.ToString(), txtEnganche.Text.Trim(), txtCuotas.Text.Trim());
                         frmVenta.frmNuevaVenta.ventaDesdeCotizacion();
+
                     }
                     else
                         ClsHelper.MensajeSistema("Valores inconcistentes, recalcular...");
@@ -232,7 +230,7 @@ namespace PV.Vistas.parciales
                 //MessageBox.Show(": " + cmbForma.SelectedIndex.ToString());
                 double t = 0.00;
                 if (cmbForma.SelectedIndex == 1)
-                    t = (Math.Round((Double.Parse(txtPrecioNegociado.Text.Trim()) - double.Parse(txtEnganche.Text.Trim())) / Double.Parse(txtCuotas.Text.Trim()), 2)) * int.Parse(txtCuotas.Text.Trim());
+                    t = (Math.Round((Double.Parse(txtPrecioNegociado.Text.Trim()) - double.Parse(txtEnganche.Text.Trim())) / int.Parse(txtCuotas.Text.Trim()))) * int.Parse(txtCuotas.Text.Trim());
 
                 double cmp = Math.Round(t - totalpagar,2);
 
@@ -267,6 +265,7 @@ namespace PV.Vistas.parciales
                 {
 
                     habilitarFinanciamiento(true);
+                    calcular();
                     txtCuotaMensual.Focus();
                 }
             }catch(Exception ex){
@@ -296,6 +295,10 @@ namespace PV.Vistas.parciales
             return true;
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
        
 }

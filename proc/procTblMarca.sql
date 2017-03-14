@@ -1,8 +1,5 @@
 go
 -- Procedimiento para insertar tabla marca
-IF OBJECT_ID('DBPV.SpIuMarca', 'P') IS NOT NULL
-	DROP PROCEDURE dbpv.SpIuMarca;
-GO
 CREATE PROCEDURE [dbo].[SpIuMarca]
 	@PidMarca int,
 	@Pnombre varchar(50),
@@ -22,12 +19,11 @@ BEGIN
 END;
 go
 
+
 go
 -- Procedimiento para seleccionar tabla marca
-IF OBJECT_ID('DBPV.SpsMarca', 'P') IS NOT NULL
-	DROP PROCEDURE dbpv.SpsMarca;
-GO
-CREATE PROCEDURE [dbo].[SpsMarca]
+
+create PROCEDURE [dbo].[SpsMarca]
 	@Pcriterio varchar(50)
 AS
 BEGIN
@@ -36,6 +32,8 @@ SELECT idMarca,nombre
 	WHERE nombre like '%'+ISNULL(@Pcriterio,nombre)+'%' order by nombre ASC
 END;
 go
+ 
+ 
  
  go
 -- PROCEDIMIENTO PARA ELIMINAR  TABLA MARCA
@@ -46,12 +44,11 @@ BEGIN
 --Verifica si hay vehículos relacionados con el actual registro antes de borrar
 	IF EXISTS(SELECT 1 FROM TblVehiculo WHERE idMarca= @PidMarca)
 	BEGIN
-		RAISERROR ('No se puede eliminar porque actualmente hay vehículos que tienen asignado este tipo',16,1);
+		RAISERROR ('No se puede eliminar porque actualmente hay vehículos que tienen asignado esta marca',16,1);
 	END
 	ELSE
 	BEGIN
 		DELETE Tblmarca WHERE idMarca = @PidMarca
 	END
 END;
-
 go

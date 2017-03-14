@@ -118,199 +118,220 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Right_Squared_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Right Squared_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Traffic_Jam_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Traffic Jam_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Close_Window_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Close Window_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="No_Cash_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\No Cash_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Add_Property_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Add Property_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cliente_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cliente_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Microsoft_Excel_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Microsoft Excel_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Circled_Right_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Circled Right_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Todo_List_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Todo List_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Attach_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Attach_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Error_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Error_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Search_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Search_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="reporteVenta_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reporteVenta_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Delete_Property_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Delete Property_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Save_as_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Save as_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pago_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pago_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cash_In_Hand_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cash In Hand_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="backup_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\backup_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Delete_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Delete_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Buy_24px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Buy_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Print_24px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Print_24px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cotizacion_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cotizacion_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Shutdown_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Shutdown_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cancel_File_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cancel File_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="marca_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\marca_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pencil" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pencil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Broom_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Broom_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Print_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Print_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Add_Shopping_Cart_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Add Shopping Cart_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Ferrari_Badge_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ferrari Badge_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Circled_Chevron_Right_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Circled Chevron Right_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="POS_Terminal_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\POS Terminal_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="venta_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\venta_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Checkmark_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Checkmark_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tipoVehiculo_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tipoVehiculo_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="High_Priority_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\High Priority_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Calculator_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Calculator_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Visible_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Visible_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Pencil_Tip_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pencil Tip_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Restart_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Restart_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Advertising_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Advertising_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tipoCosto_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tipoCosto_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="account_settings_variant" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\account-settings-variant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="usuario_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\usuario_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="linea_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\linea_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Clock_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Clock_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="rol_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rol_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="flecha-derecha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flecha-derecha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Shipped_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Shipped_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Clear_Filters_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Clear Filters_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Accounting_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Accounting_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="restore_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\restore_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Detective_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Detective_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Forward_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Forward_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Scanner_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Scanner_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Lamborghini_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Lamborghini_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Circled_Left_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Circled Left_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Add_List_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Add List_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Plus_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Plus_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ingresoVehiculos_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ingresoVehiculos_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Deletee_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Deletee_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Clock_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Clock_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="No_Cash_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\No Cash_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Exit_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Exit_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Back_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Back_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Todo_List_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Todo List_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Visible_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Visible_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Attach_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Attach_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Calculator_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Calculator_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="usuario_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\usuario_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flecha-derecha (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flecha-derecha (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Close_Window_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Close Window_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Microsoft_Excel_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Microsoft Excel_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Circled_Left_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Circled Left_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="restore_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\restore_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backup_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backup_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tipoVehiculo_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tipoVehiculo_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shipped_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shipped_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jugar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jugar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pencil_Tip_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pencil Tip_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Circled_Chevron_Right_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Circled Chevron Right_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Print_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Print_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cliente_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cliente_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="anadir" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\anadir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Add_List_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Add List_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="espalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\espalda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Delete_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Delete_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Checkmark_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checkmark_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Advertising_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Advertising_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flecha-hacia-la-izquierda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flecha-hacia-la-izquierda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Clock_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Clock_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Add_Shopping_Cart_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Add Shopping Cart_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ingresoVehiculos_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ingresoVehiculos_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Accounting_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Accounting_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Add Rule_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Add Rule_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="venta_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\venta_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Broom_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Broom_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Circled_Right_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Circled Right_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pencil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pencil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Forward_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Forward_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Traffic_Jam_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Traffic Jam_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Clock_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Clock_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cash_In_Hand_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cash In Hand_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Delete_Property_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Delete Property_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="POS_Terminal_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\POS Terminal_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Save_as_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Save as_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reporteVenta_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reporteVenta_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Clear_Filters_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Clear Filters_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="linea_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\linea_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="account_settings_variant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\account-settings-variant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Add_Property_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Add Property_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Plus_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Plus_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="marca_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\marca_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pago_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pago_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Detective_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Detective_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cotizacion_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cotizacion_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Search_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Search_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Buy_24px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Buy_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rol_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rol_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Error_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Error_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Deletee_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Deletee_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="High_Priority_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\High Priority_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lamborghini_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lamborghini_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tipoCosto_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tipoCosto_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ferrari_Badge_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ferrari Badge_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Right_Squared_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Right Squared_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cancel_File_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cancel File_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Print_24px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Print_24px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Back_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Back_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Restart_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Restart_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Scanner_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Scanner_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shutdown_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shutdown_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Add Database-28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Add Database-28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

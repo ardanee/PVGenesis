@@ -225,3 +225,232 @@ Fin anómalo de BACKUP DATABASE.   ejecutarConsulta      en PV.ClsDb.ejecutarCon
 
    27/02/2017 19:24:33   aramirez   KKROT-PC   Referencia a objeto no establecida como instancia de un objeto.   ribbon_ItemClick      en PV.FrmMain.ribbon_ItemClick(Object sender, ItemClickEventArgs e) en D:\github\PV\PV\PV\Vistas\FrmMain.cs:línea 107
 
+   13/03/2017 09:19:30 p.m.   aramirez   SOPORTE-PC   Referencia a objeto no establecida como instancia de un objeto.   ribbon_ItemClick      en PV.FrmMain.ribbon_ItemClick(Object sender, ItemClickEventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 107
+
+   13/03/2017 09:20:17 p.m.   aramirez   SOPORTE-PC   Referencia a objeto no establecida como instancia de un objeto.   ribbon_ItemClick      en PV.FrmMain.ribbon_ItemClick(Object sender, ItemClickEventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 107
+
+   13/03/2017 09:21:59 p.m.   aramirez   SOPORTE-PC   Referencia a objeto no establecida como instancia de un objeto.   ribbon_ItemClick      en PV.FrmMain.ribbon_ItemClick(Object sender, ItemClickEventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 107
+
+   13/03/2017 09:22:09 p.m.   aramirez   SOPORTE-PC   Referencia a objeto no establecida como instancia de un objeto.   ribbon_ItemClick      en PV.FrmMain.ribbon_ItemClick(Object sender, ItemClickEventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 107
+
+   13/03/2017 09:25:24 p.m.   aramirez   SOPORTE-PC   Referencia a objeto no establecida como instancia de un objeto.   ribbon_ItemClick      en PV.FrmMain.ribbon_ItemClick(Object sender, ItemClickEventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 107
+
+   13/03/2017 09:26:11 p.m.   aramirez   SOPORTE-PC   Referencia a objeto no establecida como instancia de un objeto.   ribbon_ItemClick      en PV.FrmMain.ribbon_ItemClick(Object sender, ItemClickEventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 107
+
+   13/03/2017 09:29:49 p.m.   aramirez   SOPORTE-PC   Referencia a objeto no establecida como instancia de un objeto.   ribbon_ItemClick      en PV.FrmMain.ribbon_ItemClick(Object sender, ItemClickEventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 107
+
+   13/03/2017 09:30:01 p.m.   aramirez   SOPORTE-PC   Referencia a objeto no establecida como instancia de un objeto.   ribbon_ItemClick      en PV.FrmMain.ribbon_ItemClick(Object sender, ItemClickEventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 107
+
+   13/03/2017 09:46:04 p.m.   aramirez   SOPORTE-PC   Referencia a objeto no establecida como instancia de un objeto.   ribbon_ItemClick      en PV.FrmMain.ribbon_ItemClick(Object sender, ItemClickEventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 107
+
+   13/03/2017 09:46:10 p.m.   aramirez   SOPORTE-PC   Referencia a objeto no establecida como instancia de un objeto.   ribbon_ItemClick      en PV.FrmMain.ribbon_ItemClick(Object sender, ItemClickEventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 107
+
+   13/03/2017 09:51:53 p.m.   aramirez   SOPORTE-PC   No se puede cargar el archivo o ensamblado 'Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91' ni una de sus dependencias. El sistema no puede encontrar el archivo especificado.   .ctor      en Microsoft.Reporting.WinForms.LocalReport..ctor()
+   en Microsoft.Reporting.WinForms.ReportViewer.CreateLocalReport()
+   en Microsoft.Reporting.WinForms.ReportViewer.Reset()
+   en Microsoft.Reporting.WinForms.ReportViewer..ctor()
+   en PV.FrmReporte.InitializeComponent() en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\FrmReporte.Designer.cs:línea 31
+   en PV.FrmReporte..ctor() en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\FrmReporte.cs:línea 19
+   en PV.FrmPago.mostrarEstadoCuenta() en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\movimientos\FrmPago.cs:línea 110
+   en PV.FrmPago.grdVenta_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\movimientos\FrmPago.cs:línea 54
+
+   13/03/2017 10:23:07 p.m.   aramirez   SOPORTE-PC   No se encontró el procedimiento almacenado 'SpsLineaMarca'.   consultarTabla      en PV.ClsDb.consultarTabla(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 187
+   en PV.BL.ClsLinea.seleccionarLineaMarca(String idMarca) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsLinea.cs:línea 53
+   en PV.Vistas.parciales.PfrmVehiculoNuevo.cargarComboLinea() en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVehiculoNuevo.cs:línea 253
+   en PV.Vistas.parciales.PfrmVehiculoNuevo.cmbMarca_selected_item(Object sender, EventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVehiculoNuevo.cs:línea 671
+
+   13/03/2017 10:30:15 p.m.   aramirez   SOPORTE-PC   Referencia a objeto no establecida como instancia de un objeto.   ribbon_ItemClick      en PV.FrmMain.ribbon_ItemClick(Object sender, ItemClickEventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 107
+
+   14/03/2017 07:39:53 a.m.   aramirez   SOPORTE-PC   La cadena de entrada no tiene el formato correcto.   StringToNumber      en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   en System.Int32.Parse(String s)
+   en PV.Vistas.parciales.PfrmVehiculoNuevo.cargarEdicion() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVehiculoNuevo.cs:línea 83
+   en PV.Vistas.parciales.PfrmVehiculoNuevo.frmPPIngresoVehiculo_load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVehiculoNuevo.cs:línea 99
+
+   14/03/2017 07:40:51 a.m.   aramirez   SOPORTE-PC   La cadena de entrada no tiene el formato correcto.   StringToNumber      en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   en System.Int32.Parse(String s)
+   en PV.Vistas.parciales.PfrmVehiculoNuevo.cargarEdicion() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVehiculoNuevo.cs:línea 83
+   en PV.Vistas.parciales.PfrmVehiculoNuevo.frmPPIngresoVehiculo_load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVehiculoNuevo.cs:línea 99
+
+   14/03/2017 07:41:13 a.m.   aramirez   SOPORTE-PC   La cadena de entrada no tiene el formato correcto.   StringToNumber      en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   en System.Int32.Parse(String s)
+   en PV.Vistas.parciales.PfrmVehiculoNuevo.cargarEdicion() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVehiculoNuevo.cs:línea 83
+   en PV.Vistas.parciales.PfrmVehiculoNuevo.frmPPIngresoVehiculo_load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVehiculoNuevo.cs:línea 99
+
+   14/03/2017 07:41:19 a.m.   aramirez   SOPORTE-PC   La cadena de entrada no tiene el formato correcto.   StringToNumber      en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   en System.Int32.Parse(String s)
+   en PV.Vistas.parciales.PfrmVehiculoNuevo.cargarEdicion() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVehiculoNuevo.cs:línea 83
+   en PV.Vistas.parciales.PfrmVehiculoNuevo.frmPPIngresoVehiculo_load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVehiculoNuevo.cs:línea 99
+
+   14/03/2017 07:42:39 a.m.   aramirez   SOPORTE-PC   La cadena de entrada no tiene el formato correcto.   StringToNumber      en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   en System.Int32.Parse(String s)
+   en PV.Vistas.parciales.PfrmVehiculoNuevo.cargarEdicion() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVehiculoNuevo.cs:línea 83
+   en PV.Vistas.parciales.PfrmVehiculoNuevo.frmPPIngresoVehiculo_load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVehiculoNuevo.cs:línea 99
+
+   14/03/2017 07:44:36 a.m.   aramirez   SOPORTE-PC   InvalidArgument=El valor de '2' no es válido para 'SelectedIndex'.
+Nombre del parámetro: SelectedIndex   set_SelectedIndex      en System.Windows.Forms.ComboBox.set_SelectedIndex(Int32 value)
+   en PV.Vistas.parciales.PfrmVehiculoNuevo.cargarEdicion() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVehiculoNuevo.cs:línea 83
+   en PV.Vistas.parciales.PfrmVehiculoNuevo.frmPPIngresoVehiculo_load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVehiculoNuevo.cs:línea 99
+
+   14/03/2017 07:45:04 a.m.   aramirez   SOPORTE-PC   La cadena de entrada no tiene el formato correcto.   StringToNumber      en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   en System.Int32.Parse(String s)
+   en PV.Vistas.parciales.PfrmVehiculoNuevo.cargarEdicion() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVehiculoNuevo.cs:línea 83
+   en PV.Vistas.parciales.PfrmVehiculoNuevo.frmPPIngresoVehiculo_load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVehiculoNuevo.cs:línea 99
+
+   14/03/2017 07:46:20 a.m.   aramirez   SOPORTE-PC   La cadena de entrada no tiene el formato correcto.   StringToNumber      en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   en System.Int32.Parse(String s)
+   en PV.Vistas.parciales.PfrmVehiculoNuevo.cargarEdicion() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVehiculoNuevo.cs:línea 83
+   en PV.Vistas.parciales.PfrmVehiculoNuevo.frmPPIngresoVehiculo_load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVehiculoNuevo.cs:línea 99
+
+   14/03/2017 07:47:28 a.m.   aramirez   SOPORTE-PC   La cadena de entrada no tiene el formato correcto.   StringToNumber      en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   en System.Int32.Parse(String s)
+   en PV.Vistas.parciales.PfrmVehiculoNuevo.cargarEdicion() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVehiculoNuevo.cs:línea 83
+   en PV.Vistas.parciales.PfrmVehiculoNuevo.frmPPIngresoVehiculo_load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVehiculoNuevo.cs:línea 99
+
+   14/03/2017 07:51:04 a.m.   aramirez   SOPORTE-PC   La cadena de entrada no tiene el formato correcto.   StringToNumber      en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   en System.Int32.Parse(String s)
+   en PV.Vistas.parciales.PfrmVehiculoNuevo.cargarEdicion() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVehiculoNuevo.cs:línea 81
+   en PV.Vistas.parciales.PfrmVehiculoNuevo.frmPPIngresoVehiculo_load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVehiculoNuevo.cs:línea 97
+
+   14/03/2017 09:51:04 a.m.   aramirez   SOPORTE-PC   No se puede eliminar porque actualmente hay vehículos que tienen asignado esta marca   ejecutarSP      en PV.ClsDb.ejecutarSP(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 287
+   en PV.BL.ClsMarca.eliminar(String idMarca) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsMarca.cs:línea 51
+   en PV.FrmMarca.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\maestros\FrmMarca.cs:línea 81
+
+   14/03/2017 09:57:35 a.m.   aramirez   SOPORTE-PC   No se puede cargar el archivo o ensamblado 'Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91' ni una de sus dependencias. El sistema no puede encontrar el archivo especificado.   .ctor      en Microsoft.Reporting.WinForms.LocalReport..ctor()
+   en Microsoft.Reporting.WinForms.ReportViewer.Reset()
+   en Microsoft.Reporting.WinForms.ReportViewer..ctor()
+   en PV.FrmReporte.InitializeComponent() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\FrmReporte.Designer.cs:línea 31
+   en PV.FrmReporte..ctor() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\FrmReporte.cs:línea 19
+   en PV.Vistas.parciales.FrmClienteCotizacion.btnGenerarCotizacion_Click(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\FrmClienteCotizacion.cs:línea 72
+
+   14/03/2017 11:34:14 a.m.   aramirez   SOPORTE-PC   InvalidArgument=El valor de '1' no es válido para 'SelectedIndex'.
+Nombre del parámetro: SelectedIndex   set_SelectedIndex      en System.Windows.Forms.ComboBox.set_SelectedIndex(Int32 value)
+   en PV.Vistas.parciales.PfrmVentaNueva.agregarFinanciamiento(String formaPago, String enganche, String plazo) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVentaNueva.cs:línea 341
+   en PV.Vistas.parciales.PfrmCotizacionResultado.btnVenta_Click(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmCotizacionResultado.cs:línea 211
+
+   14/03/2017 11:34:28 a.m.   aramirez   SOPORTE-PC   InvalidArgument=El valor de '0' no es válido para 'SelectedIndex'.
+Nombre del parámetro: SelectedIndex   set_SelectedIndex      en System.Windows.Forms.ComboBox.set_SelectedIndex(Int32 value)
+   en PV.Vistas.parciales.PfrmVentaNueva.agregarFinanciamiento(String formaPago, String enganche, String plazo) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVentaNueva.cs:línea 341
+   en PV.Vistas.parciales.PfrmCotizacionResultado.btnVenta_Click(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmCotizacionResultado.cs:línea 211
+
+   14/03/2017 11:35:38 a.m.   aramirez   SOPORTE-PC   InvalidArgument=El valor de '0' no es válido para 'SelectedIndex'.
+Nombre del parámetro: SelectedIndex   set_SelectedIndex      en System.Windows.Forms.ComboBox.set_SelectedIndex(Int32 value)
+   en PV.Vistas.parciales.PfrmVentaNueva.agregarFinanciamiento(String formaPago, String enganche, String plazo) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVentaNueva.cs:línea 341
+   en PV.Vistas.parciales.PfrmCotizacionResultado.btnVenta_Click(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmCotizacionResultado.cs:línea 210
+
+   14/03/2017 11:40:04 a.m.   aramirez   SOPORTE-PC   InvalidArgument=El valor de '0' no es válido para 'SelectedIndex'.
+Nombre del parámetro: SelectedIndex   set_SelectedIndex      en System.Windows.Forms.ComboBox.set_SelectedIndex(Int32 value)
+   en PV.Vistas.parciales.PfrmVentaNueva.agregarFinanciamiento(String formaPago, String enganche, String plazo) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVentaNueva.cs:línea 341
+   en PV.Vistas.parciales.PfrmCotizacionResultado.btnVenta_Click(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmCotizacionResultado.cs:línea 209
+
+   14/03/2017 11:41:36 a.m.   aramirez   SOPORTE-PC   InvalidArgument=El valor de '0' no es válido para 'SelectedIndex'.
+Nombre del parámetro: SelectedIndex   set_SelectedIndex      en System.Windows.Forms.ComboBox.set_SelectedIndex(Int32 value)
+   en PV.Vistas.parciales.PfrmVentaNueva.agregarFinanciamiento(String formaPago, String enganche, String plazo) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVentaNueva.cs:línea 341
+   en PV.Vistas.parciales.PfrmCotizacionResultado.btnVenta_Click(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmCotizacionResultado.cs:línea 209
+
+   14/03/2017 11:54:14 a.m.   aramirez   SOPORTE-PC   InvalidArgument=El valor de '0' no es válido para 'SelectedIndex'.
+Nombre del parámetro: SelectedIndex   set_SelectedIndex      en System.Windows.Forms.ComboBox.set_SelectedIndex(Int32 value)
+   en PV.Vistas.parciales.PfrmVentaNueva.agregarFinanciamiento(String formaPago, String enganche, String plazo) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVentaNueva.cs:línea 341
+   en PV.Vistas.parciales.PfrmCotizacionResultado.btnVenta_Click(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmCotizacionResultado.cs:línea 209
+
+   14/03/2017 12:19:39 p.m.   aramirez   SOPORTE-PC   Error al convertir el tipo de datos varchar a int.   consultarTabla      en PV.ClsDb.consultarTabla(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 187
+   en PV.BL.ClsVenta.grabarModificar(String idVenta, String idvehiculo, String valorVenta, String enganche, String cantidadCuotas, String cuota, String diaPago, String r1Nombre, String r1Telefono, String r1Direccion, String r2Nombre, String r2Telefono, String r2Direccion, String r3Nombre, String r3Telefono, String r3Direccion, String rutaDocumento1, String rutaDocumento2, String clNombre, String clNit, String clDPI, String clDireccion, String clTelefono, String clCorreo, String clDPIUp) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsVenta.cs:línea 57
+   en PV.Vistas.parciales.PfrmVentaNueva.btngrabar_Click(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVentaNueva.cs:línea 934
+
+   14/03/2017 12:19:51 p.m.   aramirez   SOPORTE-PC   Error al convertir el tipo de datos varchar a int.   consultarTabla      en PV.ClsDb.consultarTabla(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 187
+   en PV.BL.ClsVenta.grabarModificar(String idVenta, String idvehiculo, String valorVenta, String enganche, String cantidadCuotas, String cuota, String diaPago, String r1Nombre, String r1Telefono, String r1Direccion, String r2Nombre, String r2Telefono, String r2Direccion, String r3Nombre, String r3Telefono, String r3Direccion, String rutaDocumento1, String rutaDocumento2, String clNombre, String clNit, String clDPI, String clDireccion, String clTelefono, String clCorreo, String clDPIUp) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsVenta.cs:línea 57
+   en PV.Vistas.parciales.PfrmVentaNueva.btngrabar_Click(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVentaNueva.cs:línea 934
+
+   14/03/2017 12:21:58 p.m.   aramirez   SOPORTE-PC   Error al convertir el tipo de datos varchar a int.   consultarTabla      en PV.ClsDb.consultarTabla(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 187
+   en PV.BL.ClsVenta.grabarModificar(String idVenta, String idvehiculo, String valorVenta, String enganche, String cantidadCuotas, String cuota, String diaPago, String r1Nombre, String r1Telefono, String r1Direccion, String r2Nombre, String r2Telefono, String r2Direccion, String r3Nombre, String r3Telefono, String r3Direccion, String rutaDocumento1, String rutaDocumento2, String clNombre, String clNit, String clDPI, String clDireccion, String clTelefono, String clCorreo, String clDPIUp) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsVenta.cs:línea 57
+   en PV.Vistas.parciales.PfrmVentaNueva.btngrabar_Click(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVentaNueva.cs:línea 934
+
+   14/03/2017 12:26:48 p.m.   aramirez   SOPORTE-PC   Error al convertir el tipo de datos varchar a int.   consultarTabla      en PV.ClsDb.consultarTabla(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 187
+   en PV.BL.ClsVenta.grabarModificar(String idVenta, String idvehiculo, String valorVenta, String enganche, String cantidadCuotas, String cuota, String diaPago, String r1Nombre, String r1Telefono, String r1Direccion, String r2Nombre, String r2Telefono, String r2Direccion, String r3Nombre, String r3Telefono, String r3Direccion, String rutaDocumento1, String rutaDocumento2, String clNombre, String clNit, String clDPI, String clDireccion, String clTelefono, String clCorreo, String clDPIUp) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsVenta.cs:línea 57
+   en PV.Vistas.parciales.PfrmVentaNueva.btngrabar_Click(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVentaNueva.cs:línea 935
+
+   14/03/2017 12:28:40 p.m.   aramirez   SOPORTE-PC   Error al convertir el tipo de datos varchar a int.   consultarTabla      en PV.ClsDb.consultarTabla(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 187
+   en PV.BL.ClsVenta.grabarModificar(String idVenta, String idvehiculo, String valorVenta, String enganche, String cantidadCuotas, String cuota, String diaPago, String r1Nombre, String r1Telefono, String r1Direccion, String r2Nombre, String r2Telefono, String r2Direccion, String r3Nombre, String r3Telefono, String r3Direccion, String rutaDocumento1, String rutaDocumento2, String clNombre, String clNit, String clDPI, String clDireccion, String clTelefono, String clCorreo, String clDPIUp) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsVenta.cs:línea 57
+   en PV.Vistas.parciales.PfrmVentaNueva.btngrabar_Click(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVentaNueva.cs:línea 935
+
+   14/03/2017 12:32:04 p.m.   aramirez   SOPORTE-PC   Error al convertir el tipo de datos varchar a int.   consultarTabla      en PV.ClsDb.consultarTabla(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 187
+   en PV.BL.ClsVenta.grabarModificar(String idVenta, String idvehiculo, String valorVenta, String enganche, String cantidadCuotas, String cuota, String diaPago, String r1Nombre, String r1Telefono, String r1Direccion, String r2Nombre, String r2Telefono, String r2Direccion, String r3Nombre, String r3Telefono, String r3Direccion, String rutaDocumento1, String rutaDocumento2, String clNombre, String clNit, String clDPI, String clDireccion, String clTelefono, String clCorreo, String clDPIUp) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsVenta.cs:línea 57
+   en PV.Vistas.parciales.PfrmVentaNueva.btngrabar_Click(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVentaNueva.cs:línea 935
+
+   14/03/2017 12:38:41 p.m.   aramirez   SOPORTE-PC   __Error al convertir el tipo de datos varchar a in   consultarTabla      en PV.ClsDb.consultarTabla(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 187
+   en PV.BL.ClsVenta.grabarModificar(String idVenta, String idvehiculo, String valorVenta, String enganche, String cantidadCuotas, String cuota, String diaPago, String r1Nombre, String r1Telefono, String r1Direccion, String r2Nombre, String r2Telefono, String r2Direccion, String r3Nombre, String r3Telefono, String r3Direccion, String rutaDocumento1, String rutaDocumento2, String clNombre, String clNit, String clDPI, String clDireccion, String clTelefono, String clCorreo, String clDPIUp) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsVenta.cs:línea 57
+   en PV.Vistas.parciales.PfrmVentaNueva.btngrabar_Click(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVentaNueva.cs:línea 935
+
+   14/03/2017 12:40:14 p.m.   aramirez   SOPORTE-PC   __Error al convertir el tipo de datos varchar a in   consultarTabla      en PV.ClsDb.consultarTabla(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 187
+   en PV.BL.ClsVenta.grabarModificar(String idVenta, String idvehiculo, String valorVenta, String enganche, String cantidadCuotas, String cuota, String diaPago, String r1Nombre, String r1Telefono, String r1Direccion, String r2Nombre, String r2Telefono, String r2Direccion, String r3Nombre, String r3Telefono, String r3Direccion, String rutaDocumento1, String rutaDocumento2, String clNombre, String clNit, String clDPI, String clDireccion, String clTelefono, String clCorreo, String clDPIUp) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsVenta.cs:línea 57
+   en PV.Vistas.parciales.PfrmVentaNueva.btngrabar_Click(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVentaNueva.cs:línea 935
+
+   14/03/2017 12:42:18 p.m.   aramirez   SOPORTE-PC   La columna 'idVenta' no pertenece a la tabla .   GetDataColumn      en System.Data.DataRow.GetDataColumn(String columnName)
+   en System.Data.DataRow.get_Item(String columnName)
+   en PV.Vistas.parciales.PfrmVentaNueva.btngrabar_Click(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVentaNueva.cs:línea 951
+
+   14/03/2017 12:52:38 p.m.   aramirez   SOPORTE-PC   La columna 'idVenta' no pertenece a la tabla .   GetDataColumn      en System.Data.DataRow.GetDataColumn(String columnName)
+   en System.Data.DataRow.get_Item(String columnName)
+   en PV.Vistas.parciales.PfrmVentaNueva.btngrabar_Click(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVentaNueva.cs:línea 952
+
+   14/03/2017 01:01:34 p.m.   aramirez   SOPORTE-PC   La columna 'idVenta' no pertenece a la tabla .   GetDataColumn      en System.Data.DataRow.GetDataColumn(String columnName)
+   en System.Data.DataRow.get_Item(String columnName)
+   en PV.Vistas.parciales.PfrmVentaNueva.btngrabar_Click(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVentaNueva.cs:línea 952
+
+   14/03/2017 01:04:44 p.m.   aramirez   SOPORTE-PC   La columna 'idVenta' no pertenece a la tabla .   GetDataColumn      en System.Data.DataRow.GetDataColumn(String columnName)
+   en System.Data.DataRow.get_Item(String columnName)
+   en PV.Vistas.parciales.PfrmVentaNueva.btngrabar_Click(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVentaNueva.cs:línea 953
+
+   14/03/2017 01:06:08 p.m.   aramirez   SOPORTE-PC   No se puede cargar el archivo o ensamblado 'Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91' ni una de sus dependencias. El sistema no puede encontrar el archivo especificado.   .ctor      en Microsoft.Reporting.WinForms.LocalReport..ctor()
+   en Microsoft.Reporting.WinForms.ReportViewer.Reset()
+   en Microsoft.Reporting.WinForms.ReportViewer..ctor()
+   en PV.FrmReporte.InitializeComponent() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\FrmReporte.Designer.cs:línea 31
+   en PV.FrmReporte..ctor() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\FrmReporte.cs:línea 19
+   en PV.Vistas.parciales.PfrmVentaNueva.btnImprimir_Click(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\parciales\PfrmVentaNueva.cs:línea 994
+
+   14/03/2017 02:12:53 p.m.   aramirez   SOPORTE-PC   No se puede cargar el archivo o ensamblado 'Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91' ni una de sus dependencias. El sistema no puede encontrar el archivo especificado.   .ctor      en Microsoft.Reporting.WinForms.LocalReport..ctor()
+   en Microsoft.Reporting.WinForms.ReportViewer.Reset()
+   en Microsoft.Reporting.WinForms.ReportViewer..ctor()
+   en PV.FrmReporte.InitializeComponent() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\FrmReporte.Designer.cs:línea 31
+   en PV.FrmReporte..ctor() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\FrmReporte.cs:línea 19
+   en PV.FrmPago.mostrarEstadoCuenta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\movimientos\FrmPago.cs:línea 110
+   en PV.FrmPago.grdVenta_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\movimientos\FrmPago.cs:línea 54
+
+   14/03/2017 02:16:49 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   14/03/2017 02:17:12 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   14/03/2017 02:17:53 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   14/03/2017 02:18:58 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   14/03/2017 02:30:51 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+

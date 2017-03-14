@@ -36,12 +36,13 @@
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.btnGenerarCotizacion = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.lblTitulo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 51);
+            this.label1.Location = new System.Drawing.Point(12, 69);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 17);
             this.label1.TabIndex = 0;
@@ -50,7 +51,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 82);
+            this.label2.Location = new System.Drawing.Point(12, 100);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(153, 17);
             this.label2.TabIndex = 1;
@@ -59,7 +60,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 113);
+            this.label3.Location = new System.Drawing.Point(12, 131);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(154, 17);
             this.label3.TabIndex = 2;
@@ -67,14 +68,14 @@
             // 
             // txtCliente
             // 
-            this.txtCliente.Location = new System.Drawing.Point(172, 43);
+            this.txtCliente.Location = new System.Drawing.Point(172, 61);
             this.txtCliente.Name = "txtCliente";
             this.txtCliente.Size = new System.Drawing.Size(327, 25);
             this.txtCliente.TabIndex = 3;
             // 
             // txtSucursal
             // 
-            this.txtSucursal.Location = new System.Drawing.Point(172, 74);
+            this.txtSucursal.Location = new System.Drawing.Point(172, 92);
             this.txtSucursal.MaxLength = 60;
             this.txtSucursal.Name = "txtSucursal";
             this.txtSucursal.Size = new System.Drawing.Size(327, 25);
@@ -83,7 +84,7 @@
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(172, 105);
+            this.txtTelefono.Location = new System.Drawing.Point(172, 123);
             this.txtTelefono.MaxLength = 30;
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(327, 25);
@@ -102,7 +103,7 @@
             this.btnGenerarCotizacion.ForeColor = System.Drawing.Color.White;
             this.btnGenerarCotizacion.Image = global::PV.Properties.Resources.Print_24px;
             this.btnGenerarCotizacion.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGenerarCotizacion.Location = new System.Drawing.Point(208, 157);
+            this.btnGenerarCotizacion.Location = new System.Drawing.Point(208, 168);
             this.btnGenerarCotizacion.Name = "btnGenerarCotizacion";
             this.btnGenerarCotizacion.Size = new System.Drawing.Size(181, 27);
             this.btnGenerarCotizacion.TabIndex = 32;
@@ -123,7 +124,7 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::PV.Properties.Resources.Error_24px;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(395, 157);
+            this.button1.Location = new System.Drawing.Point(395, 168);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(104, 27);
             this.button1.TabIndex = 33;
@@ -132,12 +133,26 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // lblTitulo
+            // 
+            this.lblTitulo.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.lblTitulo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.lblTitulo.ForeColor = System.Drawing.Color.White;
+            this.lblTitulo.Location = new System.Drawing.Point(0, 0);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(515, 34);
+            this.lblTitulo.TabIndex = 34;
+            this.lblTitulo.Text = "Generador cotización";
+            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // FrmClienteCotizacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(515, 196);
+            this.ClientSize = new System.Drawing.Size(515, 207);
+            this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnGenerarCotizacion);
             this.Controls.Add(this.txtTelefono);
@@ -148,6 +163,7 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MaximizeBox = false;
             this.Name = "FrmClienteCotizacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmClienteCotizacion";
@@ -166,5 +182,6 @@
         private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.Button btnGenerarCotizacion;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lblTitulo;
     }
 }

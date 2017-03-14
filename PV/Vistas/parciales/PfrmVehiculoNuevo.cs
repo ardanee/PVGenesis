@@ -77,6 +77,7 @@ namespace PV.Vistas.parciales
                 this.tbCosto = clsCosto.seleccionarCostosVehiculo(this.idVeh);
                 this.grdCostos.DataSource = tbCosto;
                 totalCosto();
+                
             }
             catch (Exception)
             {
@@ -171,6 +172,7 @@ namespace PV.Vistas.parciales
                 this.lblInversion.Text = this.lblTotal.Text;
                 this.txtPrecioComercial.Focus();
                 this.lblCombustible.Text = this.cmbGasolina.Text.ToString();
+                
             }
             catch (Exception ex)
             {
@@ -484,6 +486,7 @@ namespace PV.Vistas.parciales
                     total = double.Parse(tbCosto.Compute("sum(monto)", "").ToString());
 
                 this.lblTotal.Text = total.ToString();
+                //MessageBox.Show("costo: " + total);
             }
             catch (Exception)
             {
@@ -792,38 +795,67 @@ namespace PV.Vistas.parciales
             }
         }
 
+        public bool validarPrecioVenta()
+        {
+            try
+            {
+                if(txtPrecioComercial.Text != "")
+                {
+                    double precio = 0.00;
+                    if (Double.TryParse(txtPrecioComercial.Text.Trim(), out precio))
+                        return true;
+                    else
+                    {
+                        ClsHelper.MensajeSistema("Precio de venta es invalido...");
+                        return false;
+                    }
+                }
+                else
+                {
+                    DialogResult r = MessageBox.Show("¿Precio de venta se encuentra vacio desea continuar?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (r == DialogResult.Yes)
+                        return true;
+                    else
+                        return false;
+                }
+            }catch(Exception)
+            {
+                throw;
+            }
+        }
         private void tbnFinalizar_Click(object sender, EventArgs e)
         {
             try
             {
-                //MessageBox.Show("fecha: " + DateTime.Now.ToString());
                 if (validarControlesGenerales())
                 {
-                    DialogResult r = MessageBox.Show("¿Confirma que desea guardar este registro?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                    if (r == DialogResult.Yes)
+                    if (validarPrecioVenta())
                     {
-                        DataTable dtNew = this.tbCosto;
-                        dtNew.Columns.Remove("TipoCosto");
-                        BL.ClsVehiculo clsVehiculo = new BL.ClsVehiculo();
-                        clsVehiculo.grabarModificar(this.idVeh.Trim(),
-                            this.cmbTipoVehiculo.SelectedValue.ToString().Trim(),
-                            this.cmbMarca.SelectedValue.ToString(),
-                            this.cmbLinea.SelectedValue.ToString(),
-                            this.cmbModelo.Text,
-                            this.txtPlaca.Text,
-                            this.txtNoChasis.Text,
-                            this.txtColores.Text,
-                            this.cmbAsientos.Text, this.cmbPuertas.Text, this.cmbTransmision.SelectedIndex.ToString(),
-                            this.txtNoMotor.Text, this.txtCc.Text, this.cmbCilindros.Text, this.txtVin.Text,
-                            this.txtTon.Text, this.txtObservaciones.Text, this.cmbAC.SelectedIndex.ToString(),
-                            this.txtNombrePropietario.Text, this.txtNit.Text, this.txtDireccionPropietario.Text,
-                            this.txtPoliza.Text, txtFecha.Text, this.txtPrecioComercial.Text, this.cmbOrigen.SelectedIndex.ToString(), dtNew,
-                            this.cmbGasolina.SelectedIndex.ToString()
-                            );
-                        ClsHelper.MensajeSistema("Proceso ejecutado exitosamente");
-                        this._p.cargarFormListaVehiculos();
+                        //DialogResult r = MessageBox.Show("¿Confirma que desea guardar este registro?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        //if (r == DialogResult.Yes)
+                        //{
+                            DataTable dtNew = this.tbCosto;
+                            dtNew.Columns.Remove("TipoCosto");
+                            BL.ClsVehiculo clsVehiculo = new BL.ClsVehiculo();
+                            clsVehiculo.grabarModificar(this.idVeh.Trim(),
+                                this.cmbTipoVehiculo.SelectedValue.ToString().Trim(),
+                                this.cmbMarca.SelectedValue.ToString(),
+                                this.cmbLinea.SelectedValue.ToString(),
+                                this.cmbModelo.Text,
+                                this.txtPlaca.Text,
+                                this.txtNoChasis.Text,
+                                this.txtColores.Text,
+                                this.cmbAsientos.Text, this.cmbPuertas.Text, this.cmbTransmision.SelectedIndex.ToString(),
+                                this.txtNoMotor.Text, this.txtCc.Text, this.cmbCilindros.Text, this.txtVin.Text,
+                                this.txtTon.Text, this.txtObservaciones.Text, this.cmbAC.SelectedIndex.ToString(),
+                                this.txtNombrePropietario.Text, this.txtNit.Text, this.txtDireccionPropietario.Text,
+                                this.txtPoliza.Text, txtFecha.Text, this.txtPrecioComercial.Text, this.cmbOrigen.SelectedIndex.ToString(), dtNew,
+                                this.cmbGasolina.SelectedIndex.ToString()
+                                );
+                            ClsHelper.MensajeSistema("Proceso ejecutado exitosamente");
+                            this._p.cargarFormListaVehiculos();
+                        //}
                     }
-
                 }
             }
             catch (Exception ex)
@@ -927,6 +959,7 @@ namespace PV.Vistas.parciales
                 fMarca.ShowDialog(this);
                 fMarca.Dispose();
                 fMarca = null;
+                cargarComboMarca();
             }
             catch (Exception ex)
             {
@@ -941,6 +974,7 @@ namespace PV.Vistas.parciales
                 fTipoVehiculo.ShowDialog(this);
                 fTipoVehiculo.Dispose();
                 fTipoVehiculo = null;
+                cargarComboTipoVehiculo();
             }
             catch (Exception ex)
             {
@@ -956,6 +990,7 @@ namespace PV.Vistas.parciales
                 fLinea.ShowDialog(this);
                 fLinea.Dispose();
                 fLinea = null;
+                cargarComboLinea();
             }
             catch (Exception ex)
             {

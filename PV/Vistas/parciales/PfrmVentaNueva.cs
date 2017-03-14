@@ -51,6 +51,10 @@ namespace PV.Vistas.parciales
                 grdReferencias.DataSource = dtReferencias;
 
                 this.idVenta = idVenta;
+
+
+                _p.liberarFormLista();
+                iniciarValores();
             }
             catch (Exception ex)
             {
@@ -63,8 +67,6 @@ namespace PV.Vistas.parciales
         {
             try
             {
-                _p.liberarFormLista();
-                iniciarValores();
             }
             catch (Exception ex)
             {
@@ -332,6 +334,7 @@ namespace PV.Vistas.parciales
             try
             {
                 cmbFormapago.SelectedIndex = int.Parse(formaPago);
+               // agregarVehiculo();
                 txtEnganche.Text = enganche;
                 txtPlazo.Text = plazo;
             }
@@ -618,12 +621,12 @@ namespace PV.Vistas.parciales
                     txtEmail.Text = dr["correoElectronico"].ToString();
                     txtDpi.Enabled = false;
                 }
-                else
+               /* else
                 {
                     string nit = txtNit.Text;
                     limpiarControlesCliente();
                     txtNit.Text = nit;
-                }
+                }*/
             }
             catch (Exception ex)
             {
@@ -699,14 +702,15 @@ namespace PV.Vistas.parciales
 
         private bool validarControlesFinanciamiento()
         {
-            double val = 0;
-            if (double.TryParse(txtPlazo.Text, out val))
+            int entero = 0;
+            double flotante = 0.00;
+            if (! int.TryParse(txtPlazo.Text, out entero))
             {
                 ClsHelper.MensajeSistema("Valor de plazo es invalido, agrege valor correcto y recalcule...");
                 return false;
                 
             }
-            if (! double.TryParse(txtEnganche.Text, out val))
+            if (! double.TryParse(txtEnganche.Text, out flotante))
             {
                 ClsHelper.MensajeSistema("Valor de enganche es invalido, agrege valor correcto y recalcule...");
                 return false;
@@ -900,11 +904,17 @@ namespace PV.Vistas.parciales
         {
             try
             {
-                //ClsHelper.MensajeSistema("val dia: " + cmbDiaPago.SelectedItem.ToString());
                 if (verificarDatosVenta() && validarControlesFinanciamiento())
                 {
-                    double saldoc = Math.Round((Math.Round(double.Parse(txtCuotaMensual.Text),2)) * (Math.Round(double.Parse(txtPlazo.Text), 2)),2);
-                    double total = Math.Round(saldoc + (Math.Round(double.Parse(txtEnganche.Text), 2)),2);
+                    // comprobar si se hicieron cambios en los valores de financiamiento
+                    double saldoc = 0.00;
+                    double total = Math.Round(double.Parse(txtTotalVenta.Text), 2);
+                    if(cmbFormapago.SelectedIndex == 1)
+                    {
+                        saldoc = Math.Round((Math.Round(double.Parse(txtCuotaMensual.Text), 2)) * (Math.Round(double.Parse(txtPlazo.Text), 2)), 2);
+                        total = Math.Round(saldoc + (Math.Round(double.Parse(txtEnganche.Text), 2)), 2);
+                    }
+                    //MessageBox.Show("val: " + total +"total: " + txtTotalVenta.Text.Trim());
                     double cmp = Math.Round(total -Math.Round(double.Parse(txtTotalVenta.Text.Trim()),2));
                     if (cmp == 0)
                     {
@@ -921,6 +931,7 @@ namespace PV.Vistas.parciales
                                     diaPago = cmbDiaPago.SelectedItem.ToString();
                                     cuotas = txtPlazo.Text.ToString().Trim();
                                 }
+                                //MessageBox.Show("idv: " + idVehiculo + "venta: " + idVenta );
                                 DataTable dt = this.clsVenta.grabarModificar(
                                     idVenta, this.idVehiculo,
                                     txtTotalVenta.Text.Trim(),
@@ -933,14 +944,18 @@ namespace PV.Vistas.parciales
                                     referenciaStr[2][0].ToString(), referenciaStr[2][1].ToString(), referenciaStr[2][2].ToString(),
                                     adjuntos[0], adjuntos[1],
                                     txtNombres.Text, txtNit.Text, txtDpi.Text, txtDireccion.Text, txtTelefono.Text, txtEmail.Text,
-                                    this.dpiU
+                                    this.dpiU,
+                                    this.txtFechaHora.Text
                                 );
                                 if (dt.Rows.Count >= 1)
                                 {
+                                    ClsHelper.MensajeSistema("data column: " + dt.Rows[0][0]);
                                     idVenta = dt.Rows[0]["idVenta"].ToString();
-                                    ClsHelper.MensajeSistema("Proceso Realizado con exito idVenta: " + idVenta);
+                                    ClsHelper.MensajeSistema("Proceso Realizado con exito" + idVenta);
                                     this.btnImprimir.Enabled = true;
                                     deshabilitarControles();
+                                    habilitarControlesFinanciamiento(false);
+                                    
                                 }
                             }
                         }

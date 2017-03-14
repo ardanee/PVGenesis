@@ -112,6 +112,12 @@
     <Compile Include="Reportes\FrmReporte.Designer.cs">
       <DependentUpon>FrmReporte.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reportes\frmReporteVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmReporteVenta.Designer.cs">
+      <DependentUpon>frmReporteVenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reportes\FrmRptCientesAtrasados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,23 +136,11 @@
     <Compile Include="Vistas\FrmScanner.Designer.cs">
       <DependentUpon>FrmScanner.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\maestros\FrmCliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\maestros\FrmCliente.Designer.cs">
-      <DependentUpon>FrmCliente.cs</DependentUpon>
-    </Compile>
     <Compile Include="Vistas\maestros\FrmClientes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vistas\maestros\FrmClientes.Designer.cs">
       <DependentUpon>FrmClientes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\maestros\FrmIngresoVehiculo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\maestros\FrmIngresoVehiculo.Designer.cs">
-      <DependentUpon>FrmIngresoVehiculo.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\maestros\FrmLinea.cs">
       <SubType>Form</SubType>
@@ -159,12 +153,6 @@
     </Compile>
     <Compile Include="Vistas\maestros\FrmMarca.Designer.cs">
       <DependentUpon>FrmMarca.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\maestros\FrmMarcaV.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\maestros\FrmMarcaV.Designer.cs">
-      <DependentUpon>FrmMarcaV.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\maestros\FrmTipoCosto.cs">
       <SubType>Form</SubType>
@@ -321,6 +309,9 @@
     <EmbeddedResource Include="Reportes\FrmReporte.resx">
       <DependentUpon>FrmReporte.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmReporteVenta.resx">
+      <DependentUpon>frmReporteVenta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\FrmRptCientesAtrasados.resx">
       <DependentUpon>FrmRptCientesAtrasados.cs</DependentUpon>
     </EmbeddedResource>
@@ -332,23 +323,14 @@
     <EmbeddedResource Include="Vistas\FrmScanner.resx">
       <DependentUpon>FrmScanner.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\maestros\FrmCliente.resx">
-      <DependentUpon>FrmCliente.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\maestros\FrmClientes.resx">
       <DependentUpon>FrmClientes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\maestros\FrmIngresoVehiculo.resx">
-      <DependentUpon>FrmIngresoVehiculo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\maestros\FrmLinea.resx">
       <DependentUpon>FrmLinea.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\maestros\FrmMarca.resx">
       <DependentUpon>FrmMarca.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\maestros\FrmMarcaV.resx">
-      <DependentUpon>FrmMarcaV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\maestros\FrmTipoCosto.resx">
       <DependentUpon>FrmTipoCosto.cs</DependentUpon>
@@ -584,8 +566,10 @@
     <None Include="Resources\restore_48px.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Add Database-28.png" />
     <Content Include="Resources\Add List_24px.png" />
     <Content Include="Resources\Add Property_24px.png" />
+    <None Include="Resources\Add Rule_24px.png" />
     <Content Include="Resources\Add Shopping Cart_24px.png" />
     <None Include="Resources\anadir.png" />
     <Content Include="Resources\Back_24px.png" />
@@ -601,8 +585,13 @@
     <Content Include="Resources\Deletee_24px.png" />
     <Content Include="Resources\Detective_24px.png" />
     <Content Include="Resources\Error_24px.png" />
+    <None Include="Resources\espalda.png" />
     <Content Include="Resources\Exit_24px.png" />
+    <None Include="Resources\flecha-derecha.png" />
+    <None Include="Resources\flecha-derecha %281%29.png" />
+    <None Include="Resources\flecha-hacia-la-izquierda.png" />
     <Content Include="Resources\Forward_24px.png" />
+    <None Include="Resources\jugar.png" />
     <Content Include="Resources\Plus_24px.png" />
     <Content Include="Resources\POS Terminal_24px.png" />
     <Content Include="Resources\Print_24px.png" />
