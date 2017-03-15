@@ -77,33 +77,12 @@ namespace PV.BL
             }
         }
 
-        public DataTable rptCotizacionVehiculo(
-            string idVehiculo = "",
-            string cliente = "",
-            string enganche = "",
-            string cuotas = "",
-            string cuotaMensual = "",
-            string sucursal = "",
-            string telefono = "",
-            string formaPago = "",
-            string total = "",
-            string precioNegociado = "")
+        public DataTable reporteCotizacion(string numeroCotizacion)
         {
             DataTable res = new DataTable();
             try
             {
-                res = consultarTabla("SpsCotizacionVehiculo", null,
-                    Parametro("@PidVehiculo", idVehiculo),
-                     Parametro("@Pcliente", cliente),
-                     Parametro("@Penganche", enganche),
-                     Parametro("@Pcuotas", cuotas),
-                     Parametro("@Pcuotamensual", cuotaMensual),
-                     Parametro("@PprecioNegociado", precioNegociado),
-                     Parametro("@Psucursal", sucursal),
-                     Parametro("@Ptelefono", telefono),
-                     Parametro("@PformaPago", formaPago),
-                     Parametro("@PtotalFinanciado", total),
-                     Parametro("@Pusuario", ClsGlobals.usuario));
+                res = consultarTabla("SpRptCotizacion", null, Parametro("@PnumeroCotizacion", numeroCotizacion));
                 return res;
             }
             catch (Exception)

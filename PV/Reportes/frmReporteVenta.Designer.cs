@@ -96,7 +96,7 @@
             this.cuotasRestantesCol});
             this.grdDatos.EnableHeadersVisualStyles = false;
             this.grdDatos.GridColor = System.Drawing.Color.LightGray;
-            this.grdDatos.Location = new System.Drawing.Point(0, 127);
+            this.grdDatos.Location = new System.Drawing.Point(0, 96);
             this.grdDatos.MultiSelect = false;
             this.grdDatos.Name = "grdDatos";
             this.grdDatos.ReadOnly = true;
@@ -117,7 +117,7 @@
             this.grdDatos.RowTemplate.Height = 30;
             this.grdDatos.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.grdDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdDatos.Size = new System.Drawing.Size(971, 317);
+            this.grdDatos.Size = new System.Drawing.Size(1049, 373);
             this.grdDatos.TabIndex = 39;
             // 
             // editarCol
@@ -226,9 +226,9 @@
             // 
             this.statusExistentes.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblExistentes});
-            this.statusExistentes.Location = new System.Drawing.Point(0, 447);
+            this.statusExistentes.Location = new System.Drawing.Point(0, 472);
             this.statusExistentes.Name = "statusExistentes";
-            this.statusExistentes.Size = new System.Drawing.Size(969, 22);
+            this.statusExistentes.Size = new System.Drawing.Size(1047, 22);
             this.statusExistentes.TabIndex = 40;
             this.statusExistentes.Text = "statusStrip1";
             // 
@@ -240,7 +240,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 60);
+            this.label2.Location = new System.Drawing.Point(14, 45);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(48, 17);
             this.label2.TabIndex = 41;
@@ -250,7 +250,7 @@
             // 
             this.picFechaInicio.CustomFormat = "dd/mm/yyyy";
             this.picFechaInicio.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.picFechaInicio.Location = new System.Drawing.Point(13, 80);
+            this.picFechaInicio.Location = new System.Drawing.Point(13, 65);
             this.picFechaInicio.Name = "picFechaInicio";
             this.picFechaInicio.Size = new System.Drawing.Size(259, 25);
             this.picFechaInicio.TabIndex = 42;
@@ -259,7 +259,7 @@
             // 
             this.picFechaFin.CustomFormat = "dd/mm/yyyy";
             this.picFechaFin.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.picFechaFin.Location = new System.Drawing.Point(291, 80);
+            this.picFechaFin.Location = new System.Drawing.Point(291, 65);
             this.picFechaFin.Name = "picFechaFin";
             this.picFechaFin.Size = new System.Drawing.Size(259, 25);
             this.picFechaFin.TabIndex = 44;
@@ -267,7 +267,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(288, 59);
+            this.label3.Location = new System.Drawing.Point(288, 44);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(44, 17);
             this.label3.TabIndex = 43;
@@ -285,7 +285,7 @@
             this.btnBuscar.ForeColor = System.Drawing.Color.White;
             this.btnBuscar.Image = global::PV.Properties.Resources.Search_24px;
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBuscar.Location = new System.Drawing.Point(568, 69);
+            this.btnBuscar.Location = new System.Drawing.Point(568, 54);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(92, 36);
             this.btnBuscar.TabIndex = 45;
@@ -306,7 +306,7 @@
             this.btnReestablecer.ForeColor = System.Drawing.Color.White;
             this.btnReestablecer.Image = global::PV.Properties.Resources.Clear_Filters_24px;
             this.btnReestablecer.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnReestablecer.Location = new System.Drawing.Point(666, 69);
+            this.btnReestablecer.Location = new System.Drawing.Point(666, 54);
             this.btnReestablecer.Name = "btnReestablecer";
             this.btnReestablecer.Size = new System.Drawing.Size(124, 36);
             this.btnReestablecer.TabIndex = 46;
@@ -326,7 +326,7 @@
             this.btnExportar.ForeColor = System.Drawing.Color.White;
             this.btnExportar.Image = global::PV.Properties.Resources.Microsoft_Excel_24px;
             this.btnExportar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnExportar.Location = new System.Drawing.Point(807, 70);
+            this.btnExportar.Location = new System.Drawing.Point(807, 55);
             this.btnExportar.Name = "btnExportar";
             this.btnExportar.Size = new System.Drawing.Size(150, 35);
             this.btnExportar.TabIndex = 47;
@@ -343,7 +343,7 @@
             this.lblTitulo.ForeColor = System.Drawing.Color.White;
             this.lblTitulo.Location = new System.Drawing.Point(0, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(969, 34);
+            this.lblTitulo.Size = new System.Drawing.Size(1047, 34);
             this.lblTitulo.TabIndex = 100;
             this.lblTitulo.Text = "Reporte Ventas";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -353,7 +353,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(969, 469);
+            this.ClientSize = new System.Drawing.Size(1047, 494);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.btnExportar);
             this.Controls.Add(this.btnBuscar);

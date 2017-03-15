@@ -34,74 +34,7 @@ BEGIN
 END;
 GO	
 	
-	GO
--- SELECCION DE VEHICULOS GENERAL
-ALTER PROCEDURE [dbo].[SpSVehiculosCotizacion]
-	@Pcriterio varchar(50)
-As
-BEGIN
-	SELECT 
-	vlo.idVehiculo as idVehiculo, tvlo.nombre AS tipoVehiculo,
-	mca.nombre As marca, lna.nombre AS linea, vlo.modelo AS modelo,
-	vlo.placa AS placa, vlo.color AS color, 
-	CASE 
-		WHEN vlo.estado = 0
-		then 'Activo'
-		else 'Vendido'
-	END as estado,
-	vlo.fechaIngreso AS fechaIngreso,
-	vlo.observaciones, 
-	vlo.precioVenta
-	FROM TblVehiculo AS vlo
-	LEFT outer JOIN dbo.TblLinea AS lna
-	ON lna.idLinea = vlo.idLinea
-	left outer JOIN dbo.TblMarca as mca
-	ON mca.idMarca = lna.idMarca
-	left JOIN dbo.TblTipoVehiculo as tvlo
-	ON tvlo.idTipoVehiculo = vlo.idTipoVehiculo
-	WHERE 
-	(vlo.placa LIKE '%'+ISNULL(@Pcriterio,vlo.placa)+'%' OR
-	vlo.color LIKE '%'+ISNULL(@Pcriterio,vlo.color)+'%' OR
-	vlo.modelo LIKE '%'+ISNULL(@Pcriterio,vlo.modelo)+'%' OR
-	lna.nombre LIKE '%'+ISNULL(@Pcriterio,lna.nombre)+'%' OR
-	mca.nombre LIKE '%'+ISNULL(@Pcriterio,mca.nombre)+'%') and
-	vlo.estado = 0
-END;
-GO	
 	
-
-GO
--- REPORTE VEHICULOS DISPONIBLES
-CREATE PROCEDURE [dbo].[SpSVehiculoReporte]
-As
-BEGIN
-	SELECT 
-	vlo.idVehiculo as 'CODIGO', 
-	vlo.placa AS PLACA, tvlo.nombre AS 'TIPO',
-	mca.nombre As MARCA, lna.nombre AS LINEA, vlo.modelo AS MODELO,
-	vlo.color AS COLOR, 
-	CASE 
-		WHEN vlo.estado = 0
-		then 'Activo'
-		else 'Vendido'
-	END as ESTADO,
-	convert(date,vlo.fechaIngreso,103) AS 'FECHA INGRESO',
-	vlo.observaciones AS OBSERVACIONES, 
-	convert(varchar(50),CAST((select SUM(monto) from TblCostoVehiculo as costo WHERE costo.idVehiculo = vlo.idVehiculo) AS MONEY),1) as COSTOS,
-	convert(varchar(50),cast((vlo.precioVenta) as money),1) AS 'PRECIO VENTA'
-	FROM TblVehiculo AS vlo
-	LEFT outer JOIN dbo.TblLinea AS lna
-	ON lna.idLinea = vlo.idLinea
-	left outer JOIN dbo.TblMarca as mca
-	ON mca.idMarca = lna.idMarca
-	left JOIN dbo.TblTipoVehiculo as tvlo
-	ON tvlo.idTipoVehiculo = vlo.idTipoVehiculo
-	WHERE 
-	vlo.estado = 0;
-	END;		
-GO
-
-
 
 GO
 -- PROCEDIMIENTO PARA ELIMINAR UN VEHICULO NO SE ELIMINA SI ES DEPENDENCIA DE OTRO REGISTRO
@@ -140,43 +73,6 @@ GO
 
 
 
-
-GO
--- SELECCION DE DETALLE DE UN VEHICULO PARA COTIZACION
-CREATE PROCEDURE [dbo].[SpSvehiculoCtn]
-	@idVehiculo varchar(50)
-As
-BEGIN
-	SELECT 
-	vlo.idVehiculo as idVehiculo, 
-	tvlo.nombre AS TipoVehiculo,
-	mca.nombre As marca,
-	lna.nombre AS linea, 
-	vlo.modelo AS modelo,
-	vlo.placa AS placa, 
-	vlo.color AS color, 
-	vlo.estado AS estado,
-	vlo.fechaIngreso AS fechaIngreso,
-	vlo.transmision AS transmision,
-	vlo.cc ,
-	vlo.cilindros,
-	vlo.ton ,
-	vlo.puertas,
-	vlo.asientos,
-	vlo.ac,
-	vlo.origen,
-	vlo.precioVenta,
-	vlo.combustible
-	FROM TblVehiculo AS vlo
-	LEFT outer JOIN dbo.TblLinea AS lna
-	ON lna.idLinea = vlo.idLinea
-	left outer JOIN dbo.TblMarca as mca
-	ON mca.idMarca = lna.idMarca
-	left JOIN dbo.TblTipoVehiculo as tvlo
-	ON tvlo.idTipoVehiculo = vlo.idTipoVehiculo
-	WHERE vlo.idVehiculo = @idVehiculo	and vlo.estado = 0;
-END;	
-GO
 
 
 
@@ -403,6 +299,13 @@ GO
 
 
 
+
+
+
+
+
+
+/*
 GO
 -- DETALLE DE UN VEHICULO PARA COTIZACION
 -- Recibir nombre de cliente
@@ -472,4 +375,4 @@ INNER JOIN TblMarca as m
 ON m.idMarca = v.idMarca
 WHERE v.idVehiculo = @PidVehiculo;
 END;
-GO
+GO*/

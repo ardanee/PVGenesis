@@ -281,6 +281,7 @@
             this.Controls.Add(this.txtNombre);
             this.MaximizeBox = false;
             this.Name = "FrmTipoVehiculo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmTipoVehiculo";
             this.Load += new System.EventHandler(this.frmTipoVehiculo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdExistentes)).EndInit();
