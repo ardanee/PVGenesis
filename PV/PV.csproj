@@ -203,6 +203,12 @@
     <Compile Include="Vistas\movimientos\Vehiculos\FrmVehiculo.Designer.cs">
       <DependentUpon>FrmVehiculo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\movimientos\Ventas\FrmAdjuntos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\movimientos\Ventas\FrmAdjuntos.Designer.cs">
+      <DependentUpon>FrmAdjuntos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\movimientos\Ventas\FrmVenta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -358,6 +364,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\movimientos\Vehiculos\FrmVehiculo.resx">
       <DependentUpon>FrmVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\movimientos\Ventas\FrmAdjuntos.resx">
+      <DependentUpon>FrmAdjuntos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\movimientos\Ventas\FrmVenta.resx">
       <DependentUpon>FrmVenta.cs</DependentUpon>
@@ -622,6 +631,7 @@
     <Content Include="Resources\Forward_24px.png" />
     <None Include="Resources\jugar.png" />
     <None Include="Resources\login.png" />
+    <None Include="Resources\login %281%29.png" />
     <Content Include="Resources\Plus_24px.png" />
     <Content Include="Resources\POS Terminal_24px.png" />
     <Content Include="Resources\Print_24px.png" />

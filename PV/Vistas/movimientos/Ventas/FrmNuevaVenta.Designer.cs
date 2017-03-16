@@ -391,7 +391,7 @@
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grdDetalle.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.grdDetalle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.grdDetalle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.grdDetalle.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.grdDetalle.BackgroundColor = System.Drawing.Color.White;
@@ -621,7 +621,7 @@
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.WhiteSmoke;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grdReferencias.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.grdReferencias.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.grdReferencias.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.grdReferencias.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.grdReferencias.BackgroundColor = System.Drawing.Color.White;
@@ -667,7 +667,7 @@
             this.grdReferencias.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grdReferencias.Size = new System.Drawing.Size(650, 120);
             this.grdReferencias.TabIndex = 16;
-            this.grdReferencias.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdReferencias_CellContentClick);
+            this.grdReferencias.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdReferencias_CellContentClick);
             // 
             // editarCol
             // 
@@ -1055,7 +1055,7 @@
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // PfrmVentaNueva
+            // FrmNuevaVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1072,7 +1072,7 @@
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MaximizeBox = false;
-            this.Name = "PfrmVentaNueva";
+            this.Name = "FrmNuevaVenta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PfrmNuevaVenta";
             this.Load += new System.EventHandler(this.PfrmNuevaVenta_Load);

@@ -69,7 +69,7 @@ namespace PV
             {
                 habilitarFinanciamiento(false);
                 cmbForma.Items.Add("Contado");
-                cmbForma.Items.Add("Financiamiento");
+                cmbForma.Items.Add("Crédito");
                 cmbForma.SelectedIndex = 0;
 
                 DataTable tb = this.Clscotizacion.seleccionarAuto(this.idVehiculo);
@@ -91,6 +91,7 @@ namespace PV
                     this.lblColor.Text = dt["color"].ToString();
                     this.lblPuertas.Text = dt["puertas"].ToString();
                     this.lblAsientos.Text = dt["asientos"].ToString();
+                    this.lblcodigo.Text = idVehiculo.ToString();
 
                     if (dt["ac"].ToString() == "0")
                         this.lblAC.Text = "SI";
@@ -129,10 +130,10 @@ namespace PV
                 if (comprobarControlesFinanciamiento())
                 {
                     double totalPagar = 0.0;
-                    double cuotaM = Math.Round((double.Parse(txtPrecioNegociado.Text.Trim()) - double.Parse(txtEnganche.Text.Trim())) / double.Parse(txtCuotas.Text.Trim()), 2);
+                    double cuotaM = Math.Round((double.Parse(txtPrecioNegociado.Text.Trim()) - double.Parse(txtEnganche.Text.Trim())) / double.Parse(txtCuotas.Text.Trim()));
                     //txtCuotaMensual.Text = Math.Round(((precioVenta - enganche) / cantidadCuotas), 2).ToString();
                     txtCuotaMensual.Text = cuotaM.ToString();
-                    totalPagar = Math.Round((cuotaM * double.Parse(txtCuotas.Text.Trim())) +double.Parse(txtEnganche.Text),2);
+                    totalPagar = Math.Round((cuotaM * double.Parse(txtCuotas.Text.Trim())) +double.Parse(txtEnganche.Text));
                     txtTotal.Text = totalPagar.ToString().Trim();
                 }
                             
@@ -230,8 +231,8 @@ namespace PV
             {
                 double t = 0.00;
                 if (cmbForma.SelectedIndex == 1)
-                    t = Math.Round((double.Parse(txtCuotaMensual.Text.Trim()) * double.Parse(txtCuotas.Text)) + Math.Round(double.Parse(txtEnganche.Text), 2), 2);
-                double cmp = Math.Round(t - (Math.Round(double.Parse(txtTotal.Text.ToString().Trim()), 2)), 2);
+                    t = Math.Round((double.Parse(txtCuotaMensual.Text.Trim()) * double.Parse(txtCuotas.Text)) + Math.Round(double.Parse(txtEnganche.Text)));
+                double cmp = Math.Round(t - (Math.Round(double.Parse(txtTotal.Text.ToString().Trim()))));
                 if (cmp == 0)
                     return true;
                 else

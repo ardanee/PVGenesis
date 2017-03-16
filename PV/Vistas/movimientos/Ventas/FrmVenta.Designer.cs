@@ -32,23 +32,32 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmVenta));
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.btnNuevaVenta = new System.Windows.Forms.Button();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.txtCriterio = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.grdExistentes = new System.Windows.Forms.DataGridView();
-            this.verCol = new System.Windows.Forms.DataGridViewImageColumn();
-            this.eliminarCol = new System.Windows.Forms.DataGridViewImageColumn();
-            this.idVentaCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clienteCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.montoVentaCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusExistentes = new System.Windows.Forms.StatusStrip();
             this.lblExistentes = new System.Windows.Forms.ToolStripStatusLabel();
             this.dtsRecibo1 = new PV.Reportes.DtsRecibo();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.btnNuevaVenta = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.verCol = new System.Windows.Forms.DataGridViewImageColumn();
+            this.eliminarCol = new System.Windows.Forms.DataGridViewImageColumn();
+            this.adjuntoCol = new System.Windows.Forms.DataGridViewImageColumn();
+            this.idVentaCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descripcionCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.formaCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clienteCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.montoVentaCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adjunto1Col = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adjunto2Col = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grdExistentes)).BeginInit();
             this.statusExistentes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtsRecibo1)).BeginInit();
@@ -66,47 +75,6 @@
             this.lblTitulo.TabIndex = 32;
             this.lblTitulo.Text = "Ventas";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // btnNuevaVenta
-            // 
-            this.btnNuevaVenta.BackColor = System.Drawing.Color.Navy;
-            this.btnNuevaVenta.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.btnNuevaVenta.FlatAppearance.BorderSize = 0;
-            this.btnNuevaVenta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnNuevaVenta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnNuevaVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNuevaVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevaVenta.ForeColor = System.Drawing.Color.White;
-            this.btnNuevaVenta.Image = global::PV.Properties.Resources.Buy_24px1;
-            this.btnNuevaVenta.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnNuevaVenta.Location = new System.Drawing.Point(518, 58);
-            this.btnNuevaVenta.Name = "btnNuevaVenta";
-            this.btnNuevaVenta.Size = new System.Drawing.Size(127, 21);
-            this.btnNuevaVenta.TabIndex = 37;
-            this.btnNuevaVenta.Text = "Nueva Venta";
-            this.btnNuevaVenta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNuevaVenta.UseVisualStyleBackColor = false;
-            this.btnNuevaVenta.Click += new System.EventHandler(this.btnNuevaVenta_Click_1);
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnBuscar.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.btnBuscar.FlatAppearance.BorderSize = 0;
-            this.btnBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.ForeColor = System.Drawing.Color.White;
-            this.btnBuscar.Image = global::PV.Properties.Resources.Search_24px;
-            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBuscar.Location = new System.Drawing.Point(420, 59);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(92, 21);
-            this.btnBuscar.TabIndex = 36;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.UseVisualStyleBackColor = false;
             // 
             // txtCriterio
             // 
@@ -150,13 +118,18 @@
             this.grdExistentes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.verCol,
             this.eliminarCol,
+            this.adjuntoCol,
             this.idVentaCol,
-            this.clienteCol,
             this.fechaCol,
-            this.montoVentaCol});
+            this.descripcionCol,
+            this.formaCol,
+            this.clienteCol,
+            this.montoVentaCol,
+            this.adjunto1Col,
+            this.adjunto2Col});
             this.grdExistentes.EnableHeadersVisualStyles = false;
             this.grdExistentes.GridColor = System.Drawing.Color.LightGray;
-            this.grdExistentes.Location = new System.Drawing.Point(0, 88);
+            this.grdExistentes.Location = new System.Drawing.Point(0, 100);
             this.grdExistentes.MultiSelect = false;
             this.grdExistentes.Name = "grdExistentes";
             this.grdExistentes.ReadOnly = true;
@@ -177,9 +150,107 @@
             this.grdExistentes.RowTemplate.Height = 30;
             this.grdExistentes.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.grdExistentes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdExistentes.Size = new System.Drawing.Size(913, 297);
+            this.grdExistentes.Size = new System.Drawing.Size(913, 285);
             this.grdExistentes.TabIndex = 33;
             this.grdExistentes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdExistentes_CellContentClick);
+            // 
+            // statusExistentes
+            // 
+            this.statusExistentes.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lblExistentes});
+            this.statusExistentes.Location = new System.Drawing.Point(0, 388);
+            this.statusExistentes.Name = "statusExistentes";
+            this.statusExistentes.Padding = new System.Windows.Forms.Padding(1, 0, 16, 0);
+            this.statusExistentes.Size = new System.Drawing.Size(913, 22);
+            this.statusExistentes.TabIndex = 38;
+            this.statusExistentes.Text = "statusStrip1";
+            // 
+            // lblExistentes
+            // 
+            this.lblExistentes.Name = "lblExistentes";
+            this.lblExistentes.Size = new System.Drawing.Size(0, 17);
+            // 
+            // dtsRecibo1
+            // 
+            this.dtsRecibo1.DataSetName = "DtsRecibo";
+            this.dtsRecibo1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle6.NullValue")));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridViewImageColumn1.FillWeight = 121.8274F;
+            this.dataGridViewImageColumn1.HeaderText = "";
+            this.dataGridViewImageColumn1.Image = global::PV.Properties.Resources.Visible_24px;
+            this.dataGridViewImageColumn1.MinimumWidth = 10;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewImageColumn1.Width = 30;
+            // 
+            // dataGridViewImageColumn2
+            // 
+            this.dataGridViewImageColumn2.FillWeight = 89.26021F;
+            this.dataGridViewImageColumn2.HeaderText = "";
+            this.dataGridViewImageColumn2.Image = global::PV.Properties.Resources.Delete_24px;
+            this.dataGridViewImageColumn2.MinimumWidth = 10;
+            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+            this.dataGridViewImageColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewImageColumn2.Visible = false;
+            // 
+            // dataGridViewImageColumn3
+            // 
+            this.dataGridViewImageColumn3.HeaderText = "Adjuntos";
+            this.dataGridViewImageColumn3.Image = global::PV.Properties.Resources.Attach_24px;
+            this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
+            this.dataGridViewImageColumn3.Width = 107;
+            // 
+            // btnNuevaVenta
+            // 
+            this.btnNuevaVenta.BackColor = System.Drawing.Color.Navy;
+            this.btnNuevaVenta.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnNuevaVenta.FlatAppearance.BorderSize = 0;
+            this.btnNuevaVenta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnNuevaVenta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnNuevaVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevaVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevaVenta.ForeColor = System.Drawing.Color.White;
+            this.btnNuevaVenta.Image = global::PV.Properties.Resources.Buy_24px1;
+            this.btnNuevaVenta.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnNuevaVenta.Location = new System.Drawing.Point(518, 53);
+            this.btnNuevaVenta.Name = "btnNuevaVenta";
+            this.btnNuevaVenta.Size = new System.Drawing.Size(127, 31);
+            this.btnNuevaVenta.TabIndex = 37;
+            this.btnNuevaVenta.Text = "Nueva Venta";
+            this.btnNuevaVenta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNuevaVenta.UseVisualStyleBackColor = false;
+            this.btnNuevaVenta.Click += new System.EventHandler(this.btnNuevaVenta_Click_1);
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnBuscar.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnBuscar.FlatAppearance.BorderSize = 0;
+            this.btnBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.Color.White;
+            this.btnBuscar.Image = global::PV.Properties.Resources.Search_24px;
+            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBuscar.Location = new System.Drawing.Point(420, 53);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(92, 31);
+            this.btnBuscar.TabIndex = 36;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click_1);
             // 
             // verCol
             // 
@@ -211,63 +282,83 @@
             this.eliminarCol.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.eliminarCol.Visible = false;
             // 
+            // adjuntoCol
+            // 
+            this.adjuntoCol.FillWeight = 63.55883F;
+            this.adjuntoCol.HeaderText = "Adjuntos";
+            this.adjuntoCol.Image = global::PV.Properties.Resources.Attach_24px;
+            this.adjuntoCol.MinimumWidth = 10;
+            this.adjuntoCol.Name = "adjuntoCol";
+            this.adjuntoCol.ReadOnly = true;
+            // 
             // idVentaCol
             // 
             this.idVentaCol.DataPropertyName = "idVenta";
-            this.idVentaCol.FillWeight = 44.53566F;
+            this.idVentaCol.FillWeight = 47.20662F;
             this.idVentaCol.HeaderText = "Código";
             this.idVentaCol.MaxInputLength = 10;
             this.idVentaCol.MinimumWidth = 10;
             this.idVentaCol.Name = "idVentaCol";
             this.idVentaCol.ReadOnly = true;
             // 
-            // clienteCol
-            // 
-            this.clienteCol.DataPropertyName = "cliente";
-            this.clienteCol.FillWeight = 181.4514F;
-            this.clienteCol.HeaderText = "Cliente";
-            this.clienteCol.MaxInputLength = 90;
-            this.clienteCol.Name = "clienteCol";
-            this.clienteCol.ReadOnly = true;
-            // 
             // fechaCol
             // 
             this.fechaCol.DataPropertyName = "fecha";
-            this.fechaCol.FillWeight = 90.81728F;
+            this.fechaCol.FillWeight = 96.26392F;
             this.fechaCol.HeaderText = "Fecha";
             this.fechaCol.MaxInputLength = 10;
             this.fechaCol.Name = "fechaCol";
             this.fechaCol.ReadOnly = true;
             // 
+            // descripcionCol
+            // 
+            this.descripcionCol.DataPropertyName = "descripcion";
+            this.descripcionCol.FillWeight = 105.9973F;
+            this.descripcionCol.HeaderText = "Descripción";
+            this.descripcionCol.Name = "descripcionCol";
+            this.descripcionCol.ReadOnly = true;
+            // 
+            // formaCol
+            // 
+            this.formaCol.DataPropertyName = "forma";
+            this.formaCol.FillWeight = 105.9973F;
+            this.formaCol.HeaderText = "Forma";
+            this.formaCol.Name = "formaCol";
+            this.formaCol.ReadOnly = true;
+            // 
+            // clienteCol
+            // 
+            this.clienteCol.DataPropertyName = "cliente";
+            this.clienteCol.FillWeight = 192.3337F;
+            this.clienteCol.HeaderText = "Cliente";
+            this.clienteCol.MaxInputLength = 90;
+            this.clienteCol.Name = "clienteCol";
+            this.clienteCol.ReadOnly = true;
+            // 
             // montoVentaCol
             // 
             this.montoVentaCol.DataPropertyName = "montoVenta";
-            this.montoVentaCol.FillWeight = 90.81728F;
+            this.montoVentaCol.FillWeight = 96.26392F;
             this.montoVentaCol.HeaderText = "Monto Venta";
             this.montoVentaCol.MaxInputLength = 10;
             this.montoVentaCol.Name = "montoVentaCol";
             this.montoVentaCol.ReadOnly = true;
             // 
-            // statusExistentes
+            // adjunto1Col
             // 
-            this.statusExistentes.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lblExistentes});
-            this.statusExistentes.Location = new System.Drawing.Point(0, 388);
-            this.statusExistentes.Name = "statusExistentes";
-            this.statusExistentes.Padding = new System.Windows.Forms.Padding(1, 0, 16, 0);
-            this.statusExistentes.Size = new System.Drawing.Size(913, 22);
-            this.statusExistentes.TabIndex = 38;
-            this.statusExistentes.Text = "statusStrip1";
+            this.adjunto1Col.DataPropertyName = "adjunto1";
+            this.adjunto1Col.HeaderText = "Adjunto 1";
+            this.adjunto1Col.Name = "adjunto1Col";
+            this.adjunto1Col.ReadOnly = true;
+            this.adjunto1Col.Visible = false;
             // 
-            // lblExistentes
+            // adjunto2Col
             // 
-            this.lblExistentes.Name = "lblExistentes";
-            this.lblExistentes.Size = new System.Drawing.Size(0, 17);
-            // 
-            // dtsRecibo1
-            // 
-            this.dtsRecibo1.DataSetName = "DtsRecibo";
-            this.dtsRecibo1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.adjunto2Col.DataPropertyName = "adjunto2";
+            this.adjunto2Col.HeaderText = "Adjunto 2";
+            this.adjunto2Col.Name = "adjunto2Col";
+            this.adjunto2Col.ReadOnly = true;
+            this.adjunto2Col.Visible = false;
             // 
             // FrmVenta
             // 
@@ -306,14 +397,22 @@
         private System.Windows.Forms.TextBox txtCriterio;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView grdExistentes;
-        private System.Windows.Forms.DataGridViewImageColumn verCol;
-        private System.Windows.Forms.DataGridViewImageColumn eliminarCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idVentaCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clienteCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fechaCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn montoVentaCol;
         private System.Windows.Forms.StatusStrip statusExistentes;
         private System.Windows.Forms.ToolStripStatusLabel lblExistentes;
         private Reportes.DtsRecibo dtsRecibo1;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn3;
+        private System.Windows.Forms.DataGridViewImageColumn verCol;
+        private System.Windows.Forms.DataGridViewImageColumn eliminarCol;
+        private System.Windows.Forms.DataGridViewImageColumn adjuntoCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idVentaCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fechaCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descripcionCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn formaCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clienteCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn montoVentaCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn adjunto1Col;
+        private System.Windows.Forms.DataGridViewTextBoxColumn adjunto2Col;
     }
 }

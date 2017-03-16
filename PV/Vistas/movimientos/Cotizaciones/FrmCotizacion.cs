@@ -143,7 +143,13 @@ namespace PV
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            this.buscar();
+            try
+            {
+                this.buscar();
+            }catch(Exception ex)
+            {
+                ClsHelper.erroLog(ex);
+            }
         }
 
         private void FrmCotizacion_Load(object sender, EventArgs e)
@@ -160,8 +166,14 @@ namespace PV
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FrmCotizacionBusqueda frmCotizacionBusqueda = new FrmCotizacionBusqueda();
-            frmCotizacionBusqueda.ShowDialog(this);
+            try
+            {
+                FrmCotizacionBusqueda frmCotizacionBusqueda = new FrmCotizacionBusqueda();
+                frmCotizacionBusqueda.ShowDialog(this);
+            }catch(Exception ex)
+            {
+                ClsHelper.erroLog(ex);
+            }
         }
     }
 }

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,10 @@ namespace PV
     {
         
         DataTable dtResult = new DataTable();
+
+        TextBox textBoxDgv1 = new TextBox();
+        Label labelDgv1 = new Label();
+
         public FrmReporteVenta()
         {
             InitializeComponent();
@@ -25,6 +30,11 @@ namespace PV
         {
             try
             {
+                cmbTipoVenta.Items.Add("Crédito - Contado");
+                cmbTipoVenta.Items.Add("Contado");
+                cmbTipoVenta.Items.Add("Crédito");
+                cmbTipoVenta.SelectedIndex = 0;
+
                 DateTime fecha = DateTime.Now;
                 picFechaInicio.Value = new DateTime(DateTime.Now.Year,DateTime.Now.Month,1);
                 buscar();
@@ -42,9 +52,15 @@ namespace PV
             try
             {
                 BL.ClsReportes clsReporteVenta = new BL.ClsReportes();
-                dtResult = clsReporteVenta.ventasPorFecha(picFechaInicio.Value.ToShortDateString(), picFechaFin.Value.ToShortDateString());
+                string forma = "";
+                if (cmbTipoVenta.SelectedIndex > 0)
+                    forma = cmbTipoVenta.SelectedItem.ToString();
+                //MessageBox.Show("c: " + forma);
+                dtResult = clsReporteVenta.ventasPorFecha(picFechaInicio.Value.ToShortDateString(), picFechaFin.Value.ToShortDateString(),forma);
                 grdDatos.DataSource = dtResult;
                 lblExistentes.Text = grdDatos.Rows.Count.ToString() + " Registro(s)";
+
+                CalcularTotales();
             }
             catch (Exception)
             {
@@ -53,6 +69,34 @@ namespace PV
             }
         }
 
+
+        private void CalcularTotales()
+        {
+            try
+            {/*
+                if (this.dtResult.Rows.Count > 0)
+                {
+                   txtSumInversion.Text = double.Parse(dtResult.Compute("sum(inversion)", "").ToString()).ToString();
+                    //dtResult.Compute("sum(inversion)","")
+                    txtSumaVentas.Text = double.Parse(dtResult.Compute("sum(valor)", "").ToString()).ToString();
+                   txtSumaRecuperado.Text = double.Parse(dtResult.Compute("sum(montoPagado)", "").ToString()).ToString();
+                    txtSumaSaldos.Text = double.Parse(dtResult.Compute("sum(saldo)", "").ToString()).ToString();
+                }else
+                {
+                    txtSumaRecuperado.Text = "0.00";
+                    txtSumaSaldos.Text = "0.00";
+                    txtSumaVentas.Text = "0.00";
+                    txtSumInversion.Text = "0.00";
+                }
+                */
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
+        }
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             try
@@ -79,6 +123,7 @@ namespace PV
                 SaveFileDialog sfd = new SaveFileDialog();
                 sfd.Filter = "txt files (*.xlsx)|*.xlsx";
                 sfd.FilterIndex = 2;
+                //sfd.FileName = "hellowor";
                 sfd.RestoreDirectory = true;
 
                 if (sfd.ShowDialog() == DialogResult.OK)
@@ -93,8 +138,10 @@ namespace PV
                         //}
                         using (XLWorkbook wb = new XLWorkbook())
                         {
-                            wb.Worksheets.Add(dtResult, "Customers");
-                            wb.SaveAs(fileName);
+                            wb.Worksheets.Add(dtResult, "Ventas");
+                            //wb.Worksheet("Ventas").Range(("D" + (dtResult.Rows.Count + 2).ToString())).Value = "Hello"; ;
+                            //wb.SaveAs(fileName);
+                            
                             if (MessageBox.Show("Archivo guardado correctamente,¿Desea abrirlo?", "Abrir Archivo", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                             {
                                 System.Diagnostics.Process.Start(fileName);
@@ -115,6 +162,15 @@ namespace PV
             }
         }
 
-
+        private void cmbTipoVenta_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                buscar();
+            }catch(Exception ex)
+            {
+                ClsHelper.erroLog(ex);
+            }
+        }
     }
 }

@@ -104,6 +104,10 @@ namespace PV
         private void deshabilitarControlesFinanciamiento(bool estado)
         {
             cmbFormapago.Enabled = estado;
+            txtEnganche.Enabled = estado;
+            txtPlazo.Enabled = estado;
+            btnCalcular.Enabled = estado;
+            cmbDiaPago.Enabled = estado;
         }
 
 
@@ -522,36 +526,7 @@ namespace PV
 
         private void grdReferencias_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            try
-            {
-                switch (e.ColumnIndex)
-                {
-                    case 0:
-                        txtNombreRef.Enabled = true;
-                        txtTelefonosRef.Enabled = true;
-                        txtDireccionRef.Enabled = true;
-                        btnAgregarReferencia.Enabled = true;
-                        idReferencia = grdReferencias.SelectedRows[0].Cells["idCol"].Value.ToString();
-                        txtNombreRef.Text = grdReferencias.SelectedRows[0].Cells["nombreRefCol"].Value.ToString();
-                        txtTelefonosRef.Text = grdReferencias.SelectedRows[0].Cells["telefonosRefCol"].Value.ToString();
-                        txtDireccionRef.Text = grdReferencias.SelectedRows[0].Cells["direccionRefCol"].Value.ToString();
-                        break;
-                    case 1:
-                        DialogResult r = MessageBox.Show("¿Confirma que desea eliminar este registro?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                        if (r == DialogResult.Yes)
-                        {
-                            DataRow[] dt = this.dtReferencias.Select("id = '" + this.grdReferencias.SelectedRows[0].Cells["idCol"].Value.ToString() + "'");
-                            dt[0].Delete();
-                            validarReferencias();
-                        }
-                        break;
-                }
 
-            }
-            catch (Exception ex)
-            {
-                ClsHelper.erroLog(ex);
-            }
         }
 
         private void txtPlaca_Leave(object sender, EventArgs e)
@@ -723,7 +698,7 @@ namespace PV
                 if (cmbFormapago.SelectedIndex == 0)
                 {
                     if (dtDetalle.Rows.Count > 0)
-                        txtTotalVenta.Text = Math.Round(((double)dtDetalle.Compute("sum(precioOtorgado)", "")),2).ToString();
+                        txtTotalVenta.Text = Math.Round(((double)dtDetalle.Compute("sum(precioOtorgado)", ""))).ToString();
                 }
                 else
                 {
@@ -734,10 +709,10 @@ namespace PV
                         double total = 0.00;
                         if (grdDetalle.Rows.Count == 1)
                         {
-                            total = Math.Round(((double)dtDetalle.Compute("sum(precioOtorgado)", "")), 2);
+                            total = Math.Round(((double)dtDetalle.Compute("sum(precioOtorgado)", "")));
                         }
                         int cuotas = int.Parse(txtPlazo.Text);
-                        double enganche = Math.Round(double.Parse(txtEnganche.Text), 2);
+                        double enganche = Math.Round(double.Parse(txtEnganche.Text));
 
 
                         //double total = Math.Round(double.Parse(txtTotalVenta.Text),2);
@@ -747,11 +722,11 @@ namespace PV
                         {
                             if (enganche < total)
                             {
-                                double saldo = Math.Round((total - enganche), 2);
-                                double cuota = Math.Round((saldo / cuotas), 2);
+                                double saldo = Math.Round((total - enganche));
+                                double cuota = Math.Round((saldo / cuotas));
 
-                                double nuevoTotal = Math.Round(((cuota * cuotas) + enganche), 2);
-                                double nuevoSaldo = Math.Round((nuevoTotal - enganche), 2);
+                                double nuevoTotal = Math.Round(((cuota * cuotas) + enganche));
+                                double nuevoSaldo = Math.Round((nuevoTotal - enganche));
 
                                 txtCuotaMensual.Text = cuota.ToString();
                                 txtSaldo.Text = nuevoSaldo.ToString();
@@ -947,12 +922,12 @@ namespace PV
                                 );
                                 if (dt.Rows.Count >= 1)
                                 {
-                                    ClsHelper.MensajeSistema("data column: " + dt.Rows[0][0]);
+                                    //ClsHelper.MensajeSistema("data column: " + dt.Rows[0][0]);
                                     idVenta = dt.Rows[0]["idVenta"].ToString();
-                                    ClsHelper.MensajeSistema("Proceso Realizado con exito" + idVenta);
+                                    //ClsHelper.MensajeSistema("Proceso Realizado con exito" + idVenta);
                                     this.btnImprimir.Enabled = true;
                                     deshabilitarControles();
-                                    habilitarControlesFinanciamiento(false);
+                                    //habilitarControlesFinanciamiento(false);
                                     
                                 }
                             }

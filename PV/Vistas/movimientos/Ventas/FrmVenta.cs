@@ -103,6 +103,19 @@ namespace PV
                             //limpiarControles();
                         }
                         break;
+                    case 2:
+                        string r1 = grdExistentes.SelectedRows[0].Cells["adjunto1Col"].Value.ToString();
+                        string r2 = grdExistentes.SelectedRows[0].Cells["adjunto2Col"].Value.ToString();
+                        List<String> adjuntos = new List<string>();
+                        if (r1 != "")
+                            adjuntos.Add(r1);
+                        if (r2 != "")
+                            adjuntos.Add(r2);
+
+                        FrmAdjuntos frmAdjuntos = new FrmAdjuntos(adjuntos);
+                        frmAdjuntos.ShowDialog(this);
+                        //MessageBox.Show("adjunto");
+                        break;
                 }
             }
             catch (Exception ex)
@@ -117,6 +130,17 @@ namespace PV
             FrmNuevaVenta frmVenta = new FrmNuevaVenta();
             frmVenta.ShowDialog(this);
 
+        }
+
+        private void btnBuscar_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                buscar();
+            }catch(Exception ex)
+            {
+                ClsHelper.erroLog(ex);
+            }
         }
 
 

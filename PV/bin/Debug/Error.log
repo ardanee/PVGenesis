@@ -616,3 +616,542 @@ Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(St
    en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
    en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
 
+   15/03/2017 09:25:12 a.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 09:51:08 a.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 09:55:56 a.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 10:01:38 a.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 10:04:09 a.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 11:26:51 a.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 11:29:15 a.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 11:31:19 a.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 11:32:20 a.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 11:35:11 a.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 11:41:48 a.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 11:54:31 a.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 11:57:13 a.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 12:00:44 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 12:09:23 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 12:16:54 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 12:19:11 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 12:20:44 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 12:21:42 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 12:55:27 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 12:57:32 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 09:02:51 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 09:14:28 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 09:16:30 p.m.   aramirez   SOPORTE-PC   No se puede eliminar porque actualmente hay ventas que tienen asignado este Vehiculo   ejecutarSP      en PV.ClsDb.ejecutarSP(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 287
+   en PV.BL.ClsVehiculo.eliminar(String idVehiculo) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsVehiculo.cs:línea 138
+   en PV.FrmVehiculo.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\movimientos\Vehiculos\FrmVehiculo.cs:línea 117
+
+   15/03/2017 09:59:04 p.m.      SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 10:04:37 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 10:04:41 p.m.   aramirez   SOPORTE-PC   No se puede encontrar la columna [inversion].   Bind      en System.Data.AggregateNode.Bind(DataTable table, List`1 list)
+   en System.Data.DataExpression.Bind(DataTable table)
+   en System.Data.DataExpression..ctor(DataTable table, String expression, Type type)
+   en System.Data.DataTable.Compute(String expression, String filter)
+   en PV.FrmReporteVenta.CalcularTotales() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 92
+   en PV.FrmReporteVenta.buscar() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 64
+   en PV.FrmReporteVenta.frmReporteVenta_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 40
+
+   15/03/2017 10:23:49 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 10:23:54 p.m.   aramirez   SOPORTE-PC   No se puede encontrar la columna [inversion].   Bind      en System.Data.AggregateNode.Bind(DataTable table, List`1 list)
+   en System.Data.DataExpression.Bind(DataTable table)
+   en System.Data.DataExpression..ctor(DataTable table, String expression, Type type)
+   en System.Data.DataTable.Compute(String expression, String filter)
+   en PV.FrmReporteVenta.CalcularTotales() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 96
+   en PV.FrmReporteVenta.buscar() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 68
+   en PV.FrmReporteVenta.frmReporteVenta_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 40
+
+   15/03/2017 10:24:06 p.m.   aramirez   SOPORTE-PC   No se puede encontrar la columna [inversion].   Bind      en System.Data.AggregateNode.Bind(DataTable table, List`1 list)
+   en System.Data.DataExpression.Bind(DataTable table)
+   en System.Data.DataExpression..ctor(DataTable table, String expression, Type type)
+   en System.Data.DataTable.Compute(String expression, String filter)
+   en PV.FrmReporteVenta.CalcularTotales() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 96
+   en PV.FrmReporteVenta.buscar() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 68
+   en PV.FrmReporteVenta.btnBuscar_Click(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 104
+
+   15/03/2017 10:24:14 p.m.   aramirez   SOPORTE-PC   No se puede encontrar la columna [inversion].   Bind      en System.Data.AggregateNode.Bind(DataTable table, List`1 list)
+   en System.Data.DataExpression.Bind(DataTable table)
+   en System.Data.DataExpression..ctor(DataTable table, String expression, Type type)
+   en System.Data.DataTable.Compute(String expression, String filter)
+   en PV.FrmReporteVenta.CalcularTotales() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 96
+   en PV.FrmReporteVenta.buscar() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 68
+   en PV.FrmReporteVenta.btnBuscar_Click(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 104
+
+   15/03/2017 10:25:07 p.m.      SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 10:25:24 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 10:25:29 p.m.   aramirez   SOPORTE-PC   No se puede encontrar la columna [inversion].   Bind      en System.Data.AggregateNode.Bind(DataTable table, List`1 list)
+   en System.Data.DataExpression.Bind(DataTable table)
+   en System.Data.DataExpression..ctor(DataTable table, String expression, Type type)
+   en System.Data.DataTable.Compute(String expression, String filter)
+   en PV.FrmReporteVenta.CalcularTotales() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 96
+   en PV.FrmReporteVenta.buscar() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 68
+   en PV.FrmReporteVenta.frmReporteVenta_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 40
+
+   15/03/2017 10:25:32 p.m.   aramirez   SOPORTE-PC   Referencia a objeto no establecida como instancia de un objeto.   buscar      en PV.FrmReporteVenta.buscar() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 68
+   en PV.FrmReporteVenta.btnBuscar_Click(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 104
+
+   15/03/2017 10:25:34 p.m.   aramirez   SOPORTE-PC   Referencia a objeto no establecida como instancia de un objeto.   buscar      en PV.FrmReporteVenta.buscar() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 68
+   en PV.FrmReporteVenta.btnBuscar_Click(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 104
+
+   15/03/2017 10:26:01 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 10:26:05 p.m.   aramirez   SOPORTE-PC   No se puede encontrar la columna [inversion].   Bind      en System.Data.AggregateNode.Bind(DataTable table, List`1 list)
+   en System.Data.DataExpression.Bind(DataTable table)
+   en System.Data.DataExpression..ctor(DataTable table, String expression, Type type)
+   en System.Data.DataTable.Compute(String expression, String filter)
+   en PV.FrmReporteVenta.CalcularTotales() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 96
+   en PV.FrmReporteVenta.buscar() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 68
+   en PV.FrmReporteVenta.frmReporteVenta_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 40
+
+   15/03/2017 10:26:10 p.m.   aramirez   SOPORTE-PC   No se puede encontrar la columna [inversion].   Bind      en System.Data.AggregateNode.Bind(DataTable table, List`1 list)
+   en System.Data.DataExpression.Bind(DataTable table)
+   en System.Data.DataExpression..ctor(DataTable table, String expression, Type type)
+   en System.Data.DataTable.Compute(String expression, String filter)
+   en PV.FrmReporteVenta.CalcularTotales() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 96
+   en PV.FrmReporteVenta.buscar() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 68
+   en PV.FrmReporteVenta.btnBuscar_Click(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 104
+
+   15/03/2017 10:27:22 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 10:27:27 p.m.   aramirez   SOPORTE-PC   No se puede encontrar la columna [inversion].   Bind      en System.Data.AggregateNode.Bind(DataTable table, List`1 list)
+   en System.Data.DataExpression.Bind(DataTable table)
+   en System.Data.DataExpression..ctor(DataTable table, String expression, Type type)
+   en System.Data.DataTable.Compute(String expression, String filter)
+   en PV.FrmReporteVenta.CalcularTotales() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 96
+   en PV.FrmReporteVenta.buscar() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 68
+   en PV.FrmReporteVenta.frmReporteVenta_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 40
+
+   15/03/2017 10:27:31 p.m.   aramirez   SOPORTE-PC   No se puede encontrar la columna [inversion].   Bind      en System.Data.AggregateNode.Bind(DataTable table, List`1 list)
+   en System.Data.DataExpression.Bind(DataTable table)
+   en System.Data.DataExpression..ctor(DataTable table, String expression, Type type)
+   en System.Data.DataTable.Compute(String expression, String filter)
+   en PV.FrmReporteVenta.CalcularTotales() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 96
+   en PV.FrmReporteVenta.buscar() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 68
+   en PV.FrmReporteVenta.btnBuscar_Click(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 104
+
+   15/03/2017 10:27:39 p.m.   aramirez   SOPORTE-PC   No se puede encontrar la columna [inversion].   Bind      en System.Data.AggregateNode.Bind(DataTable table, List`1 list)
+   en System.Data.DataExpression.Bind(DataTable table)
+   en System.Data.DataExpression..ctor(DataTable table, String expression, Type type)
+   en System.Data.DataTable.Compute(String expression, String filter)
+   en PV.FrmReporteVenta.CalcularTotales() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 96
+   en PV.FrmReporteVenta.buscar() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 68
+   en PV.FrmReporteVenta.btnBuscar_Click(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 104
+
+   15/03/2017 10:27:44 p.m.   aramirez   SOPORTE-PC   No se puede encontrar la columna [inversion].   Bind      en System.Data.AggregateNode.Bind(DataTable table, List`1 list)
+   en System.Data.DataExpression.Bind(DataTable table)
+   en System.Data.DataExpression..ctor(DataTable table, String expression, Type type)
+   en System.Data.DataTable.Compute(String expression, String filter)
+   en PV.FrmReporteVenta.CalcularTotales() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 96
+   en PV.FrmReporteVenta.buscar() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 68
+   en PV.FrmReporteVenta.btnBuscar_Click(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 104
+
+   15/03/2017 10:27:49 p.m.   aramirez   SOPORTE-PC   No se puede encontrar la columna [inversion].   Bind      en System.Data.AggregateNode.Bind(DataTable table, List`1 list)
+   en System.Data.DataExpression.Bind(DataTable table)
+   en System.Data.DataExpression..ctor(DataTable table, String expression, Type type)
+   en System.Data.DataTable.Compute(String expression, String filter)
+   en PV.FrmReporteVenta.CalcularTotales() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 96
+   en PV.FrmReporteVenta.buscar() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 68
+   en PV.FrmReporteVenta.btnBuscar_Click(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 104
+
+   15/03/2017 10:30:51 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 10:30:54 p.m.   aramirez   SOPORTE-PC   No se puede encontrar la columna [inversion].   Bind      en System.Data.AggregateNode.Bind(DataTable table, List`1 list)
+   en System.Data.DataExpression.Bind(DataTable table)
+   en System.Data.DataExpression..ctor(DataTable table, String expression, Type type)
+   en System.Data.DataTable.Compute(String expression, String filter)
+   en PV.FrmReporteVenta.CalcularTotales() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 96
+   en PV.FrmReporteVenta.buscar() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 68
+   en PV.FrmReporteVenta.frmReporteVenta_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\frmReporteVenta.cs:línea 40
+
+   15/03/2017 10:42:02 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 10:43:06 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 10:43:41 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 10:48:48 p.m.   aramirez   SOPORTE-PC   El índice estaba fuera del intervalo. Debe ser un valor no negativo e inferior al tamaño de la colección.
+Nombre del parámetro: index   get_Item      en System.Collections.ArrayList.get_Item(Int32 index)
+   en System.Windows.Forms.DataGridViewSelectedRowCollection.get_Item(Int32 index)
+   en PV.FrmCotizacionBusqueda.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\movimientos\Cotizaciones\FrmCotizacionBusqueda.cs:línea 77
+
+   15/03/2017 10:48:54 p.m.   aramirez   SOPORTE-PC   El índice estaba fuera del intervalo. Debe ser un valor no negativo e inferior al tamaño de la colección.
+Nombre del parámetro: index   get_Item      en System.Collections.ArrayList.get_Item(Int32 index)
+   en System.Windows.Forms.DataGridViewSelectedRowCollection.get_Item(Int32 index)
+   en PV.FrmCotizacionBusqueda.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\movimientos\Cotizaciones\FrmCotizacionBusqueda.cs:línea 77
+
+   15/03/2017 10:51:24 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 10:51:33 p.m.   aramirez   SOPORTE-PC   El índice estaba fuera del intervalo. Debe ser un valor no negativo e inferior al tamaño de la colección.
+Nombre del parámetro: index   get_Item      en System.Collections.ArrayList.get_Item(Int32 index)
+   en System.Windows.Forms.DataGridViewSelectedRowCollection.get_Item(Int32 index)
+   en PV.FrmCotizacionBusqueda.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\movimientos\Cotizaciones\FrmCotizacionBusqueda.cs:línea 77
+
+   15/03/2017 10:56:31 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 10:58:44 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 11:03:37 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 11:03:43 p.m.   aramirez   SOPORTE-PC   La columna 'idVetna' no pertenece a la tabla .   GetDataColumn      en System.Data.DataRow.GetDataColumn(String columnName)
+   en System.Data.DataRow.get_Item(String columnName)
+   en PV.FrmCotizacionDetalle.PfrmCotizacionResultado_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\movimientos\Cotizaciones\FrmCotizacionDetalle.cs:línea 94
+
+   15/03/2017 11:04:59 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 11:05:06 p.m.   aramirez   SOPORTE-PC   La columna 'idVetna' no pertenece a la tabla .   GetDataColumn      en System.Data.DataRow.GetDataColumn(String columnName)
+   en System.Data.DataRow.get_Item(String columnName)
+   en PV.FrmCotizacionDetalle.PfrmCotizacionResultado_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\movimientos\Cotizaciones\FrmCotizacionDetalle.cs:línea 94
+
+   15/03/2017 11:10:52 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 11:11:00 p.m.   aramirez   SOPORTE-PC   La columna 'idVetna' no pertenece a la tabla .   GetDataColumn      en System.Data.DataRow.GetDataColumn(String columnName)
+   en System.Data.DataRow.get_Item(String columnName)
+   en PV.FrmCotizacionDetalle.PfrmCotizacionResultado_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\movimientos\Cotizaciones\FrmCotizacionDetalle.cs:línea 94
+
+   15/03/2017 11:12:55 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 11:14:12 p.m.   aramirez   SOPORTE-PC   No se puede cargar el archivo o ensamblado 'Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91' ni una de sus dependencias. El sistema no puede encontrar el archivo especificado.   .ctor      en Microsoft.Reporting.WinForms.LocalReport..ctor()
+   en Microsoft.Reporting.WinForms.ReportViewer.Reset()
+   en Microsoft.Reporting.WinForms.ReportViewer..ctor()
+   en PV.FrmReporte.InitializeComponent() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\FrmReporte.Designer.cs:línea 31
+   en PV.FrmReporte..ctor() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\FrmReporte.cs:línea 19
+   en PV.FrmClienteCotizacion.btnGenerarCotizacion_Click(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\movimientos\Cotizaciones\FrmClienteCotizacion.cs:línea 78
+
+   15/03/2017 11:25:01 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 11:28:42 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 11:31:58 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 11:52:56 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 11:55:30 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   15/03/2017 11:57:41 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmRptCientesAtrasados.FrmRptCientesAtrasados_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Reportes\FrmRptCientesAtrasados.cs:línea 30
+
+   15/03/2017 11:58:16 p.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   16/03/2017 09:11:24 a.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   16/03/2017 09:13:13 a.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   16/03/2017 09:14:51 a.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   16/03/2017 09:56:30 a.m.      SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   16/03/2017 10:00:46 a.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   16/03/2017 10:02:20 a.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   16/03/2017 10:02:25 a.m.   aramirez   SOPORTE-PC   No se pudo encontrar la columna denominada adjunto1Col.
+Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   en PV.FrmVenta.grdExistentes_CellContentClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\movimientos\Ventas\FrmVenta.cs:línea 107
+
+   16/03/2017 10:09:40 a.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   16/03/2017 10:09:44 a.m.   aramirez   SOPORTE-PC   No se pudo encontrar la columna denominada adjunto1Col.
+Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   en PV.FrmVenta.grdExistentes_CellContentClick(Object sender, DataGridViewCellEventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\movimientos\Ventas\FrmVenta.cs:línea 107
+
+   16/03/2017 10:10:44 a.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   16/03/2017 10:14:21 a.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   16/03/2017 10:15:57 a.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   16/03/2017 10:16:43 a.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   16/03/2017 10:19:39 a.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   16/03/2017 10:20:35 a.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   16/03/2017 10:22:16 a.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   16/03/2017 10:23:27 a.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+
+   16/03/2017 10:25:02 a.m.   aramirez   SOPORTE-PC   La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 180
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 33
+

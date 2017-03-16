@@ -207,3 +207,4 @@ C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\obj\Debug\PV.exe
 C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\obj\Debug\PV.pdb
 C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\obj\Debug\PV.csprojResolveAssemblyReference.cache
 C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\obj\Debug\PV.Vistas.FrmReportV2.resources
+C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\obj\Debug\PV.FrmAdjuntos.resources

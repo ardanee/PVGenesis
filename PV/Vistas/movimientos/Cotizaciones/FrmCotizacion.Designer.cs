@@ -31,9 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCotizacion));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
@@ -42,18 +41,17 @@
             this.txtBusqueda = new System.Windows.Forms.TextBox();
             this.statusExistentes = new System.Windows.Forms.StatusStrip();
             this.lblExistentes = new System.Windows.Forms.ToolStripStatusLabel();
-            this.seleccionCol = new System.Windows.Forms.DataGridViewImageColumn();
+            this.btnNuevaCotizacion = new System.Windows.Forms.Button();
             this.numeroCotizacionCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clienteCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sucursalCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telefonoCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.formaPagoCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.diazValidezCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcionCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.precioVentaCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.precioNegociadoCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.totalCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnNuevaCotizacion = new System.Windows.Forms.Button();
+            this.diazValidezCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grdExistentes)).BeginInit();
             this.statusExistentes.SuspendLayout();
             this.SuspendLayout();
@@ -138,41 +136,40 @@
             this.grdExistentes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.grdExistentes.ColumnHeadersHeight = 30;
             this.grdExistentes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.seleccionCol,
             this.numeroCotizacionCol,
             this.clienteCol,
             this.sucursalCol,
             this.telefonoCol,
             this.formaPagoCol,
-            this.diazValidezCol,
             this.descripcionCol,
             this.precioVentaCol,
             this.precioNegociadoCol,
-            this.totalCol});
+            this.totalCol,
+            this.diazValidezCol});
             this.grdExistentes.EnableHeadersVisualStyles = false;
             this.grdExistentes.GridColor = System.Drawing.Color.LightGray;
-            this.grdExistentes.Location = new System.Drawing.Point(3, 81);
+            this.grdExistentes.Location = new System.Drawing.Point(3, 93);
             this.grdExistentes.MultiSelect = false;
             this.grdExistentes.Name = "grdExistentes";
             this.grdExistentes.ReadOnly = true;
             this.grdExistentes.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdExistentes.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdExistentes.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.grdExistentes.RowHeadersWidth = 20;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.LightSkyBlue;
-            this.grdExistentes.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.LightSkyBlue;
+            this.grdExistentes.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.grdExistentes.RowTemplate.Height = 30;
             this.grdExistentes.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.grdExistentes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdExistentes.Size = new System.Drawing.Size(942, 313);
+            this.grdExistentes.Size = new System.Drawing.Size(942, 301);
             this.grdExistentes.TabIndex = 35;
             this.grdExistentes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdExistentes_CellClick);
             // 
@@ -208,27 +205,26 @@
             this.lblExistentes.Name = "lblExistentes";
             this.lblExistentes.Size = new System.Drawing.Size(0, 17);
             // 
-            // seleccionCol
+            // btnNuevaCotizacion
             // 
-            this.seleccionCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle3.NullValue")));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            this.seleccionCol.DefaultCellStyle = dataGridViewCellStyle3;
-            this.seleccionCol.Description = "Ver Auto";
-            this.seleccionCol.FillWeight = 121.8274F;
-            this.seleccionCol.HeaderText = "";
-            this.seleccionCol.Image = ((System.Drawing.Image)(resources.GetObject("seleccionCol.Image")));
-            this.seleccionCol.MinimumWidth = 35;
-            this.seleccionCol.Name = "seleccionCol";
-            this.seleccionCol.ReadOnly = true;
-            this.seleccionCol.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.seleccionCol.ToolTipText = "Ver Auto";
-            this.seleccionCol.Visible = false;
-            this.seleccionCol.Width = 40;
+            this.btnNuevaCotizacion.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnNuevaCotizacion.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnNuevaCotizacion.FlatAppearance.BorderSize = 0;
+            this.btnNuevaCotizacion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnNuevaCotizacion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnNuevaCotizacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevaCotizacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevaCotizacion.ForeColor = System.Drawing.Color.White;
+            this.btnNuevaCotizacion.Image = global::PV.Properties.Resources.Add_List_24px;
+            this.btnNuevaCotizacion.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnNuevaCotizacion.Location = new System.Drawing.Point(483, 50);
+            this.btnNuevaCotizacion.Name = "btnNuevaCotizacion";
+            this.btnNuevaCotizacion.Size = new System.Drawing.Size(90, 25);
+            this.btnNuevaCotizacion.TabIndex = 39;
+            this.btnNuevaCotizacion.Text = "Nueva";
+            this.btnNuevaCotizacion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNuevaCotizacion.UseVisualStyleBackColor = false;
+            this.btnNuevaCotizacion.Click += new System.EventHandler(this.button1_Click);
             // 
             // numeroCotizacionCol
             // 
@@ -274,15 +270,6 @@
             this.formaPagoCol.Name = "formaPagoCol";
             this.formaPagoCol.ReadOnly = true;
             // 
-            // diazValidezCol
-            // 
-            this.diazValidezCol.DataPropertyName = "validez";
-            this.diazValidezCol.FillWeight = 150F;
-            this.diazValidezCol.HeaderText = "Dias Validez";
-            this.diazValidezCol.MaxInputLength = 5;
-            this.diazValidezCol.Name = "diazValidezCol";
-            this.diazValidezCol.ReadOnly = true;
-            // 
             // descripcionCol
             // 
             this.descripcionCol.DataPropertyName = "descripcion";
@@ -310,31 +297,19 @@
             // totalCol
             // 
             this.totalCol.DataPropertyName = "totalFinanciado";
-            this.totalCol.HeaderText = "Total";
+            this.totalCol.HeaderText = "Total Financiado";
             this.totalCol.MaxInputLength = 20;
             this.totalCol.Name = "totalCol";
             this.totalCol.ReadOnly = true;
             // 
-            // btnNuevaCotizacion
+            // diazValidezCol
             // 
-            this.btnNuevaCotizacion.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnNuevaCotizacion.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.btnNuevaCotizacion.FlatAppearance.BorderSize = 0;
-            this.btnNuevaCotizacion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnNuevaCotizacion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnNuevaCotizacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNuevaCotizacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevaCotizacion.ForeColor = System.Drawing.Color.White;
-            this.btnNuevaCotizacion.Image = global::PV.Properties.Resources.Add_List_24px;
-            this.btnNuevaCotizacion.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnNuevaCotizacion.Location = new System.Drawing.Point(483, 50);
-            this.btnNuevaCotizacion.Name = "btnNuevaCotizacion";
-            this.btnNuevaCotizacion.Size = new System.Drawing.Size(90, 25);
-            this.btnNuevaCotizacion.TabIndex = 39;
-            this.btnNuevaCotizacion.Text = "Nueva";
-            this.btnNuevaCotizacion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNuevaCotizacion.UseVisualStyleBackColor = false;
-            this.btnNuevaCotizacion.Click += new System.EventHandler(this.button1_Click);
+            this.diazValidezCol.DataPropertyName = "validez";
+            this.diazValidezCol.FillWeight = 150F;
+            this.diazValidezCol.HeaderText = "Dias Validez";
+            this.diazValidezCol.MaxInputLength = 5;
+            this.diazValidezCol.Name = "diazValidezCol";
+            this.diazValidezCol.ReadOnly = true;
             // 
             // FrmCotizacion
             // 
@@ -373,17 +348,16 @@
         private System.Windows.Forms.TextBox txtBusqueda;
         private System.Windows.Forms.StatusStrip statusExistentes;
         private System.Windows.Forms.ToolStripStatusLabel lblExistentes;
-        private System.Windows.Forms.DataGridViewImageColumn seleccionCol;
+        private System.Windows.Forms.Button btnNuevaCotizacion;
         private System.Windows.Forms.DataGridViewTextBoxColumn numeroCotizacionCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn clienteCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn sucursalCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn telefonoCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn formaPagoCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn diazValidezCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn descripcionCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn precioVentaCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn precioNegociadoCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn totalCol;
-        private System.Windows.Forms.Button btnNuevaCotizacion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn diazValidezCol;
     }
 }

@@ -113,7 +113,7 @@ GO
 
 
 create table TblWCotizacion(
-numeroCotizacion int,
+numeroCotizacion varchar(30),
 nombreCliente varchar(60),
 idVehiculo int,
 precioNegociado decimal(18,2),
@@ -130,9 +130,8 @@ fecha date default getdate()
 );
 
 
-
 GO
-create PROCEDURE SpIuCotizacion
+ALTER PROCEDURE SpIuCotizacion
 @Pusuario varchar(40),
 @PidVehiculo int, ------
 @Pcliente varchar(60),------
@@ -145,17 +144,17 @@ create PROCEDURE SpIuCotizacion
 @PformaPago varchar(30),----
 @PtotalFinanciado decimal(18,2),
 @Pvalidez int
-AS
+AS select * from TblParametro
 BEGIN
 DECLARE 
 @vNumeroCotizacion VARCHAR(30),@eMensaje varchar(120)
 BEGIN TRANSACTION
 	BEGIN TRY
-		SET @vNumeroCotizacion = REPLACE(STR(((SELECT CONVERT(INT,valor) FROM TblParametro WHERE idParametro = 2 )+1), 7),' ','0')
+		SET @vNumeroCotizacion = (SELECT CONVERT(INT,valor) FROM TblParametro WHERE idParametro = 2 )+1 
 		UPDATE TblParametro SET valor =@vNumeroCotizacion WHERE idParametro = 2
 		INSERT INTO TblWCotizacion(numeroCotizacion,nombreCliente,idVehiculo,precioNegociado,cuotas,enganche,
 							cuotaMensual,totalFinanciado,sucursal,telefonoSucursal,forma,usuario,validez)
-							values(@vNumeroCotizacion,@Pcliente,@PidVehiculo,@PprecioNegociado,@Pcuotas,@Penganche,
+							values(REPLACE(STR((@vNumeroCotizacion), 7),' ','0'),@Pcliente,@PidVehiculo,@PprecioNegociado,@Pcuotas,@Penganche,
 							@Pcuotamensual,@PtotalFinanciado,@Psucursal,@Ptelefono,@PformaPago,@Pusuario,@Pvalidez);
 		SELECT (@vNumeroCotizacion) AS numeroCotizacion;		
 	COMMIT
@@ -234,19 +233,19 @@ alter PROCEDURE SpsCotizacion
 AS
 BEGIN
 		SELECT
+		cotizacion.numeroCotizacion ,
 		cotizacion.nombreCliente as cliente,
 		--cotizacion.cuotaMensual as cuotaMensual, --****************
 		cotizacion.sucursal as sucursal,--****************************
 		cotizacion.telefonoSucursal as telefono,--****************************
+		(convert(varchar(10),(v.idVehiculo)) + ', '+ tv.nombre+', ' + m.nombre +', ' + li.nombre +', ' + v.placa + ', ' + v.cc) descripcion,
 		cotizacion.forma as formaPago,--***************************
+		v.precioVenta as precioVenta,
+		cotizacion.precioNegociado as precioNegociado,
 		--cotizacion.cuotas as cuotas,--***************************
 		--cotizacion.enganche as enganche,--**********************
 		cotizacion.totalFinanciado as totalFinanciado,--********************
-		cotizacion.precioNegociado as precioNegociado,
-		(convert(varchar(10),(v.idVehiculo)) + ', '+ tv.nombre+', ' + m.nombre +', ' + li.nombre +', ' + v.placa + ', ' + v.cc) descripcion,
-		v.precioVenta as precioVenta,
-		cotizacion.validez,
-		cotizacion.numeroCotizacion 
+		cotizacion.validez
 		FROM TblWCotizacion AS cotizacion
 		INNER JOIN TblVehiculo as v
 		ON v.idVehiculo = cotizacion.idVehiculo
@@ -260,4 +259,89 @@ BEGIN
 		cotizacion.numeroCotizacion LIKE '%'+ISNULL(@Pcriterio,cotizacion.numeroCotizacion)+'%'
 END;
 GO
+
+
+
+
+
+
+
+GO
+-- REPORTE VENTA
+alter procedure SpsReporteVentaPorFecha
+	@PfechaIncio date,
+	@PfechaFin date,
+	@PformaVenta varchar(15)
+AS
+BEGIN
+	SELECT venta.idVenta as CODIGO, 
+	(SELECT usuario.nombre FROM TblSecUsuario as usuario WHERE usuario.usuario = venta.usuarioCreacion) AS VENDEDOR,
+	cliente.nombre as CLIENTE,  tipoV.nombre as TIPO,marca.nombre as MARCA,linea.nombre as LINEA,
+	convert(varchar(15),venta.fechaCreacion,103) as FECHA,
+	CASE
+		WHEN venta.cantidadCuotas > 0
+		THEN 'Crédito'
+		ELSE 'Contado'
+	END as FORMA,
+	--(isnull((select SUM(monto) from TblCostoVehiculo as costo WHERE costo.idVehiculo = vehiculo.idVehiculo ),0)) as INVERSION,
+	vehiculo.precioVenta as PRECIO_VENTA,
+	venta.valorVenta VALOR_VENTA,
+	VENTA.enganche AS ENGANCHE,
+	VENTA.cantidadCuotas AS CUOTAS,
+	VENTA.cuota AS VALOR_CUOTA,
+	VENTA.montoInicial AS VALOR_FINANCIADO,
+	CASE 
+	WHEN venta.cuota < 1
+		THEN (0.00)
+		ELSE 
+			((isnull(venta.montoInicial,0)) - (isnull((select SUM(monto) from TblPago as pago where pago.idVenta = venta.idVenta),0)))
+	END as SALDO,
+	CASE 
+	WHEN venta.cuota < 1
+		THEN 
+			(ISNULL(venta.valorVenta,0))
+		ELSE 
+			(isnull((select SUM(monto) from TblPago as tp WHERE tp.idVenta = venta.idVenta),0) + isnull(venta.enganche,0))
+	END as PAGADO
+	--PRECIO VENTA
+	--ENGANCHE
+	--CUOTAS 
+	--SALDO
+	--VALOR FINANCIADO
+	--VALOR CUOTA
+	-- DESCUENTO
+	--(isnull((select SUM(monto) from TblPago as tp WHERE tp.idVenta = venta.idVenta),0) + isnull(venta.montoInicial,0)) as montoPagado,
+	--convert(varchar(15),(SELECT DATEADD(month,venta.cantidadCuotas,venta.fechaCreacion)),103) AS fechaUltimaCuota, venta.cantidadCuotas
+	--(venta.cantidadCuotas - (select count(1) from TblPago as tp WHERE tp.idVenta = venta.idVenta)) as cuotasRestantes,
+	--(tipoV.nombre + ', ' + marca.nombre + ', ' + linea.nombre + ', '+ cast(vehiculo.modelo as varchar(6)) +', cc: '+ isnull(vehiculo.cc,0) + ', '+ vehiculo.color) as descripcion,
+	FROM TblVenta AS venta
+	INNER JOIN TblCliente as cliente
+	ON venta.dpi = cliente.dpi
+	INNER JOIN TblVehiculo vehiculo
+	ON vehiculo.idVehiculo = venta.idVehiculo
+	INNER JOIN TblTipoVehiculo tipoV
+	ON tipoV.idTipoVehiculo = vehiculo.idTipoVehiculo
+	INNER JOIN TblMarca marca
+	ON marca.idMarca = vehiculo.idMarca
+	INNER JOIN TblLinea linea
+	ON linea.idLinea = vehiculo.idLinea
+	WHERE venta.fechaCreacion BETWEEN 
+	CONVERT(Varchar(10),@PfechaIncio,103) and 
+	CONVERT(Varchar(10),@PfechaFin,103) and 
+	(CASE WHEN venta.cantidadCuotas > 0 THEN 'Crédito' ELSE 'Contado' END) LIKE '%'+ISNULL(@PformaVenta,(CASE WHEN venta.cantidadCuotas > 0 THEN 'Crédito' ELSE 'Contado' END))+'%'
+END;
+go
+
+
+
+
+
+
+
+
+
+
+
+
+
 

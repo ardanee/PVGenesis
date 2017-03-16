@@ -1,44 +1,40 @@
-GO
--- REPORTE VENTA
-CREATE procedure SpsReporteVenta
-	@PfechaIncio date,
-	@PfechaFin date
-AS
-BEGIN
-	SELECT v.idVenta as idVenta, 
-	cl.nombre as cliente, 
-	convert(varchar(15),v.fechaCreacion,103) as fecha,
-	v.valorVenta valor,
-	isnull((select SUM(monto) from TblPago as tp WHERE tp.idVenta = v.idVenta),0)+ isnull(v.montoInicial,0) as montoPagado,
-	convert(varchar(15),(SELECT DATEADD(month,v.cantidadCuotas,v.fechaCreacion)),103) AS fechaUltimaCuota, v.cantidadCuotas,
-	((v.valorVenta - v.enganche) - (isnull((select SUM(monto) from TblPago as tp WHERE tp.idVenta = v.idVenta),0)+ isnull(v.montoInicial,0))) as saldo,
-	(v.cantidadCuotas - (select count(1) from TblPago as tp WHERE tp.idVenta = v.idVenta)) as cuotasRestantes
-	FROM TblVenta AS v 
-	INNER JOIN TblCliente as cl
-	ON v.dpi = cl.dpi
-	WHERE v.fechaCreacion BETWEEN 
-	CONVERT(Varchar(10),@PfechaIncio,103) and 
-	CONVERT(Varchar(10),@PfechaFin,103)
-END;
-go
 
 
-
-
-
+EXEC SpsVenta @PCRITERIO =''
 GO
 -- VENTAS REALIZADAS
-CREATE procedure SpsVenta
+ALTER procedure SpsVenta
 	@PCriterio varchar(40)
 AS
 BEGIN
-	select v.idVenta as idVenta, v.fechaCreacion as fecha, v.valorVenta as montoVenta, cl.nombre as cliente from tblVenta as v, TblCliente as cl
-	WHERE v.dpi = cl.dpi and (
-	v.fechaCreacion LIKE '%'+ISNULL(@Pcriterio,v.fechaCreacion)+'%' OR
-	v.idVenta LIKE '%'+ISNULL(@Pcriterio,v.idVenta)+'%' OR
-	v.dpi LIKE '%'+ISNULL(@Pcriterio,v.dpi)+'%' OR
-	v.diaPago LIKE '%'+ISNULL(@Pcriterio,v.diaPago)+'%' OR
-	v.idVehiculo LIKE '%'+ISNULL(@Pcriterio,v.idVehiculo)+'%')
+	select venta.idVenta as idVenta,
+	 venta.fechaCreacion as fecha, 
+	 venta.valorVenta as montoVenta, 
+	 cliente.nombre as cliente,
+	 venta.rutaDocumento1 as adjunto1, venta.rutaDocumento2 as adjunto2,
+	 (tipoV.nombre + ', ' + marca.nombre + ', ' + linea.nombre + ', '+ cast(vehiculo.modelo as varchar(6)) +', cc: '+ isnull(vehiculo.cc,0) + ', '+ vehiculo.color) as descripcion,
+	 CASE
+		WHEN venta.cantidadCuotas > 0
+		THEN 'Crédito'
+		ELSE 'Contado'
+	END as FORMA
+	 from tblVenta as venta
+	 inner join TblCliente as cliente
+	 on venta.dpi = cliente.dpi
+	 INNER JOIN TblVehiculo as vehiculo
+	 ON vehiculo.idVehiculo = venta.idVehiculo
+	 INNER JOIN TblTipoVehiculo tipoV
+	ON tipoV.idTipoVehiculo = vehiculo.idTipoVehiculo
+	INNER JOIN TblMarca marca
+	ON marca.idMarca = vehiculo.idMarca
+	INNER JOIN TblLinea linea
+	ON linea.idLinea = vehiculo.idLinea
+	WHERE venta.dpi = cliente.dpi and (
+	venta.fechaCreacion LIKE '%'+ISNULL(@Pcriterio,venta.fechaCreacion)+'%' OR
+	venta.idVenta LIKE '%'+ISNULL(@Pcriterio,venta.idVenta)+'%' OR
+	venta.dpi LIKE '%'+ISNULL(@Pcriterio,venta.dpi)+'%' OR
+	venta.diaPago LIKE '%'+ISNULL(@Pcriterio,venta.diaPago)+'%' OR
+	venta.idVehiculo LIKE '%'+ISNULL(@Pcriterio,venta.idVehiculo)+'%')
 END;
 GO
 

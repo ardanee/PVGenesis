@@ -249,17 +249,18 @@
             // 
             this.idVehiculoCol.DataPropertyName = "idVehiculo";
             this.idVehiculoCol.FillWeight = 43.75145F;
-            this.idVehiculoCol.HeaderText = "ID";
+            this.idVehiculoCol.HeaderText = "Código";
+            this.idVehiculoCol.MaxInputLength = 10;
             this.idVehiculoCol.MinimumWidth = 30;
             this.idVehiculoCol.Name = "idVehiculoCol";
             this.idVehiculoCol.ReadOnly = true;
-            this.idVehiculoCol.Visible = false;
             // 
             // tipoVehiculoCol
             // 
             this.tipoVehiculoCol.DataPropertyName = "tipoVehiculo";
             this.tipoVehiculoCol.FillWeight = 150F;
             this.tipoVehiculoCol.HeaderText = "Tipo Vehiculo";
+            this.tipoVehiculoCol.MaxInputLength = 30;
             this.tipoVehiculoCol.Name = "tipoVehiculoCol";
             this.tipoVehiculoCol.ReadOnly = true;
             // 
@@ -268,6 +269,7 @@
             this.marcaCol.DataPropertyName = "marca";
             this.marcaCol.FillWeight = 199.7983F;
             this.marcaCol.HeaderText = "Marca";
+            this.marcaCol.MaxInputLength = 30;
             this.marcaCol.Name = "marcaCol";
             this.marcaCol.ReadOnly = true;
             // 
@@ -275,6 +277,7 @@
             // 
             this.lineaCol.DataPropertyName = "linea";
             this.lineaCol.HeaderText = "Linea";
+            this.lineaCol.MaxInputLength = 30;
             this.lineaCol.Name = "lineaCol";
             this.lineaCol.ReadOnly = true;
             // 
@@ -282,6 +285,7 @@
             // 
             this.modeloCol.DataPropertyName = "modelo";
             this.modeloCol.HeaderText = "Modelo";
+            this.modeloCol.MaxInputLength = 10;
             this.modeloCol.Name = "modeloCol";
             this.modeloCol.ReadOnly = true;
             // 
@@ -289,6 +293,7 @@
             // 
             this.placaCol.DataPropertyName = "placa";
             this.placaCol.HeaderText = "Placa";
+            this.placaCol.MaxInputLength = 30;
             this.placaCol.Name = "placaCol";
             this.placaCol.ReadOnly = true;
             // 
@@ -296,6 +301,7 @@
             // 
             this.colorCol.DataPropertyName = "color";
             this.colorCol.HeaderText = "Color";
+            this.colorCol.MaxInputLength = 60;
             this.colorCol.Name = "colorCol";
             this.colorCol.ReadOnly = true;
             // 
@@ -303,6 +309,7 @@
             // 
             this.estadoCol.DataPropertyName = "estado";
             this.estadoCol.HeaderText = "Estado";
+            this.estadoCol.MaxInputLength = 30;
             this.estadoCol.Name = "estadoCol";
             this.estadoCol.ReadOnly = true;
             // 
@@ -311,6 +318,7 @@
             this.fechaIngresoCol.DataPropertyName = "fechaIngreso";
             this.fechaIngresoCol.FillWeight = 150F;
             this.fechaIngresoCol.HeaderText = "Fecha Ingreso";
+            this.fechaIngresoCol.MaxInputLength = 20;
             this.fechaIngresoCol.Name = "fechaIngresoCol";
             this.fechaIngresoCol.ReadOnly = true;
             // 

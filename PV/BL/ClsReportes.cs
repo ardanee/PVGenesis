@@ -46,12 +46,12 @@ namespace PV.BL
                 throw;
             }
         }
-        public DataTable ventasPorFecha(string fechaInicio, string fechaFin)
+        public DataTable ventasPorFecha(string fechaInicio, string fechaFin, string forma)
         {
             DataTable res = new DataTable();
             try
             {
-                res = consultarTabla("SpsReporteVenta", null, Parametro("@PfechaIncio", fechaInicio), Parametro("@PfechaFin", fechaFin));
+                res = consultarTabla("SpsReporteVentaPorFecha", null, Parametro("@PfechaIncio", fechaInicio), Parametro("@PfechaFin", fechaFin), Parametro("@PformaVenta",forma));
                 return res;
             }
             catch (Exception)
