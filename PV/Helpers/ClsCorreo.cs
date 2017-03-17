@@ -112,7 +112,11 @@ namespace PV
             string tablaHtml = "";
             try
             {
-                tablaHtml = "<table style=\" box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);animation: float 5s infinite; width: 100%;border-collapse: collapse;border: 1px solid #38678f;background: white;text-align:center;\">";
+                if (dt.Rows.Count < 0)
+                {
+                    tablaHtml += "<h1>No hay Registros de Vehiculos</h1>";
+                }
+                tablaHtml += "<table style=\" box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);animation: float 5s infinite; width: 100%;border-collapse: collapse;border: 1px solid #38678f;background: white;text-align:center;\">";
                 tablaHtml += "<thead><tr style=\"border-bottom: 1px solid #cccccc;\">";
                 for (int i = 0; i < dt.Columns.Count; i++)
                 {

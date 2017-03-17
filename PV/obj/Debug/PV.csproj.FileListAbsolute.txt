@@ -167,3 +167,4 @@ C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\obj\Debug\RdlCompile.cache
 C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\obj\Debug\RdlCompile.compiled
 C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\obj\Debug\PV.exe
 C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\obj\Debug\PV.pdb
+C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\obj\Debug\PV.csprojResolveAssemblyReference.cache

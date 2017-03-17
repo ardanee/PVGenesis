@@ -166,6 +166,7 @@ namespace PV
             try
             {
                 calcular();
+                btnImprimir.Enabled = true;
             }
             catch (Exception ex)
             {
@@ -319,6 +320,17 @@ namespace PV
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void txtPrecioNegociado_Leave(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txtPrecioNegociado_TextChanged(object sender, EventArgs e)
+        {
+            if(cmbForma.SelectedIndex == 1)
+                btnImprimir.Enabled = false;
         }
     }
        

@@ -541,6 +541,8 @@
             this.txtPrecioNegociado.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtPrecioNegociado.Size = new System.Drawing.Size(144, 31);
             this.txtPrecioNegociado.TabIndex = 21;
+            this.txtPrecioNegociado.TextChanged += new System.EventHandler(this.txtPrecioNegociado_TextChanged);
+            this.txtPrecioNegociado.Leave += new System.EventHandler(this.txtPrecioNegociado_Leave);
             // 
             // panel42
             // 
@@ -708,6 +710,7 @@
             this.txtCuotas.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtCuotas.Size = new System.Drawing.Size(77, 31);
             this.txtCuotas.TabIndex = 23;
+            this.txtCuotas.TextChanged += new System.EventHandler(this.txtPrecioNegociado_TextChanged);
             // 
             // panel34
             // 
@@ -767,6 +770,7 @@
             this.txtEnganche.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtEnganche.Size = new System.Drawing.Size(145, 31);
             this.txtEnganche.TabIndex = 22;
+            this.txtEnganche.TextChanged += new System.EventHandler(this.txtPrecioNegociado_TextChanged);
             // 
             // panel32
             // 

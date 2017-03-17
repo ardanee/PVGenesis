@@ -45,3 +45,4 @@ C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\obj\Release\RdlCompile.cache
 C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\obj\Release\RdlCompile.compiled
 C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\obj\Release\PV.exe
 C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\obj\Release\PV.pdb
+C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\obj\Release\PV.csprojResolveAssemblyReference.cache
