@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraBars.Alerter.AlertButton alertButton2 = new DevExpress.XtraBars.Alerter.AlertButton();
+            DevExpress.XtraBars.Alerter.AlertButton alertButton1 = new DevExpress.XtraBars.Alerter.AlertButton();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.skinRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
@@ -376,17 +376,17 @@
             // 
             // alertControl1
             // 
-            this.alertControl1.AppearanceCaption.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold);
+            this.alertControl1.AppearanceCaption.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.alertControl1.AppearanceCaption.ForeColor = System.Drawing.Color.Maroon;
             this.alertControl1.AppearanceCaption.Options.UseFont = true;
             this.alertControl1.AppearanceCaption.Options.UseForeColor = true;
             this.alertControl1.AppearanceCaption.Options.UseTextOptions = true;
             this.alertControl1.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.alertControl1.AppearanceHotTrackedText.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.alertControl1.AppearanceHotTrackedText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.alertControl1.AppearanceHotTrackedText.ForeColor = System.Drawing.Color.Maroon;
             this.alertControl1.AppearanceHotTrackedText.Options.UseFont = true;
             this.alertControl1.AppearanceHotTrackedText.Options.UseForeColor = true;
-            this.alertControl1.AppearanceText.Font = new System.Drawing.Font("Roboto", 9F);
+            this.alertControl1.AppearanceText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.alertControl1.AppearanceText.ForeColor = System.Drawing.Color.Maroon;
             this.alertControl1.AppearanceText.Image = global::PV.Properties.Resources.High_Priority_24px;
             this.alertControl1.AppearanceText.Options.UseFont = true;
@@ -396,9 +396,9 @@
             this.alertControl1.AppearanceText.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.alertControl1.AppearanceText.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.alertControl1.AutoHeight = true;
-            alertButton2.Image = global::PV.Properties.Resources.Clock_24px;
-            alertButton2.Name = "btnListado";
-            this.alertControl1.Buttons.Add(alertButton2);
+            alertButton1.Image = global::PV.Properties.Resources.Clock_24px;
+            alertButton1.Name = "btnListado";
+            this.alertControl1.Buttons.Add(alertButton1);
             this.alertControl1.ControlBoxPosition = DevExpress.XtraBars.Alerter.AlertFormControlBoxPosition.Right;
             this.alertControl1.FormDisplaySpeed = DevExpress.XtraBars.Alerter.AlertFormDisplaySpeed.Fast;
             this.alertControl1.FormLocation = DevExpress.XtraBars.Alerter.AlertFormLocation.TopRight;
@@ -421,6 +421,7 @@
             this.StatusBar = this.ribbonStatusBar1;
             this.Text = "Importadora Génesis";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmMain_FormClosed);
             this.Load += new System.EventHandler(this.FrmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();

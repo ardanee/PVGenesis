@@ -170,6 +170,7 @@ namespace PV
             {
                 FrmCotizacionBusqueda frmCotizacionBusqueda = new FrmCotizacionBusqueda();
                 frmCotizacionBusqueda.ShowDialog(this);
+                buscar();
             }catch(Exception ex)
             {
                 ClsHelper.erroLog(ex);

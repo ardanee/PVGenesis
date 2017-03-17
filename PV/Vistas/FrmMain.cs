@@ -16,6 +16,8 @@ namespace PV
     public partial class FrmMain : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         DataTable dtAccesoFormularios = new DataTable();
+        
+        ClsManejadorReporteDiario clsManejador = new ClsManejadorReporteDiario();
         public FrmMain()
         {
             InitializeComponent();
@@ -29,6 +31,8 @@ namespace PV
                 //Hilo que muestra la alerta
                 //Thread alertaThread = new Thread(new ThreadStart(this.mostrarAlerta));
                 //alertaThread.Start();
+
+                enviarReporteCorreo();
                 Thread.SpinWait(50000);
                 mostrarAlerta();
             }
@@ -205,5 +209,28 @@ namespace PV
                 ClsHelper.erroLog(ex);
             }
         }
+
+        private void enviarReporteCorreo()
+        {
+            try
+            {
+                Thread worker = new Thread(clsManejador.DoWork);
+                worker.Start();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        private void FrmMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            clsManejador.RequestStop();
+            Application.Exit();
+            
+        }
+
+
+
     }
 }

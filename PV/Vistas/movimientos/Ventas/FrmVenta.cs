@@ -127,8 +127,16 @@ namespace PV
 
         private void btnNuevaVenta_Click_1(object sender, EventArgs e)
         {
-            FrmNuevaVenta frmVenta = new FrmNuevaVenta();
-            frmVenta.ShowDialog(this);
+            try
+            {
+                FrmNuevaVenta frmVenta = new FrmNuevaVenta();
+                frmVenta.ShowDialog(this);
+                buscar();
+            }
+            catch (Exception ex)
+            {
+                ClsHelper.erroLog(ex);
+            }
 
         }
 

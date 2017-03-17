@@ -123,7 +123,9 @@ namespace PV
                 SaveFileDialog sfd = new SaveFileDialog();
                 sfd.Filter = "txt files (*.xlsx)|*.xlsx";
                 sfd.FilterIndex = 2;
-                //sfd.FileName = "hellowor";
+                string fileName = "Sales_" + this.picFechaInicio.Value.ToString("dd_MM_yyyy") + "_to_" + this.picFechaFin.Value.ToString("dd_MM_yyyy"); ;
+                sfd.FileName = fileName;
+               // MessageBox.Show("fecha: " + this.picFechaInicio.Value.ToString("dd-MM-yyyy"));
                 sfd.RestoreDirectory = true;
 
                 if (sfd.ShowDialog() == DialogResult.OK)
@@ -131,7 +133,7 @@ namespace PV
                     if (!String.IsNullOrEmpty(sfd.FileName))
                     {
                         //Exporting to Excel
-                        string fileName = sfd.FileName;
+                        fileName = sfd.FileName;
                         //if (!Directory.Exists(folderPath))
                         //{
                         //    Directory.CreateDirectory(folderPath);
@@ -140,7 +142,7 @@ namespace PV
                         {
                             wb.Worksheets.Add(dtResult, "Ventas");
                             //wb.Worksheet("Ventas").Range(("D" + (dtResult.Rows.Count + 2).ToString())).Value = "Hello"; ;
-                            //wb.SaveAs(fileName);
+                            wb.SaveAs(fileName);
                             
                             if (MessageBox.Show("Archivo guardado correctamente,¿Desea abrirlo?", "Abrir Archivo", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                             {

@@ -47,6 +47,20 @@ namespace PV
                             rw1.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", ((DataSet)origenDatos).Tables[1]));
                             break;
                         }
+                    case "RptCotizacion":
+                        {
+                            rw1.LocalReport.ReportPath = @"Reportes\RptCotizacion.rdlc";
+                            rw1.LocalReport.DataSources.Clear();
+                            rw1.LocalReport.DataSources.Add(new ReportDataSource("dtsCotizacion",(DataTable)origenDatos));
+                            break;
+                        }
+                    case "RptVenta":
+                        {
+                            rw1.LocalReport.ReportPath = @"Reportes\RptVenta.rdlc";
+                            rw1.LocalReport.DataSources.Clear();
+                            rw1.LocalReport.DataSources.Add(new ReportDataSource("dtsVenta", (DataTable)origenDatos));
+                            break;
+                        }
                 }
 
                 this.rw1.RefreshReport();

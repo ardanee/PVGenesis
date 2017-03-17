@@ -78,6 +78,10 @@ namespace PV
                                         FrmReporte rpt = new FrmReporte();
                                         rpt.cargarReporte("RptCotizacion", dtt);
                                     }
+                                    else
+                                    {
+                                        ClsHelper.MensajeSistema("no hgay cotizacion");
+                                    }
                                     deshabilitarControles(false);
                                     /*DataTable dt = clsReporte.rptCotizacionVehiculo(
                                         idVehiculo, 

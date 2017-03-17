@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -46,6 +47,7 @@ namespace PV
         public string scanv2()
         {
             string rutaImagen = "";
+            string nombreAdjunto = "";
             System.Drawing.Image i = null;
             try
             {
@@ -57,15 +59,16 @@ namespace PV
                 WIA.Vector vector = imageFile.FileData;
 
                 DateTime fecha = DateTime.Now;
-                rutaImagen = ClsGlobals.pathImg
-                    + "scan_" + fecha.Day.ToString()
+                nombreAdjunto = "scan_" + fecha.Day.ToString()
                     + fecha.Month.ToString()
                     + fecha.Year.ToString()
                     + "_" + fecha.Hour.ToString()
                     + fecha.Minute.ToString()
                     + fecha.Second.ToString()
-                    + fecha.Millisecond.ToString()
+                    + fecha.Millisecond.ToString() 
                     + ".jpeg";
+                rutaImagen = ClsGlobals.rutaAdjuntos + nombreAdjunto;
+                    
 
                 if (System.IO.File.Exists(rutaImagen))
                 {
@@ -73,6 +76,12 @@ namespace PV
                 }
                 try
                 {
+
+                    // Se crea el directorio si no existe para almacenar los adjunntos
+                    if (Directory.Exists(ClsGlobals.rutaAdjuntos))
+                    {
+                        DirectoryInfo di = Directory.CreateDirectory(ClsGlobals.rutaAdjuntos);
+                    }
                     imageFile.SaveFile(rutaImagen);
                 }
                 catch (Exception ex)
@@ -97,7 +106,7 @@ namespace PV
             {
                 ClsHelper.MensajeSistema("No se completo la operación...");
             }
-            return rutaImagen;
+            return nombreAdjunto;
         }
         public override string ToString()
         {

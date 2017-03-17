@@ -14,7 +14,7 @@ BEGIN
 	 venta.rutaDocumento1 as adjunto1, venta.rutaDocumento2 as adjunto2,
 	 (tipoV.nombre + ', ' + marca.nombre + ', ' + linea.nombre + ', '+ cast(vehiculo.modelo as varchar(6)) +', cc: '+ isnull(vehiculo.cc,0) + ', '+ vehiculo.color) as descripcion,
 	 CASE
-		WHEN venta.cantidadCuotas > 0
+		WHEN venta.cantidadCuotas > 1
 		THEN 'Crédito'
 		ELSE 'Contado'
 	END as FORMA
@@ -100,13 +100,13 @@ GO
 
 GO
 -- DETALLE COMPLETO DE UNA VENTA
-CREATE procedure [dbo].SpsUnaVenta
+alter procedure [dbo].SpsUnaVenta
 @PidVenta int
 AS
 BEGIN
 select 
 venta.idVenta idVenta,
-venta.usuarioCreacion nombreVendedor,
+(SELECT usuario.nombre from TblSecUsuario as usuario WHERE usuario.usuario = venta.usuarioCreacion) nombreVendedor,
 cliente.nombre nombreCliente,
 cliente.direccion direccionCliente,
 cliente.nit nitCliente,

@@ -144,7 +144,7 @@ ALTER PROCEDURE SpIuCotizacion
 @PformaPago varchar(30),----
 @PtotalFinanciado decimal(18,2),
 @Pvalidez int
-AS select * from TblParametro
+AS
 BEGIN
 DECLARE 
 @vNumeroCotizacion VARCHAR(30),@eMensaje varchar(120)
@@ -221,7 +221,7 @@ BEGIN
 		ON li.idLinea = v.idLinea
 		INNER JOIN TblMarca as m
 		ON m.idMarca = v.idMarca
-		WHERE cotizacion.numeroCotizacion = @PnumeroCotizacion;
+		WHERE cotizacion.numeroCotizacion = @PnumeroCotizacion ORDER BY cotizacion.numeroCotizacion DESC;
 END;
 GO
 
@@ -279,7 +279,7 @@ BEGIN
 	cliente.nombre as CLIENTE,  tipoV.nombre as TIPO,marca.nombre as MARCA,linea.nombre as LINEA,
 	convert(varchar(15),venta.fechaCreacion,103) as FECHA,
 	CASE
-		WHEN venta.cantidadCuotas > 0
+		WHEN venta.cantidadCuotas > 1
 		THEN 'Crédito'
 		ELSE 'Contado'
 	END as FORMA,
@@ -290,19 +290,8 @@ BEGIN
 	VENTA.cantidadCuotas AS CUOTAS,
 	VENTA.cuota AS VALOR_CUOTA,
 	VENTA.montoInicial AS VALOR_FINANCIADO,
-	CASE 
-	WHEN venta.cuota < 1
-		THEN (0.00)
-		ELSE 
-			((isnull(venta.montoInicial,0)) - (isnull((select SUM(monto) from TblPago as pago where pago.idVenta = venta.idVenta),0)))
-	END as SALDO,
-	CASE 
-	WHEN venta.cuota < 1
-		THEN 
-			(ISNULL(venta.valorVenta,0))
-		ELSE 
-			(isnull((select SUM(monto) from TblPago as tp WHERE tp.idVenta = venta.idVenta),0) + isnull(venta.enganche,0))
-	END as PAGADO
+	((isnull(venta.montoInicial,0)) - (isnull((select SUM(monto) from TblPago as pago where pago.idVenta = venta.idVenta),0)))as SALDO,
+	(isnull((select SUM(monto) from TblPago as tp WHERE tp.idVenta = venta.idVenta),0) + isnull(venta.enganche,0)) as PAGADO
 	--PRECIO VENTA
 	--ENGANCHE
 	--CUOTAS 
@@ -328,7 +317,7 @@ BEGIN
 	WHERE venta.fechaCreacion BETWEEN 
 	CONVERT(Varchar(10),@PfechaIncio,103) and 
 	CONVERT(Varchar(10),@PfechaFin,103) and 
-	(CASE WHEN venta.cantidadCuotas > 0 THEN 'Crédito' ELSE 'Contado' END) LIKE '%'+ISNULL(@PformaVenta,(CASE WHEN venta.cantidadCuotas > 0 THEN 'Crédito' ELSE 'Contado' END))+'%'
+	(CASE WHEN venta.cantidadCuotas > 1 THEN 'Crédito' ELSE 'Contado' END) LIKE '%'+ISNULL(@PformaVenta,(CASE WHEN venta.cantidadCuotas > 1 THEN 'Crédito' ELSE 'Contado' END))+'%'
 END;
 go
 
@@ -344,4 +333,7 @@ go
 
 
 
+
+select * from TblVenta
+update TblVenta set cantidadCuotas = 1 where cantidadCuotas = 0
 

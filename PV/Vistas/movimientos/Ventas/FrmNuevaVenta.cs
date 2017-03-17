@@ -122,7 +122,11 @@ namespace PV
                 {
                     cmbDiaPago.Items.Add(i);
                 }
-                cmbDiaPago.SelectedIndex = 15;
+                int dia = DateTime.Now.Day;
+                if (dia > 30)
+                    dia = 30;
+                //MessageBox.Show("dia: " + dia);
+                cmbDiaPago.SelectedIndex = dia-1;
 
                 cmbFormapago.SelectedIndex = 0;
             }
@@ -618,10 +622,14 @@ namespace PV
             try
             {
                 //cmbFormapago.SelectedIndex = 0;
-                cmbDiaPago.SelectedIndex = 15;
+                //cmbDiaPago.SelectedIndex = 15;
+                int dia = DateTime.Now.Day;
+                if (dia > 30)
+                    dia = 30;
+                cmbDiaPago.SelectedIndex = dia-1;
                 txtEnganche.Text = "0.00";
                 txtCuotaMensual.Text = "0.00";
-                txtPlazo.Text = "0";
+                txtPlazo.Text = "1";
                 txtSaldo.Text = "0.00";
                 if (dtDetalle.Rows.Count > 0)
                     txtTotalVenta.Text = ((double)dtDetalle.Compute("sum(precioOtorgado)", "")).ToString();
@@ -772,7 +780,7 @@ namespace PV
    
 
         // Controles de adjuntar documento
-
+        private int contadorAdjuntos = 0;
         private void btnAdjuntar_Click(object sender, EventArgs e)
         {
             try
@@ -780,10 +788,27 @@ namespace PV
                 ClsScanner scan = new ClsScanner();
                 string img = scan.scanv2();
                 if (img != "")
-                    if (adjuntos[0] == "")
+                {
+                    int r = contadorAdjuntos % 2;
+                    if (r == 0)
+                    {
                         adjuntos[0] = img;
-                    else if (adjuntos[1] == "")
+                        //listaAdjuntos.Items.Add("-" + img);
+                    }
+                    else
+                    {
                         adjuntos[1] = img;
+                        //listaAdjuntos.Items.Add("-" + img);
+                    }
+                    contadorAdjuntos++;
+                    listaAdjuntos.Items.Clear();
+                    foreach(string adjunto in adjuntos){
+                        if(adjunto != "")
+                            listaAdjuntos.Items.Add(adjunto);
+                    }
+                }
+                //btnAdjuntar.Text = "Adjuntar Documentos (" + adjuntos.Count() +"/2)";
+
             }
             catch (Exception ex)
             {
@@ -897,40 +922,12 @@ namespace PV
                             DialogResult r = MessageBox.Show("¿No se a adjuntado documentos, confirma que desea Grabar?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                             if (r == DialogResult.Yes)
                             {
-                                string diaPago = "0";
-                                string cuotas = "0";
-                                if (cmbFormapago.SelectedIndex == 1)
-                                {
-                                    diaPago = cmbDiaPago.SelectedItem.ToString();
-                                    cuotas = txtPlazo.Text.ToString().Trim();
-                                }
-                                //MessageBox.Show("idv: " + idVehiculo + "venta: " + idVenta );
-                                DataTable dt = this.clsVenta.grabarModificar(
-                                    idVenta, this.idVehiculo,
-                                    txtTotalVenta.Text.Trim(),
-                                    txtEnganche.Text,
-                                    cuotas,
-                                    txtCuotaMensual.Text,
-                                    diaPago,
-                                    referenciaStr[0][0].ToString(), referenciaStr[0][1].ToString(), referenciaStr[0][2].ToString(),
-                                    referenciaStr[1][0].ToString(), referenciaStr[1][1].ToString(), referenciaStr[1][2].ToString(),
-                                    referenciaStr[2][0].ToString(), referenciaStr[2][1].ToString(), referenciaStr[2][2].ToString(),
-                                    adjuntos[0], adjuntos[1],
-                                    txtNombres.Text, txtNit.Text, txtDpi.Text, txtDireccion.Text, txtTelefono.Text, txtEmail.Text,
-                                    this.dpiU,
-                                    this.txtFechaHora.Text
-                                );
-                                if (dt.Rows.Count >= 1)
-                                {
-                                    //ClsHelper.MensajeSistema("data column: " + dt.Rows[0][0]);
-                                    idVenta = dt.Rows[0]["idVenta"].ToString();
-                                    //ClsHelper.MensajeSistema("Proceso Realizado con exito" + idVenta);
-                                    this.btnImprimir.Enabled = true;
-                                    deshabilitarControles();
-                                    //habilitarControlesFinanciamiento(false);
-                                    
-                                }
+                                guardar();
                             }
+                        }
+                        else
+                        {
+                            guardar();
                         }
 
                     }else
@@ -943,7 +940,53 @@ namespace PV
             }
         }
 
-
+        private void guardar()
+        {
+            try
+            {
+                //string diaPago = "0";
+                string cuotas = "1";
+                if (cmbFormapago.SelectedIndex == 1)
+                {
+                    //diaPago = cmbDiaPago.SelectedItem.ToString();
+                    cuotas = txtPlazo.Text.ToString().Trim();
+                }
+                //MessageBox.Show("idv: " + idVehiculo + "venta: " + idVenta );
+                DataTable dt = this.clsVenta.grabarModificar(
+                    idVenta, this.idVehiculo,
+                    txtTotalVenta.Text.Trim(),
+                    txtEnganche.Text,
+                    cuotas,
+                    txtCuotaMensual.Text,
+                    cmbDiaPago.SelectedItem.ToString(),
+                    referenciaStr[0][0].ToString(), referenciaStr[0][1].ToString(), referenciaStr[0][2].ToString(),
+                    referenciaStr[1][0].ToString(), referenciaStr[1][1].ToString(), referenciaStr[1][2].ToString(),
+                    referenciaStr[2][0].ToString(), referenciaStr[2][1].ToString(), referenciaStr[2][2].ToString(),
+                    adjuntos[0], adjuntos[1],
+                    txtNombres.Text, txtNit.Text, txtDpi.Text, txtDireccion.Text, txtTelefono.Text, txtEmail.Text,
+                    this.dpiU,
+                    this.txtFechaHora.Text
+                );
+                if (dt.Rows.Count >= 1)
+                {
+                    //ClsHelper.MensajeSistema("data column: " + dt.Rows[0][0]);
+                    idVenta = dt.Rows[0]["idVenta"].ToString();
+                    //ClsHelper.MensajeSistema("Proceso Realizado con exito" + idVenta);
+                    this.btnImprimir.Enabled = true;
+                    deshabilitarControles();
+                    //habilitarControlesFinanciamiento(false);
+                    ClsHelper.MensajeSistema("Proceso completado correctamente...");
+                }
+                else
+                {
+                    ClsHelper.MensajeSistema("Proceso no se completo correctamente, contactar con soporte...");
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
 
         public void frmChange_Index(object sender, EventArgs e)
         {
@@ -969,6 +1012,12 @@ namespace PV
                 FrmReporte frmrep = new FrmReporte();
                 dt = clsReporte.rptVenta(idVenta);
                 frmrep.cargarReporte("RptVenta",dt);
+                DialogResult r = MessageBox.Show("¿Proceso finalizado, desea salir?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (r == DialogResult.Yes)
+                {
+                    this.Dispose();
+                    this.Close();
+                }
 
             }
             catch (Exception ex)

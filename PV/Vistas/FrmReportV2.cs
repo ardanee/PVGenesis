@@ -16,5 +16,11 @@ namespace PV.Vistas
         {
             InitializeComponent();
         }
+
+        private void FrmReportV2_Load(object sender, EventArgs e)
+        {
+
+            this.reportViewer1.RefreshReport();
+        }
     }
 }

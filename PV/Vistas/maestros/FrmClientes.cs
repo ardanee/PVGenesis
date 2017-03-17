@@ -12,10 +12,10 @@ namespace PV
 {
     public partial class FrmClientes : Form
     {
+
         //private 
         private BL.ClsCliente clsCliente = new BL.ClsCliente();
         private string dpiCliente = "0";
-
         public FrmClientes()
         {
             InitializeComponent();
@@ -76,14 +76,14 @@ namespace PV
                 string strQuery = "";
                 if (this.txtDpi.Text.Trim() != "")
                     strQuery = this.txtDpi.Text.Trim();
-                else if(this.txtNit.Text.Trim() != "")
+                else if (this.txtNit.Text.Trim() != "")
                     strQuery = this.txtNit.Text.Trim();
-                else if(this.txtNombre.Text.Trim() != "")
+                else if (this.txtNombre.Text.Trim() != "")
                     strQuery = this.txtNombre.Text.Trim();
                 //MessageBox.Show("queri: " + strQuery);
                 grdExistentes.DataSource = this.clsCliente.seleccionar("");
                 lblExistentes.Text = grdExistentes.Rows.Count.ToString() + " Registro(s)";
-                this.limpiarControles();
+                //this.limpiarControles();
             }
             catch (Exception)
             {

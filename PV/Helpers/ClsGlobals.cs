@@ -11,7 +11,7 @@ namespace PV
         public static string usuario = string.Empty;
         public static Int32 idUSuario = 0;
 
-        public static string pathImg = @"C:\img-gen\";
+        public static string rutaAdjuntos = @"C:\img-gen\";
 
     }
 }

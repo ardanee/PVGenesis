@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel31 = new System.Windows.Forms.Panel();
+            this.lblcodigo = new System.Windows.Forms.Label();
+            this.panel33 = new System.Windows.Forms.Panel();
+            this.label21 = new System.Windows.Forms.Label();
             this.btnVenta = new System.Windows.Forms.Button();
             this.btnReestablecer = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -132,11 +136,9 @@
             this.lblPlaca = new System.Windows.Forms.Label();
             this.panel40 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel31 = new System.Windows.Forms.Panel();
-            this.lblcodigo = new System.Windows.Forms.Label();
-            this.panel33 = new System.Windows.Forms.Panel();
-            this.label21 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.panel31.SuspendLayout();
+            this.panel33.SuspendLayout();
             this.panel47.SuspendLayout();
             this.panel48.SuspendLayout();
             this.panelTotal.SuspendLayout();
@@ -181,8 +183,6 @@
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel40.SuspendLayout();
-            this.panel31.SuspendLayout();
-            this.panel33.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -227,9 +227,52 @@
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(-1, -1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1001, 511);
+            this.panel1.Size = new System.Drawing.Size(935, 520);
             this.panel1.TabIndex = 38;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // panel31
+            // 
+            this.panel31.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel31.Controls.Add(this.lblcodigo);
+            this.panel31.Controls.Add(this.panel33);
+            this.panel31.Location = new System.Drawing.Point(37, 46);
+            this.panel31.Name = "panel31";
+            this.panel31.Size = new System.Drawing.Size(78, 65);
+            this.panel31.TabIndex = 64;
+            // 
+            // lblcodigo
+            // 
+            this.lblcodigo.AutoSize = true;
+            this.lblcodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblcodigo.ForeColor = System.Drawing.Color.White;
+            this.lblcodigo.Location = new System.Drawing.Point(6, 31);
+            this.lblcodigo.Name = "lblcodigo";
+            this.lblcodigo.Size = new System.Drawing.Size(21, 24);
+            this.lblcodigo.TabIndex = 24;
+            this.lblcodigo.Text = "1";
+            // 
+            // panel33
+            // 
+            this.panel33.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel33.BackColor = System.Drawing.Color.Azure;
+            this.panel33.Controls.Add(this.label21);
+            this.panel33.Location = new System.Drawing.Point(0, 0);
+            this.panel33.Name = "panel33";
+            this.panel33.Size = new System.Drawing.Size(76, 28);
+            this.panel33.TabIndex = 0;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(5, 3);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(73, 25);
+            this.label21.TabIndex = 0;
+            this.label21.Text = "Código";
             // 
             // btnVenta
             // 
@@ -239,7 +282,7 @@
             this.btnVenta.ForeColor = System.Drawing.Color.White;
             this.btnVenta.Image = global::PV.Properties.Resources.Card_in_Use_24px;
             this.btnVenta.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnVenta.Location = new System.Drawing.Point(564, 468);
+            this.btnVenta.Location = new System.Drawing.Point(599, 474);
             this.btnVenta.Name = "btnVenta";
             this.btnVenta.Size = new System.Drawing.Size(93, 34);
             this.btnVenta.TabIndex = 28;
@@ -273,7 +316,7 @@
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
             this.btnCancelar.Image = global::PV.Properties.Resources.Error_24px;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCancelar.Location = new System.Drawing.Point(775, 468);
+            this.btnCancelar.Location = new System.Drawing.Point(810, 474);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(108, 34);
             this.btnCancelar.TabIndex = 30;
@@ -290,7 +333,7 @@
             this.btnImprimir.ForeColor = System.Drawing.Color.White;
             this.btnImprimir.Image = global::PV.Properties.Resources.Print_24px;
             this.btnImprimir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnImprimir.Location = new System.Drawing.Point(663, 468);
+            this.btnImprimir.Location = new System.Drawing.Point(698, 474);
             this.btnImprimir.Name = "btnImprimir";
             this.btnImprimir.Size = new System.Drawing.Size(106, 34);
             this.btnImprimir.TabIndex = 29;
@@ -1384,55 +1427,12 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "PLACA";
             // 
-            // panel31
-            // 
-            this.panel31.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel31.Controls.Add(this.lblcodigo);
-            this.panel31.Controls.Add(this.panel33);
-            this.panel31.Location = new System.Drawing.Point(37, 46);
-            this.panel31.Name = "panel31";
-            this.panel31.Size = new System.Drawing.Size(78, 65);
-            this.panel31.TabIndex = 64;
-            // 
-            // lblcodigo
-            // 
-            this.lblcodigo.AutoSize = true;
-            this.lblcodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcodigo.ForeColor = System.Drawing.Color.White;
-            this.lblcodigo.Location = new System.Drawing.Point(6, 31);
-            this.lblcodigo.Name = "lblcodigo";
-            this.lblcodigo.Size = new System.Drawing.Size(21, 24);
-            this.lblcodigo.TabIndex = 24;
-            this.lblcodigo.Text = "1";
-            // 
-            // panel33
-            // 
-            this.panel33.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel33.BackColor = System.Drawing.Color.Azure;
-            this.panel33.Controls.Add(this.label21);
-            this.panel33.Location = new System.Drawing.Point(0, 0);
-            this.panel33.Name = "panel33";
-            this.panel33.Size = new System.Drawing.Size(76, 28);
-            this.panel33.TabIndex = 0;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(5, 3);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(73, 25);
-            this.label21.TabIndex = 0;
-            this.label21.Text = "Código";
-            // 
             // FrmCotizacionDetalle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(998, 511);
+            this.ClientSize = new System.Drawing.Size(934, 520);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -1443,6 +1443,10 @@
             this.Load += new System.EventHandler(this.PfrmCotizacionResultado_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel31.ResumeLayout(false);
+            this.panel31.PerformLayout();
+            this.panel33.ResumeLayout(false);
+            this.panel33.PerformLayout();
             this.panel47.ResumeLayout(false);
             this.panel47.PerformLayout();
             this.panel48.ResumeLayout(false);
@@ -1530,10 +1534,6 @@
             this.panel2.PerformLayout();
             this.panel40.ResumeLayout(false);
             this.panel40.PerformLayout();
-            this.panel31.ResumeLayout(false);
-            this.panel31.PerformLayout();
-            this.panel33.ResumeLayout(false);
-            this.panel33.PerformLayout();
             this.ResumeLayout(false);
 
         }

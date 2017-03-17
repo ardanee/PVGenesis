@@ -89,6 +89,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.btnAgregarReferencia = new System.Windows.Forms.Button();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.listaAdjuntos = new System.Windows.Forms.ListView();
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtDireccion = new System.Windows.Forms.TextBox();
@@ -135,7 +136,7 @@
             this.groupBox1.Controls.Add(this.label21);
             this.groupBox1.Controls.Add(this.txtTotalVenta);
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Location = new System.Drawing.Point(15, 302);
+            this.groupBox1.Location = new System.Drawing.Point(15, 356);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1135, 141);
             this.groupBox1.TabIndex = 72;
@@ -336,9 +337,9 @@
             this.groupBox2.Controls.Add(this.txtDescripcion);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.txtPlaca);
-            this.groupBox2.Location = new System.Drawing.Point(14, 176);
+            this.groupBox2.Location = new System.Drawing.Point(14, 206);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1136, 126);
+            this.groupBox2.Size = new System.Drawing.Size(1136, 144);
             this.groupBox2.TabIndex = 63;
             this.groupBox2.TabStop = false;
             // 
@@ -413,7 +414,7 @@
             this.precioOtorgadoCol});
             this.grdDetalle.EnableHeadersVisualStyles = false;
             this.grdDetalle.GridColor = System.Drawing.Color.LightGray;
-            this.grdDetalle.Location = new System.Drawing.Point(1, 58);
+            this.grdDetalle.Location = new System.Drawing.Point(1, 64);
             this.grdDetalle.MultiSelect = false;
             this.grdDetalle.Name = "grdDetalle";
             this.grdDetalle.ReadOnly = true;
@@ -434,7 +435,7 @@
             this.grdDetalle.RowTemplate.Height = 30;
             this.grdDetalle.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.grdDetalle.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdDetalle.Size = new System.Drawing.Size(1135, 67);
+            this.grdDetalle.Size = new System.Drawing.Size(1135, 80);
             this.grdDetalle.TabIndex = 27;
             // 
             // idVehiculoCol
@@ -588,7 +589,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 24);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1132, 127);
+            this.tabPage2.Size = new System.Drawing.Size(1132, 145);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Referencias";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -605,7 +606,7 @@
             this.btnCancelarReferencia.ForeColor = System.Drawing.Color.White;
             this.btnCancelarReferencia.Image = global::PV.Properties.Resources.Error_24px;
             this.btnCancelarReferencia.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCancelarReferencia.Location = new System.Drawing.Point(357, 83);
+            this.btnCancelarReferencia.Location = new System.Drawing.Point(355, 112);
             this.btnCancelarReferencia.Name = "btnCancelarReferencia";
             this.btnCancelarReferencia.Size = new System.Drawing.Size(93, 24);
             this.btnCancelarReferencia.TabIndex = 15;
@@ -644,7 +645,7 @@
             this.direccionRefCol});
             this.grdReferencias.EnableHeadersVisualStyles = false;
             this.grdReferencias.GridColor = System.Drawing.Color.LightGray;
-            this.grdReferencias.Location = new System.Drawing.Point(479, 7);
+            this.grdReferencias.Location = new System.Drawing.Point(454, 0);
             this.grdReferencias.MultiSelect = false;
             this.grdReferencias.Name = "grdReferencias";
             this.grdReferencias.ReadOnly = true;
@@ -665,7 +666,7 @@
             this.grdReferencias.RowTemplate.Height = 30;
             this.grdReferencias.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.grdReferencias.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdReferencias.Size = new System.Drawing.Size(650, 120);
+            this.grdReferencias.Size = new System.Drawing.Size(675, 145);
             this.grdReferencias.TabIndex = 16;
             this.grdReferencias.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdReferencias_CellContentClick);
             // 
@@ -723,7 +724,7 @@
             // 
             // txtDireccionRef
             // 
-            this.txtDireccionRef.Location = new System.Drawing.Point(16, 83);
+            this.txtDireccionRef.Location = new System.Drawing.Point(14, 118);
             this.txtDireccionRef.MaxLength = 50;
             this.txtDireccionRef.Name = "txtDireccionRef";
             this.txtDireccionRef.Size = new System.Drawing.Size(226, 21);
@@ -731,7 +732,7 @@
             // 
             // txtTelefonosRef
             // 
-            this.txtTelefonosRef.Location = new System.Drawing.Point(247, 41);
+            this.txtTelefonosRef.Location = new System.Drawing.Point(14, 76);
             this.txtTelefonosRef.MaxLength = 50;
             this.txtTelefonosRef.Name = "txtTelefonosRef";
             this.txtTelefonosRef.Size = new System.Drawing.Size(226, 21);
@@ -739,7 +740,7 @@
             // 
             // txtNombreRef
             // 
-            this.txtNombreRef.Location = new System.Drawing.Point(15, 41);
+            this.txtNombreRef.Location = new System.Drawing.Point(15, 25);
             this.txtNombreRef.MaxLength = 50;
             this.txtNombreRef.Name = "txtNombreRef";
             this.txtNombreRef.Size = new System.Drawing.Size(226, 21);
@@ -748,7 +749,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(13, 65);
+            this.label14.Location = new System.Drawing.Point(11, 100);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(59, 15);
             this.label14.TabIndex = 25;
@@ -757,7 +758,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(244, 22);
+            this.label15.Location = new System.Drawing.Point(11, 57);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(61, 15);
             this.label15.TabIndex = 22;
@@ -766,7 +767,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(12, 23);
+            this.label16.Location = new System.Drawing.Point(12, 7);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(58, 15);
             this.label16.TabIndex = 21;
@@ -784,7 +785,7 @@
             this.btnAgregarReferencia.ForeColor = System.Drawing.Color.White;
             this.btnAgregarReferencia.Image = global::PV.Properties.Resources.Save_as_24px;
             this.btnAgregarReferencia.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAgregarReferencia.Location = new System.Drawing.Point(258, 85);
+            this.btnAgregarReferencia.Location = new System.Drawing.Point(256, 114);
             this.btnAgregarReferencia.Name = "btnAgregarReferencia";
             this.btnAgregarReferencia.Size = new System.Drawing.Size(93, 23);
             this.btnAgregarReferencia.TabIndex = 14;
@@ -795,6 +796,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.listaAdjuntos);
             this.tabPage1.Controls.Add(this.txtTelefono);
             this.tabPage1.Controls.Add(this.txtEmail);
             this.tabPage1.Controls.Add(this.txtDireccion);
@@ -811,30 +813,40 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1132, 127);
+            this.tabPage1.Size = new System.Drawing.Size(1132, 145);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Principal";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // listaAdjuntos
+            // 
+            this.listaAdjuntos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listaAdjuntos.Location = new System.Drawing.Point(653, 6);
+            this.listaAdjuntos.Name = "listaAdjuntos";
+            this.listaAdjuntos.Size = new System.Drawing.Size(258, 145);
+            this.listaAdjuntos.TabIndex = 75;
+            this.listaAdjuntos.UseCompatibleStateImageBehavior = false;
+            this.listaAdjuntos.View = System.Windows.Forms.View.List;
+            // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(332, 63);
+            this.txtTelefono.Location = new System.Drawing.Point(19, 106);
             this.txtTelefono.MaxLength = 50;
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(299, 21);
+            this.txtTelefono.Size = new System.Drawing.Size(303, 21);
             this.txtTelefono.TabIndex = 5;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(650, 63);
+            this.txtEmail.Location = new System.Drawing.Point(332, 106);
             this.txtEmail.MaxLength = 50;
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(434, 21);
+            this.txtEmail.Size = new System.Drawing.Size(299, 21);
             this.txtEmail.TabIndex = 6;
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(21, 63);
+            this.txtDireccion.Location = new System.Drawing.Point(332, 64);
             this.txtDireccion.MaxLength = 50;
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(299, 21);
@@ -842,7 +854,7 @@
             // 
             // txtNombres
             // 
-            this.txtNombres.Location = new System.Drawing.Point(466, 21);
+            this.txtNombres.Location = new System.Drawing.Point(19, 64);
             this.txtNombres.MaxLength = 50;
             this.txtNombres.Name = "txtNombres";
             this.txtNombres.Size = new System.Drawing.Size(303, 21);
@@ -850,10 +862,10 @@
             // 
             // txtDpi
             // 
-            this.txtDpi.Location = new System.Drawing.Point(226, 21);
+            this.txtDpi.Location = new System.Drawing.Point(332, 21);
             this.txtDpi.MaxLength = 13;
             this.txtDpi.Name = "txtDpi";
-            this.txtDpi.Size = new System.Drawing.Size(231, 21);
+            this.txtDpi.Size = new System.Drawing.Size(299, 21);
             this.txtDpi.TabIndex = 2;
             // 
             // txtNit
@@ -861,14 +873,14 @@
             this.txtNit.Location = new System.Drawing.Point(20, 21);
             this.txtNit.MaxLength = 25;
             this.txtNit.Name = "txtNit";
-            this.txtNit.Size = new System.Drawing.Size(200, 21);
+            this.txtNit.Size = new System.Drawing.Size(302, 21);
             this.txtNit.TabIndex = 1;
             this.txtNit.Leave += new System.EventHandler(this.txtNit_Leave);
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(326, 45);
+            this.label13.Location = new System.Drawing.Point(17, 88);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(61, 15);
             this.label13.TabIndex = 74;
@@ -877,7 +889,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(647, 45);
+            this.label12.Location = new System.Drawing.Point(329, 88);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(39, 15);
             this.label12.TabIndex = 72;
@@ -886,7 +898,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(16, 45);
+            this.label5.Location = new System.Drawing.Point(327, 46);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(59, 15);
             this.label5.TabIndex = 70;
@@ -908,14 +920,14 @@
             this.btnAdjuntar.Name = "btnAdjuntar";
             this.btnAdjuntar.Size = new System.Drawing.Size(209, 26);
             this.btnAdjuntar.TabIndex = 7;
-            this.btnAdjuntar.Text = "Adjuntar Documentos (0)";
+            this.btnAdjuntar.Text = "Adjuntar Documentos (2)";
             this.btnAdjuntar.UseVisualStyleBackColor = false;
             this.btnAdjuntar.Click += new System.EventHandler(this.btnAdjuntar_Click);
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(463, 3);
+            this.label17.Location = new System.Drawing.Point(16, 46);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(58, 15);
             this.label17.TabIndex = 28;
@@ -924,7 +936,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(223, 3);
+            this.label19.Location = new System.Drawing.Point(329, 3);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(27, 15);
             this.label19.TabIndex = 25;
@@ -946,7 +958,7 @@
             this.tabControl1.Location = new System.Drawing.Point(14, 15);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1140, 155);
+            this.tabControl1.Size = new System.Drawing.Size(1140, 173);
             this.tabControl1.TabIndex = 43;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.frmChange_Index);
             // 
@@ -982,7 +994,7 @@
             this.btnNuevaVenta.ForeColor = System.Drawing.Color.White;
             this.btnNuevaVenta.Image = global::PV.Properties.Resources.Add_List_24px;
             this.btnNuevaVenta.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnNuevaVenta.Location = new System.Drawing.Point(713, 448);
+            this.btnNuevaVenta.Location = new System.Drawing.Point(713, 505);
             this.btnNuevaVenta.Name = "btnNuevaVenta";
             this.btnNuevaVenta.Size = new System.Drawing.Size(103, 31);
             this.btnNuevaVenta.TabIndex = 40;
@@ -1004,7 +1016,7 @@
             this.btnImprimir.ForeColor = System.Drawing.Color.White;
             this.btnImprimir.Image = global::PV.Properties.Resources.Print_24px;
             this.btnImprimir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnImprimir.Location = new System.Drawing.Point(822, 448);
+            this.btnImprimir.Location = new System.Drawing.Point(822, 505);
             this.btnImprimir.Name = "btnImprimir";
             this.btnImprimir.Size = new System.Drawing.Size(119, 31);
             this.btnImprimir.TabIndex = 41;
@@ -1025,7 +1037,7 @@
             this.btngrabar.ForeColor = System.Drawing.Color.White;
             this.btngrabar.Image = global::PV.Properties.Resources.Save_as_24px;
             this.btngrabar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btngrabar.Location = new System.Drawing.Point(947, 449);
+            this.btngrabar.Location = new System.Drawing.Point(947, 506);
             this.btngrabar.Name = "btngrabar";
             this.btngrabar.Size = new System.Drawing.Size(106, 31);
             this.btngrabar.TabIndex = 42;
@@ -1046,7 +1058,7 @@
             this.btnSalir.ForeColor = System.Drawing.Color.White;
             this.btnSalir.Image = global::PV.Properties.Resources.Exit_24px;
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSalir.Location = new System.Drawing.Point(1059, 449);
+            this.btnSalir.Location = new System.Drawing.Point(1059, 506);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(95, 31);
             this.btnSalir.TabIndex = 43;
@@ -1060,7 +1072,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1166, 497);
+            this.ClientSize = new System.Drawing.Size(1166, 541);
             this.Controls.Add(this.btnNuevaVenta);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnImprimir);
@@ -1167,5 +1179,6 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
+        private System.Windows.Forms.ListView listaAdjuntos;
     }
 }
