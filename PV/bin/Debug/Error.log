@@ -1765,3 +1765,25 @@ Se terminó la instrucción.   consultarTabla      en PV.ClsDb.consultarTabla(St
 Fin anómalo de BACKUP DATABASE.   ejecutarConsulta      en PV.ClsDb.ejecutarConsulta(String sqlQuery, SqlConnection cn) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 260
    en PV.FrmCrearBackup.btnCrearCopia_Click(Object sender, EventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\backups\FrmCrearBackup.cs:línea 54
 
+   29/03/2017 21:27:16      SOPORTE-PC   Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: SQL Network Interfaces, error: 26 - Error al buscar el servidor o instancia especificado)   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery, SqlConnection cn) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 127
+   en PV.BL.ClsReportes.clientesMorosos() en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsReportes.cs:línea 46
+   en PV.FrmMain.mostrarAlerta() en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 188
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\FrmMain.cs:línea 37
+
+   01/04/2017 12:10:54      SOPORTE-PC   El procedimiento o la función 'SpUICorreo' esperaba el parámetro '@Pestado', que no se ha especificado.   ejecutarSP      en PV.ClsDb.ejecutarSP(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 287
+   en PV.BL.ClsMail.grabarModificar(String idCorreo, String correoOrigen, String correoDestino, String contrasena, String estado) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsMail.cs:línea 23
+   en PV.FrmCorreo.btnGrabar_Click(Object sender, EventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\Correo\FrmCorreo.cs:línea 169
+
+   01/04/2017 12:12:47      SOPORTE-PC   No se pudo encontrar la columna denominada correoOrigenCol.
+Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   en PV.FrmCorreo.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\Correo\FrmCorreo.cs:línea 140
+
+   01/04/2017 12:14:02      SOPORTE-PC   No se puede insertar el valor NULL en la columna 'contrasena', tabla 'DBPV.dbo.TblCorreo'. La columna no admite valores NULL. Error de INSERT.
+Se terminó la instrucción.   ejecutarSP      en PV.ClsDb.ejecutarSP(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 287
+   en PV.BL.ClsMail.grabarModificar(String idCorreo, String correoOrigen, String correoDestino, String contrasena, String estado) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsMail.cs:línea 24
+   en PV.FrmCorreo.btnGrabar_Click(Object sender, EventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\Correo\FrmCorreo.cs:línea 169
+
+   03/04/2017 23:04:34   aramirez   SOPORTE-PC   No se puede abrir el dispositivo de copia de seguridad 'C:\Users\Soporte\Desktop\DbPV3-4-2017-23.4.33.bak'. Error de sistema operativo 5(failed to retrieve text for this error. Reason: 15100).
+Fin anómalo de BACKUP DATABASE.   ejecutarConsulta      en PV.ClsDb.ejecutarConsulta(String sqlQuery, SqlConnection cn) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 260
+   en PV.FrmCrearBackup.btnCrearCopia_Click(Object sender, EventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\backups\FrmCrearBackup.cs:línea 54
+

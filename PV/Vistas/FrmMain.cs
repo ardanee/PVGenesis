@@ -58,6 +58,10 @@ namespace PV
                     mostrarMenu();
 
                 }
+                else
+                {
+                    this.Close();
+                }
             }
             catch (Exception)
             {

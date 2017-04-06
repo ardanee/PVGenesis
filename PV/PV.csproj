@@ -12,6 +12,21 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,16 +47,29 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Car.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="ClosedXML, Version=0.86.0.0, Culture=neutral, PublicKeyToken=fd1eb21b62ae805b, processorArchitecture=MSIL">
       <HintPath>..\packages\ClosedXML.0.86.0\lib\net40\ClosedXML.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Data.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Utils.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
     <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\DocumentFormat.OpenXml.2.5\lib\DocumentFormat.OpenXml.dll</HintPath>
       <Private>True</Private>
@@ -67,6 +95,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BL\ClsCliente.cs" />
+    <Compile Include="BL\ClsMail.cs" />
     <Compile Include="BL\ClsParametros.cs" />
     <Compile Include="Helpers\ClsCorreo.cs" />
     <Compile Include="BL\ClsCosto.cs" />
@@ -146,6 +175,12 @@
     </Compile>
     <Compile Include="Vistas\backups\FrmCrearBackup.Designer.cs">
       <DependentUpon>FrmCrearBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Correo\FrmCorreo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Correo\FrmCorreo.Designer.cs">
+      <DependentUpon>FrmCorreo.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\FrmReportV2.cs">
       <SubType>Form</SubType>
@@ -338,6 +373,9 @@
     <EmbeddedResource Include="Reportes\RptVenta.rdlc" />
     <EmbeddedResource Include="Vistas\backups\FrmCrearBackup.resx">
       <DependentUpon>FrmCrearBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Correo\FrmCorreo.resx">
+      <DependentUpon>FrmCorreo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\FrmReportV2.resx">
       <DependentUpon>FrmReportV2.cs</DependentUpon>
@@ -608,6 +646,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Add Database-28.png" />
+    <Content Include="Car.ico" />
     <Content Include="Resources\Add List_24px.png" />
     <Content Include="Resources\Add Property_24px.png" />
     <None Include="Resources\Add Rule_24px.png" />
@@ -618,6 +657,7 @@
     <Content Include="Resources\Buy_24px.png" />
     <Content Include="Resources\Calculator_24px.png" />
     <None Include="Resources\Card in Use_24px.png" />
+    <None Include="Resources\Checked Checkbox_24px.png" />
     <Content Include="Resources\Checkmark_24px.png" />
     <Content Include="Resources\Circled Chevron Right_48px.png" />
     <Content Include="Resources\Circled Left_48px.png" />
@@ -636,6 +676,7 @@
     <None Include="Resources\jugar.png" />
     <None Include="Resources\login.png" />
     <None Include="Resources\login %281%29.png" />
+    <None Include="Resources\Lock_24px.png" />
     <Content Include="Resources\Plus_24px.png" />
     <Content Include="Resources\POS Terminal_24px.png" />
     <Content Include="Resources\Print_24px.png" />
@@ -644,7 +685,23 @@
     <Content Include="Resources\Shipped_96px.png" />
     <Content Include="Resources\Visible_24px.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

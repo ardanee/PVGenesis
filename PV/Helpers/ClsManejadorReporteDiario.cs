@@ -15,7 +15,7 @@ namespace PV
         private volatile bool _shouldStop;
         private BL.ClsParametros clsParametros;
         private ClsCorreo clsCorreo;
-        private StreamReader file;
+        //private StreamReader file;
         private int intervalo = 300000;
         private int intentos = 1;
 
@@ -73,7 +73,7 @@ namespace PV
                 //ClsHelper.erroLog(ex);
                 EscribirLog("Excepcion",ex.Message);
                 //EscribirLog("Excepcion ManejadorCorreo: " +  + ex.Message);
-                //throw;
+                throw;
             }
         }
 
@@ -88,7 +88,7 @@ namespace PV
 
             try
             {
-                string LogFilePath = Application.StartupPath + @"\logCorreo.txt";
+                string LogFilePath = Application.StartupPath + @"\logmail.txt";
                 StreamWriter LogFile;
                 if (File.Exists(LogFilePath))
                     LogFile = new StreamWriter(LogFilePath, true);
@@ -99,7 +99,7 @@ namespace PV
             }
             catch (Exception)
             {
-
+                throw;
             }
         }
 

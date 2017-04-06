@@ -21,7 +21,7 @@ namespace PV
         private MailAddress mailPara;
         private MailMessage mensaje;
         private string estado;
-        private static string LogFilePath = Application.StartupPath + @"\logCorreo.txt";
+        private static string LogFilePath = Application.StartupPath + @"\logmail.txt";
 
 
 
@@ -212,7 +212,7 @@ namespace PV
 
             try
             {
-                string LogFilePath = Application.StartupPath + @"\logCorreo.txt";
+                string LogFilePath = Application.StartupPath + @"\logmail.txt";
                 StreamWriter LogFile;
                 if (File.Exists(LogFilePath))
                     LogFile = new StreamWriter(LogFilePath, true);

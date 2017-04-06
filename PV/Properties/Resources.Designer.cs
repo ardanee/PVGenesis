@@ -243,6 +243,16 @@ namespace PV.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Checked_Checkbox_24px {
+            get {
+                object obj = ResourceManager.GetObject("Checked Checkbox_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Checkmark_24px {
             get {
                 object obj = ResourceManager.GetObject("Checkmark_24px", resourceCulture);
@@ -516,6 +526,16 @@ namespace PV.Properties {
         internal static System.Drawing.Bitmap linea_48px {
             get {
                 object obj = ResourceManager.GetObject("linea_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Lock_24px {
+            get {
+                object obj = ResourceManager.GetObject("Lock_24px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

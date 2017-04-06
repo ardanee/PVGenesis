@@ -86,12 +86,19 @@ namespace PV
 
         private void limpiarControles()
         {
-            this.cmbMarca.SelectedValue = 0;
-            this.txtNombre.Enabled = false;
-            this.txtNombre.Clear();
-            idLinea = "";
-            buscar();
-            txtNombre.Focus();
+            try
+            {
+                this.cmbMarca.SelectedValue = 0;
+                this.txtNombre.Enabled = false;
+                this.txtNombre.Clear();
+                idLinea = "";
+                buscar();
+                txtNombre.Focus();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
             
         }
 
