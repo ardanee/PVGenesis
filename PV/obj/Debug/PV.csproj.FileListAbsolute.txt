@@ -164,6 +164,7 @@ C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\obj\Debug\PV.FrmReporte.resources
 C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\obj\Debug\PV.FrmReporteVenta.resources
 C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\obj\Debug\PV.FrmRptCientesAtrasados.resources
 C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\obj\Debug\PV.FrmCrearBackup.resources
+C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\obj\Debug\PV.FrmCorreo.resources
 C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\obj\Debug\PV.Vistas.FrmReportV2.resources
 C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\obj\Debug\PV.FrmScanner.resources
 C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\obj\Debug\PV.FrmClientes.resources
@@ -197,5 +198,3 @@ C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\obj\Debug\RdlCompile.cache
 C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\obj\Debug\RdlCompile.compiled
 C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\obj\Debug\PV.exe
 C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\obj\Debug\PV.pdb
-C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\obj\Debug\PV.csprojResolveAssemblyReference.cache
-C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\obj\Debug\PV.FrmCorreo.resources

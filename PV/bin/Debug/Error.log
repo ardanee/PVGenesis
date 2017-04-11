@@ -1787,3 +1787,29 @@ Se terminó la instrucción.   ejecutarSP      en PV.ClsDb.ejecutarSP(String spN
 Fin anómalo de BACKUP DATABASE.   ejecutarConsulta      en PV.ClsDb.ejecutarConsulta(String sqlQuery, SqlConnection cn) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 260
    en PV.FrmCrearBackup.btnCrearCopia_Click(Object sender, EventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\backups\FrmCrearBackup.cs:línea 54
 
+   10/04/2017 19:41:07      SOPORTE-PC   La columna 'id' no pertenece a la tabla .   GetDataColumn      en System.Data.DataRow.GetDataColumn(String columnName)
+   en System.Data.DataRow.get_Item(String columnName)
+   en PV.FrmCorreo.buscar() en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\Correo\FrmCorreo.cs:línea 60
+   en PV.FrmCorreo.FrmCorreo_Load(Object sender, EventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\Correo\FrmCorreo.cs:línea 27
+
+   10/04/2017 20:04:09      SOPORTE-PC   El procedimiento o la función 'SpUICorreo' esperaba el parámetro '@Pestado', que no se ha especificado.   ejecutarSP      en PV.ClsDb.ejecutarSP(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 287
+   en PV.BL.ClsMail.grabarModificar(String idCorreo, String correoOrigen, String correoDestino, String contrasena) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsMail.cs:línea 22
+   en PV.FrmCorreo.btnGrabar_Click(Object sender, EventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\Correo\FrmCorreo.cs:línea 97
+
+   10/04/2017 20:06:04      SOPORTE-PC   El procedimiento o la función 'SpUICorreo' esperaba el parámetro '@Pestado', que no se ha especificado.   ejecutarSP      en PV.ClsDb.ejecutarSP(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 287
+   en PV.BL.ClsMail.grabarModificar(String idCorreo, String correoOrigen, String correoDestino, String contrasena) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsMail.cs:línea 22
+   en PV.FrmCorreo.btnGrabar_Click(Object sender, EventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\Correo\FrmCorreo.cs:línea 97
+
+   10/04/2017 20:06:25      SOPORTE-PC   El procedimiento o la función 'SpUICorreo' esperaba el parámetro '@Pestado', que no se ha especificado.   ejecutarSP      en PV.ClsDb.ejecutarSP(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 287
+   en PV.BL.ClsMail.grabarModificar(String idCorreo, String correoOrigen, String correoDestino, String contrasena) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsMail.cs:línea 22
+   en PV.FrmCorreo.btnGrabar_Click(Object sender, EventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\Correo\FrmCorreo.cs:línea 97
+
+   10/04/2017 20:07:12      SOPORTE-PC   El procedimiento o la función 'SpUICorreo' esperaba el parámetro '@Pestado', que no se ha especificado.   ejecutarSP      en PV.ClsDb.ejecutarSP(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 287
+   en PV.BL.ClsMail.grabarModificar(String idCorreo, String correoOrigen, String correoDestino, String contrasena) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsMail.cs:línea 22
+   en PV.FrmCorreo.btnGrabar_Click(Object sender, EventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\Correo\FrmCorreo.cs:línea 97
+
+   10/04/2017 20:11:40      SOPORTE-PC   No se puede insertar el valor NULL en la columna 'estado', tabla 'DBPV.dbo.TblCorreo'. La columna no admite valores NULL. Error de INSERT.
+Se terminó la instrucción.   ejecutarSP      en PV.ClsDb.ejecutarSP(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 287
+   en PV.BL.ClsMail.grabarModificar(String idCorreo, String correoOrigen, String correoDestino, String contrasena) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsMail.cs:línea 22
+   en PV.FrmCorreo.btnGrabar_Click(Object sender, EventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\Correo\FrmCorreo.cs:línea 97
+

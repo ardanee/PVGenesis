@@ -573,6 +573,16 @@ namespace PV.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Message_48px {
+            get {
+                object obj = ResourceManager.GetObject("Message_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Microsoft_Excel_24px {
             get {
                 object obj = ResourceManager.GetObject("Microsoft_Excel_24px", resourceCulture);

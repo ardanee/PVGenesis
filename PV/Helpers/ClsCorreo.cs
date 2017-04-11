@@ -25,17 +25,47 @@ namespace PV
 
 
 
-        public ClsCorreo(string correo, string nombreDe, string apellidoDe)
+        private string[] obtenerProtocolo(string correo)
+        {
+            char[] delimitador = {'@' };
+            string[] dominios = correo.Split(delimitador);
+            string[] resultado = {"","" }; 
+
+            foreach(string elemento in dominios){
+                if (elemento == "hotmail.com" || elemento == "live.com" || elemento == "outlook.com")
+                {
+                    resultado[0] = "smtp.live.com";
+                    resultado[1] = "587";
+                }
+                else if (elemento == "yahoo.com")
+                {
+                    resultado[0] = "smtp.mail.yahoo.com";
+                    resultado[1] = "587";
+                }
+                else if (elemento == "gmail.com")
+                {
+                    resultado[0] = "smtp.gmail.com";
+                    resultado[1] = "587";
+
+                }
+            }
+
+
+            return resultado;
+        }
+
+        public ClsCorreo(string correo, string nombreDe, string apellidoDe,string correoEnvia)
         {
             try
             {
-                
+
                 //MessageBox.Show(logFile);
-                this.mailEmisor = correo;
+                this.mailEmisor = correoEnvia;
                 this.mailReceptor = correo;
                 this.nombreDe = nombreDe;
                 this.apellidoDe = apellidoDe;
-                this.cliente = new SmtpClient("smtp.gmail.com", 587);
+                string[] d = obtenerProtocolo(correoEnvia);
+                this.cliente = new SmtpClient(d[0],int.Parse(d[1]));
                 //this.autenticar();
                 this.mailDe = new MailAddress(this.mailEmisor, this.nombreDe + " " + this.apellidoDe, System.Text.Encoding.UTF8);
                 this.mailPara = new MailAddress(this.mailReceptor);
@@ -44,8 +74,6 @@ namespace PV
             }
             catch (Exception ex)
             {
-                //EscribirLog("Exception correo: " + DateTime.Now.ToString("dd/MM/yyy hh:mm") + " " + ex.Message);
-                //file.WriteLine("Exception correo: "+ DateTime.Now.ToString("dd/MM/yyy hh:mm") + ex.Message);
                 EscribirLog("Excepcion", ex.Message);
 
                 //throw;
@@ -63,8 +91,6 @@ namespace PV
             }
             catch (Exception ex)
             {
-                //EscribirLog("Exception correo: " + DateTime.Now.ToString("dd/MM/yyy hh:mm") + " " + ex.Message);
-                //file.WriteLine("Exception correo: " + DateTime.Now.ToString("dd/MM/yyy hh:mm") + ex.Message);
                 EscribirLog("Excepcion", ex.Message);
                 //throw;
             }
@@ -74,7 +100,7 @@ namespace PV
 
 
        
-        public void enviarReporte()
+        public bool enviarReporte()
         {
             try
             {
@@ -89,48 +115,79 @@ namespace PV
                 this.mensaje.IsBodyHtml = true;
                 this.mensaje.Body += Environment.NewLine;
                 this.mensaje.BodyEncoding = System.Text.Encoding.UTF8;
-                this.mensaje.Subject = "Reporte vehiculos diario";
+                this.mensaje.Subject = "Reporte vehiculos";
                 //this.mensaje.Attachments.Add(this.generarReporte());
                 this.mensaje.SubjectEncoding = System.Text.Encoding.UTF8;
                 this.cliente.SendCompleted += new SendCompletedEventHandler(estadoEnvio);
                 string UserState = "Mensaje";
-                this.cliente.SendAsync(this.mensaje, UserState);
+                this.cliente.Send(this.mensaje);
+                return true;
             }
             catch (Exception ex)
             {
-                //EscribirLog("Exception correo: " + DateTime.Now.ToString("dd/MM/yyy hh:mm") + " " + ex.Message);
-                //file.WriteLine("Exception correo: " + DateTime.Now.ToString("dd/MM/yyy hh:mm") + ex.Message);
                 EscribirLog("Excepcion", ex.Message);
+                return false;
 //                throw;
             }
             //this.mensaje.Dispose();
 
         }
 
-        
+
+        public bool correoPrueba()
+        {
+            try
+            {
+
+                DateTime hoy = DateTime.Parse(DateTime.Now.ToString());
+                string html = "<h1>Correo Prueba Importadora Genesis</h1>";
+                this.mensaje.Body = html;
+                this.mensaje.IsBodyHtml = true;
+                this.mensaje.Body += Environment.NewLine;
+                this.mensaje.BodyEncoding = System.Text.Encoding.UTF8;
+                this.mensaje.Subject = "Correo Prueba";
+                this.mensaje.SubjectEncoding = System.Text.Encoding.UTF8;
+                this.cliente.SendCompleted += new SendCompletedEventHandler(estadoEnvio);
+                string UserState = "correoPrueba";
+                this.cliente.Send(mensaje);
+                return true;
+                //MessageBox.Show("Enviado");
+            }
+            catch (Exception ex)
+            {
+                return false;
+                //MessageBox.Show("Error");
+                //EscribirLog("Excepcion", ex.Message);
+                //                throw;
+            }
+        }
+
         private string convertDataTableToHTML(DataTable dt){
             string tablaHtml = "";
             try
             {
-                if (dt.Rows.Count < 0)
+                if (dt.Rows.Count <= 0)
                 {
                     tablaHtml += "<h1>No hay Registros de Vehiculos</h1>";
                 }
-                tablaHtml += "<table style=\" box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);animation: float 5s infinite; width: 100%;border-collapse: collapse;border: 1px solid #38678f;background: white;text-align:center;\">";
-                tablaHtml += "<thead><tr style=\"border-bottom: 1px solid #cccccc;\">";
-                for (int i = 0; i < dt.Columns.Count; i++)
+                else
                 {
-                    tablaHtml += "<th style=\" background: steelblue;height: 54px;font-weight: lighter;text-shadow: 0 1px 0 #38678f;color: white;border: 1px solid #38678f;box-shadow: inset 0px 1px 2px #568ebd;\">" + dt.Columns[i].ColumnName.ToString() + "</th>";
+                    tablaHtml += "<table style=\" box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);animation: float 5s infinite; width: 100%;border-collapse: collapse;border: 1px solid #38678f;background: white;text-align:center;\">";
+                    tablaHtml += "<thead><tr style=\"border-bottom: 1px solid #cccccc;\">";
+                    for (int i = 0; i < dt.Columns.Count; i++)
+                    {
+                        tablaHtml += "<th style=\" background: steelblue;height: 54px;font-weight: lighter;text-shadow: 0 1px 0 #38678f;color: white;border: 1px solid #38678f;box-shadow: inset 0px 1px 2px #568ebd;\">" + dt.Columns[i].ColumnName.ToString() + "</th>";
+                    }
+                    tablaHtml += "</tr></thead>";
+                    for (int i = 0; i < dt.Rows.Count; i++)
+                    {
+                        tablaHtml += "<tr style=\"border-bottom: 1px solid #cccccc;\">";
+                        for (int j = 0; j < dt.Columns.Count; j++)
+                            tablaHtml += "<td style=\"border-right: 1px solid #cccccc; padding:7px\">" + dt.Rows[i][j].ToString() + "</td>";
+                        tablaHtml += "<tr>";
+                    }
+                    tablaHtml += "</table>";
                 }
-                tablaHtml += "</tr></thead>";
-                for (int i = 0; i < dt.Rows.Count; i++)
-                {
-                    tablaHtml += "<tr style=\"border-bottom: 1px solid #cccccc;\">";
-                    for (int j = 0; j < dt.Columns.Count; j++)
-                        tablaHtml += "<td style=\"border-right: 1px solid #cccccc; padding:7px\">" + dt.Rows[i][j].ToString() + "</td>";
-                    tablaHtml += "<tr>";
-                }
-                tablaHtml += "</table>";
             }
             catch (Exception ex)
             {
@@ -164,7 +221,7 @@ namespace PV
                     //Error en el Envio
                     this.estado = "Error en el envio " + ficha + e.Error;
                     mailEnviado = false;
-                    EscribirLog("Mensaje", "Mensaje no enviado se produjo un error : "+ e.Error.HResult);
+                    EscribirLog("Mensaje", "Mensaje no enviado se produjo un error : "+ e.Error.Message);
 
                     //EscribirLog("Mensaje correo: " + DateTime.Now.ToString("dd/MM/yyy hh:mm") + " Correo no enviado, error");
                     //file.WriteLine("Mensaje correo: " + DateTime.Now.ToString("dd/MM/yyy hh:mm") + "Correo no enviado, error");
@@ -175,10 +232,8 @@ namespace PV
                     //Mensaje Enviado
                     this.estado = "Mensaje Enviado " + ficha;
                     mailEnviado = true;
-                    BL.ClsParametros clsParametros = new BL.ClsParametros();
-                    clsParametros.grabarModificarPCorreo(DateTime.Now.Day.ToString());
-                    EscribirLog("Mensaje", "Mensje Enviado correctamente...");
-
+                    
+                    //MessageBox.Show(ficha);
                     //EscribirLog("Mensaje correo: " + DateTime.Now.ToString("dd/MM/yyy hh:mm") + " Correo enviado");
                     //file.WriteLine("Mensaje correo: " + DateTime.Now.ToString("dd/MM/yyy hh:mm") +"Correo enviado");
 

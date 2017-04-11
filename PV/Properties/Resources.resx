@@ -142,9 +142,6 @@
   <data name="Attach_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Attach_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pencil" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pencil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Calculator_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Calculator_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -160,6 +157,12 @@
   <data name="Microsoft_Excel_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Microsoft Excel_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Print_24px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Print_24px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Clock_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Clock_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Circled_Left_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Circled Left_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -171,9 +174,6 @@
   </data>
   <data name="tipoVehiculo_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tipoVehiculo_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Right_Squared_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Right Squared_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Shipped_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Shipped_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -192,6 +192,9 @@
   </data>
   <data name="cliente_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cliente_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tipoCosto_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tipoCosto_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="anadir" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\anadir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,8 +217,8 @@
   <data name="flecha-hacia-la-izquierda" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\flecha-hacia-la-izquierda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Clock_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Clock_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Add Rule_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Add Rule_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="login (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\login (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -226,14 +229,14 @@
   <data name="Accounting_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Accounting_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Add Rule_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Add Rule_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="venta_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\venta_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Broom_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Broom_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Card in Use_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Card in Use_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Circled_Right_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Circled Right_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -292,11 +295,11 @@
   <data name="cotizacion_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cotizacion_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Checked Checkbox_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checked Checkbox_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Search_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Search_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Lock_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Lock_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Buy_24px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Buy_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -316,14 +319,14 @@
   <data name="Lamborghini_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Lamborghini_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tipoCosto_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tipoCosto_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pencil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pencil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Ferrari_Badge_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ferrari Badge_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Card in Use_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Card in Use_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Right_Squared_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Right Squared_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Add_Shopping_Cart_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Add Shopping Cart_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -334,8 +337,8 @@
   <data name="login" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Print_24px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Print_24px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Lock_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lock_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Back_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Back_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -349,7 +352,7 @@
   <data name="Shutdown_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Shutdown_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Checked Checkbox_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Checked Checkbox_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Message_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Message_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

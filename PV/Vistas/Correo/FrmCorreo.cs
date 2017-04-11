@@ -24,9 +24,6 @@ namespace PV
         {
             try
             {
-                cmbEstado.Items.Add("Activo");
-                cmbEstado.Items.Add("Inactivo");
-                cargar();
                 buscar();
             }catch(Exception ex)
             {
@@ -35,41 +32,7 @@ namespace PV
             
         }
 
-        private void cargar()
-        {
-            try
-            {
-                if (checkBuscar.Checked)
-                {
-                    limpiarControles();
-                    txtContrasena.Enabled = false;
-                    txtCorreoDestino.Enabled = true;
-                    txtCorreoOrigen.Enabled = false;
-                    btnBuscar.Enabled = true;
-                    txtCorreoDestino.Focus();
-                    btnVerificar.Enabled = false;
-                    btnGrabar.Enabled = false;
-                    cmbEstado.Enabled = false;
-                }
-                else
-                {
-                    limpiarControles();
-                    txtContrasena.Enabled = true;
-                    txtCorreoDestino.Enabled = true;
-                    txtCorreoOrigen.Enabled = true;
-                    btnBuscar.Enabled = false;
-                    btnVerificar.Enabled = true;
-                    btnGrabar.Enabled = true;
-                    cmbEstado.Enabled = true;
-
-                }
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-
-        }
+        
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
@@ -87,8 +50,16 @@ namespace PV
         {
             try
             {
-                grdExistentes.DataSource = clsMail.seleccionar(this.txtCorreoDestino.Text.Trim());
-                lblExistentes.Text = grdExistentes.Rows.Count.ToString() + " Registro(s)";
+                DataTable dt= clsMail.seleccionar("");
+                if (dt.Rows.Count > 0)
+                {
+                    idCorreo = dt.Rows[0]["idCorreo"].ToString();
+                    txtCorreoOrigen.Text = dt.Rows[0]["correoOrigen"].ToString();
+                    txtCorreoDestino.Text = dt.Rows[0]["correoDestino"].ToString();
+                    txtContrasena.Text = dt.Rows[0]["contrasena"].ToString();
+                    txtCorreoOrigen.Focus();
+                }
+                //lblExistentes.Text = grdExistentes.Rows.Count.ToString() + " Registro(s)";
             }
             catch (Exception)
             {
@@ -101,7 +72,7 @@ namespace PV
         {
             try
             {
-                cmbEstado.SelectedIndex = 0;
+                
                 txtContrasena.Clear();
                 txtCorreoDestino.Clear();
                 txtCorreoOrigen.Clear();
@@ -116,53 +87,7 @@ namespace PV
 
         }
 
-        private void checkBuscar_CheckedChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                cargar();
-            }
-            catch (Exception ex)
-            {
-                ClsHelper.erroLog(ex);
-            }
-        }
-
-        private void grdExistentes_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            try
-            {
-                switch (e.ColumnIndex)
-                {
-                    case 0:
-                        //limpiarControles();
-                        idCorreo = grdExistentes.SelectedRows[0].Cells["idCorreoCol"].Value.ToString();
-                        txtContrasena.Text = grdExistentes.SelectedRows[0].Cells["contrasenaCol"].Value.ToString();
-                        txtCorreoOrigen.Text = grdExistentes.SelectedRows[0].Cells["correoOrigenCol"].Value.ToString();
-                        txtCorreoDestino.Text = grdExistentes.SelectedRows[0].Cells["correoDestinoCol"].Value.ToString();
-                        //cmbMarca.SelectedValue = grdExistentes.SelectedRows[0].Cells["idMarcaCol"].Value;
-                        //txtNombre.Enabled = true;
-                        checkBuscar.Checked = false;
-                        txtCorreoOrigen.Focus();
-                        //txtCorreo .Focus();
-                        break;
-                    case 1:
-                        DialogResult r = MessageBox.Show("¿Confirma que desea eliminar este registro?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                        if (r == DialogResult.Yes)
-                        {
-                            clsMail.eliminar(grdExistentes.SelectedRows[0].Cells["idCorreoCol"].Value.ToString());
-                            ClsHelper.MensajeSistema("Proceso ejecutado exitosamente");
-                            limpiarControles();
-                        }
-                        break;
-                }
-            }
-            catch (Exception ex)
-            {
-                idCorreo = "0";
-                ClsHelper.erroLog(ex);
-            }
-        }
+                
 
         private void btnGrabar_Click(object sender, EventArgs e)
         {
@@ -170,14 +95,17 @@ namespace PV
             {
                 if (verificar())
                 {
-                    clsMail.grabarModificar(idCorreo, txtCorreoOrigen.Text.Trim(), txtCorreoDestino.Text.Trim(), txtContrasena.Text.Trim(), cmbEstado.SelectedIndex.ToString());
-                    limpiarControles();
-                    ClsHelper.MensajeSistema("Proceso ejecutado exitosamente");
+                    clsMail.grabarModificar(idCorreo, txtCorreoOrigen.Text.Trim(), txtCorreoDestino.Text.Trim(), txtContrasena.Text.Trim());
+                    //limpiarControles();
+                    ClsHelper.MensajeSistema("Proceso ejecutado exitosamente...");
+                    btnGrabar.Enabled = false;
+                    btnVerificar.Enabled = false;
+                    buscar();
                 }
             }
             catch (Exception ex)
             {
-                idCorreo = "0";
+                //idCorreo = "0";
                 ClsHelper.erroLog(ex);
             }
         }
@@ -208,6 +136,52 @@ namespace PV
                 throw;
             }
                 return true;
+        }
+
+       
+
+        private void btnVerificar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (verificar())
+                {
+                    ClsCorreo correo = new ClsCorreo(txtCorreoDestino.Text.Trim(), "Importadora", "Genesis", txtCorreoOrigen.Text.Trim());
+                    correo.autenticar(txtCorreoOrigen.Text.Trim(), txtContrasena.Text.Trim());
+
+                    if (correo.correoPrueba())
+                    {
+
+                        MessageBox.Show("Correo Verificado correctamente...");
+                        btnGrabar.Enabled = true;
+                        btnVerificar.Enabled = false;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Correo no verificado, verificar valores o verificar conexion a la red...");
+                        txtCorreoOrigen.Focus();
+                        btnGrabar.Enabled = false;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                ClsHelper.erroLog(ex);
+            }
+            
+        }
+
+        private void txtCorreoOrigen_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                btnGrabar.Enabled = false;
+                btnVerificar.Enabled = true;
+            }
+            catch (Exception ex)
+            {
+                ClsHelper.erroLog(ex);
+            }
         }
 
         

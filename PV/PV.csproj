@@ -677,6 +677,7 @@
     <None Include="Resources\login.png" />
     <None Include="Resources\login %281%29.png" />
     <None Include="Resources\Lock_24px.png" />
+    <None Include="Resources\Message_48px.png" />
     <Content Include="Resources\Plus_24px.png" />
     <Content Include="Resources\POS Terminal_24px.png" />
     <Content Include="Resources\Print_24px.png" />

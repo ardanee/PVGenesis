@@ -9,11 +9,11 @@ namespace PV.BL
 {
     class ClsParametros: ClsDb
     {
-        public void grabarModificarPCorreo(string dia)
+        public void grabarModificarPCorreo(string dia,string correo)
         {
             try
             {
-                ejecutarSP("SpIUCorreo", null, Parametro("@PdiaCorreo", dia));
+                ejecutarSP("SpIUParametroCorreo", null, Parametro("@PdiaCorreo", dia),Parametro("@Pcorreo",correo));
 
                 //ejecutarSP("SpIuTipoVehiculo", null, Parametro("@PidTipoVehiculo", idTipoVehiculo), Parametro("@Pnombre", nombre), Parametro("@Pusuario", ClsGlobals.usuario));
             }

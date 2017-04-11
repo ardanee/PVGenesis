@@ -15,9 +15,9 @@ namespace PV
         private volatile bool _shouldStop;
         private BL.ClsParametros clsParametros;
         private ClsCorreo clsCorreo;
-        //private StreamReader file;
-        private int intervalo = 300000;
+        public int intervalo = 300000;
         private int intentos = 1;
+        private BL.ClsMail clsMail = new BL.ClsMail();
 
         public ClsManejadorReporteDiario()
         {
@@ -28,7 +28,6 @@ namespace PV
             catch (Exception ex)
             {
                 EscribirLog("Excepcion", ex.Message);
-                //EscribirLog("Exepcion ManejadorCorreo: " + DateTime.Now.ToString("dd/MM/yyy hh:mm") + ex.Message);
             }
         }
 
@@ -38,28 +37,37 @@ namespace PV
             {
                 while (!_shouldStop)
                 {
+
+                    DataTable dtMail = clsMail.seleccionar("");
                     DataTable dt = clsParametros.seleccionarValorCorreo();
                     string dia = dt.Rows[0]["dia"].ToString();
-                    if (dia == DateTime.Now.Day.ToString())
+                    if (dia == DateTime.Now.Day.ToString() && dtMail.Rows[0]["correoDestino"].ToString() == dt.Rows[0]["correo"].ToString() )
                     {
-                        this.RequestStop();
-                        intervalo = 0;
-                        //EscribirLog("Mensaje ManejadorCorreo: " + DateTime.Now.ToString("dd/MM/yyy hh:mm") + "Correo ya Enviado");
+                        RequestStop();
                     }
                     else
                     {
-                        this.clsCorreo = new ClsCorreo("roonmorton@gmail.com", "Importadora", "Génesis");
-                        clsCorreo.autenticar("ronquevedo77@gmail.com", "680cfb8dac2016");
-                        clsCorreo.enviarReporte();
-                        if (this.clsCorreo.mailEnviado)
+                        if (dt.Rows.Count > 0)
                         {
-                            this.RequestStop();
-                            intervalo = 1;
+                            this.clsCorreo = new ClsCorreo(dtMail.Rows[0]["correoDestino"].ToString(), 
+                                "Importadora", "Génesis", dtMail.Rows[0]["correoOrigen"].ToString());
+                            clsCorreo.autenticar(dtMail.Rows[0]["correoOrigen"].ToString(), 
+                                dtMail.Rows[0]["contrasena"].ToString());
+                            if (clsCorreo.enviarReporte())
+                            {
+                                //BL.ClsParametros clsParametros = new BL.ClsParametros();
+                                clsParametros.grabarModificarPCorreo(DateTime.Now.Day.ToString(), dtMail.Rows[0]["correoDestino"].ToString());
+                                EscribirLog("Mensaje", "Mensje Enviado a: " + dtMail.Rows[0]["correoDestino"].ToString());
+                                RequestStop();
+                            }
+                            if (intentos == 10)
+                            {
+                                RequestStop();
+                            }
                         }
-                        if (intentos == 10)
+                        else
                         {
-                            this.RequestStop();
-                            intervalo = 1;
+                            RequestStop();
                         }
                         
                     }
@@ -69,16 +77,15 @@ namespace PV
             }
             catch (Exception ex)
             {
-               // Thread.Sleep(500000);
-                //ClsHelper.erroLog(ex);
                 EscribirLog("Excepcion",ex.Message);
-                //EscribirLog("Excepcion ManejadorCorreo: " +  + ex.Message);
                 throw;
             }
         }
 
         public void RequestStop()
         {
+            intervalo = 1;
+            intentos = 10;
             _shouldStop = true;
 
         }

@@ -116,7 +116,6 @@ namespace PV
                 {
 
                     case 0:
-
                         this.txtPlaca.Focus();
                         break;
 

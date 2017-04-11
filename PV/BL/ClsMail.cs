@@ -9,15 +9,13 @@ namespace PV.BL
 {
     class ClsMail : ClsDb
     {
-        public void grabarModificar(string idCorreo, string correoOrigen, string correoDestino, string contrasena, string estado)
+        public void grabarModificar(string idCorreo, string correoOrigen, string correoDestino, string contrasena)
         {
             try
             {
-                ejecutarSP("SpUICorreo", null, Parametro("@PidCorreo", idCorreo), Parametro("@PcorreoOrigen", correoOrigen), 
-                    Parametro("@Pusuario", ClsGlobals.usuario), Parametro("@PcorreoDestino", correoDestino), Parametro("@Pcontrasena",contrasena),
-                    Parametro("@Pestado",estado));
+                ejecutarSP("SpIUCorreo", null, Parametro("@PidCorreo", idCorreo), Parametro("@PcorreoOrigen", correoOrigen), 
+                    Parametro("@Pusuario", ClsGlobals.usuario), Parametro("@PcorreoDestino", correoDestino), Parametro("@Pcontrasena",contrasena));
 
-                //ejecutarSP("SpIuTipoVehiculo", null, Parametro("@PidTipoVehiculo", idTipoVehiculo), Parametro("@Pnombre", nombre), Parametro("@Pusuario", ClsGlobals.usuario));
             }
             catch (Exception)
             {
