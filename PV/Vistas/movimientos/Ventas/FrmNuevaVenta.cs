@@ -373,6 +373,7 @@ namespace PV
         {
             try
             {
+                //MessageBox.Show("div: " + this.idVehiculo);
                 this.cmbFormapago.Enabled = true;
                 DataRow dr = this.dtDetalle.NewRow();
                 dr["placa"] = txtPlaca.Text;
@@ -573,6 +574,7 @@ namespace PV
                 this.txtEmail.Clear();
                 this.txtNombres.Clear();
                 this.txtDpi.Enabled = true;
+             //   this.idVehiculo = null;
             }
             catch (Exception)
             {
@@ -598,12 +600,26 @@ namespace PV
                     txtEmail.Text = dr["correoElectronico"].ToString();
                     txtDpi.Enabled = false;
                 }
-               /* else
+               else
                 {
+                    //this.dpiU = "";
                     string nit = txtNit.Text;
+                    string dpi = txtDpi.Text;
+                    string nombres = txtNombres.Text;
+                    string direccion = txtDireccion.Text;
+                    string telefonos = txtTelefono.Text;
+                    string correo = txtEmail.Text;
                     limpiarControlesCliente();
                     txtNit.Text = nit;
-                }*/
+                    txtDpi.Text = dpi;
+                    txtNombres.Text = nombres;
+                    txtDireccion.Text = direccion;
+                    txtTelefono.Text = telefonos;
+                    txtEmail.Text = correo;
+                    txtDpi.Focus();
+                    this.dpiU = "";
+
+                }
             }
             catch (Exception ex)
             {

@@ -1813,3 +1813,55 @@ Se terminó la instrucción.   ejecutarSP      en PV.ClsDb.ejecutarSP(String spN
    en PV.BL.ClsMail.grabarModificar(String idCorreo, String correoOrigen, String correoDestino, String contrasena) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsMail.cs:línea 22
    en PV.FrmCorreo.btnGrabar_Click(Object sender, EventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\Correo\FrmCorreo.cs:línea 97
 
+   17/04/2017 10:36:31   aramirez   SOPORTE-PC   No se pudo encontrar la columna denominada idVehiculoCol.
+Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   en PV.FrmCotizacion.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\movimientos\Cotizaciones\FrmCotizacion.cs:línea 130
+
+   17/04/2017 10:36:35   aramirez   SOPORTE-PC   No se pudo encontrar la columna denominada idVehiculoCol.
+Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   en PV.FrmCotizacion.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\movimientos\Cotizaciones\FrmCotizacion.cs:línea 130
+
+   17/04/2017 10:36:38   aramirez   SOPORTE-PC   No se pudo encontrar la columna denominada idVehiculoCol.
+Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   en PV.FrmCotizacion.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\movimientos\Cotizaciones\FrmCotizacion.cs:línea 130
+
+   17/04/2017 10:51:39   aramirez   SOPORTE-PC   Instrucción UPDATE en conflicto con la restricción   consultarTabla      en PV.ClsDb.consultarTabla(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 187
+   en PV.BL.ClsVenta.grabarModificar(String idVenta, String idvehiculo, String valorVenta, String enganche, String cantidadCuotas, String cuota, String diaPago, String r1Nombre, String r1Telefono, String r1Direccion, String r2Nombre, String r2Telefono, String r2Direccion, String r3Nombre, String r3Telefono, String r3Direccion, String rutaDocumento1, String rutaDocumento2, String clNombre, String clNit, String clDPI, String clDireccion, String clTelefono, String clCorreo, String clDPIUp, String fecha) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsVenta.cs:línea 58
+   en PV.FrmNuevaVenta.guardar() en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\movimientos\Ventas\FrmNuevaVenta.cs:línea 987
+   en PV.FrmNuevaVenta.btngrabar_Click(Object sender, EventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\movimientos\Ventas\FrmNuevaVenta.cs:línea 925
+
+   17/04/2017 11:01:38   aramirez   SOPORTE-PC   Referencia a objeto no establecida como instancia de un objeto.   fNull      en PV.ClsDb.fNull(String xstring) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 34
+   en PV.ClsDb.Parametro(String nombre, String valor) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 313
+   en PV.BL.ClsVenta.grabarModificar(String idVenta, String idvehiculo, String valorVenta, String enganche, String cantidadCuotas, String cuota, String diaPago, String r1Nombre, String r1Telefono, String r1Direccion, String r2Nombre, String r2Telefono, String r2Direccion, String r3Nombre, String r3Telefono, String r3Direccion, String rutaDocumento1, String rutaDocumento2, String clNombre, String clNit, String clDPI, String clDireccion, String clTelefono, String clCorreo, String clDPIUp, String fecha) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsVenta.cs:línea 58
+   en PV.FrmNuevaVenta.guardar() en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\movimientos\Ventas\FrmNuevaVenta.cs:línea 988
+   en PV.FrmNuevaVenta.btngrabar_Click(Object sender, EventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\movimientos\Ventas\FrmNuevaVenta.cs:línea 926
+
+   17/04/2017 11:10:26   aramirez   SOPORTE-PC   No se pudo encontrar la columna denominada idVehiculoCol.
+Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   en PV.FrmCotizacion.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\movimientos\Cotizaciones\FrmCotizacion.cs:línea 130
+
+   17/04/2017 11:12:32   aramirez   SOPORTE-PC   Instrucción UPDATE en conflicto con la restricción   consultarTabla      en PV.ClsDb.consultarTabla(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 187
+   en PV.BL.ClsVenta.grabarModificar(String idVenta, String idvehiculo, String valorVenta, String enganche, String cantidadCuotas, String cuota, String diaPago, String r1Nombre, String r1Telefono, String r1Direccion, String r2Nombre, String r2Telefono, String r2Direccion, String r3Nombre, String r3Telefono, String r3Direccion, String rutaDocumento1, String rutaDocumento2, String clNombre, String clNit, String clDPI, String clDireccion, String clTelefono, String clCorreo, String clDPIUp, String fecha) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsVenta.cs:línea 58
+   en PV.FrmNuevaVenta.guardar() en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\movimientos\Ventas\FrmNuevaVenta.cs:línea 999
+   en PV.FrmNuevaVenta.btngrabar_Click(Object sender, EventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\movimientos\Ventas\FrmNuevaVenta.cs:línea 937
+
+   17/04/2017 11:37:46   aramirez   SOPORTE-PC   Instrucción UPDATE en conflicto con la restricción   consultarTabla      en PV.ClsDb.consultarTabla(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 187
+   en PV.BL.ClsVenta.grabarModificar(String idVenta, String idvehiculo, String valorVenta, String enganche, String cantidadCuotas, String cuota, String diaPago, String r1Nombre, String r1Telefono, String r1Direccion, String r2Nombre, String r2Telefono, String r2Direccion, String r3Nombre, String r3Telefono, String r3Direccion, String rutaDocumento1, String rutaDocumento2, String clNombre, String clNit, String clDPI, String clDireccion, String clTelefono, String clCorreo, String clDPIUp, String fecha) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsVenta.cs:línea 58
+   en PV.FrmNuevaVenta.guardar() en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\movimientos\Ventas\FrmNuevaVenta.cs:línea 1002
+   en PV.FrmNuevaVenta.btngrabar_Click(Object sender, EventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\movimientos\Ventas\FrmNuevaVenta.cs:línea 940
+
+   17/04/2017 11:50:44   aramirez   SOPORTE-PC   Infracción de la restricción PRIMARY KEY 'PK_TblCl   consultarTabla      en PV.ClsDb.consultarTabla(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 187
+   en PV.BL.ClsVenta.grabarModificar(String idVenta, String idvehiculo, String valorVenta, String enganche, String cantidadCuotas, String cuota, String diaPago, String r1Nombre, String r1Telefono, String r1Direccion, String r2Nombre, String r2Telefono, String r2Direccion, String r3Nombre, String r3Telefono, String r3Direccion, String rutaDocumento1, String rutaDocumento2, String clNombre, String clNit, String clDPI, String clDireccion, String clTelefono, String clCorreo, String clDPIUp, String fecha) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsVenta.cs:línea 58
+   en PV.FrmNuevaVenta.guardar() en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\movimientos\Ventas\FrmNuevaVenta.cs:línea 1003
+   en PV.FrmNuevaVenta.btngrabar_Click(Object sender, EventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\movimientos\Ventas\FrmNuevaVenta.cs:línea 941
+
+   17/04/2017 11:51:10   aramirez   SOPORTE-PC   Infracción de la restricción PRIMARY KEY 'PK_TblCl   consultarTabla      en PV.ClsDb.consultarTabla(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 187
+   en PV.BL.ClsVenta.grabarModificar(String idVenta, String idvehiculo, String valorVenta, String enganche, String cantidadCuotas, String cuota, String diaPago, String r1Nombre, String r1Telefono, String r1Direccion, String r2Nombre, String r2Telefono, String r2Direccion, String r3Nombre, String r3Telefono, String r3Direccion, String rutaDocumento1, String rutaDocumento2, String clNombre, String clNit, String clDPI, String clDireccion, String clTelefono, String clCorreo, String clDPIUp, String fecha) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsVenta.cs:línea 58
+   en PV.FrmNuevaVenta.guardar() en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\movimientos\Ventas\FrmNuevaVenta.cs:línea 1003
+   en PV.FrmNuevaVenta.btngrabar_Click(Object sender, EventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\movimientos\Ventas\FrmNuevaVenta.cs:línea 941
+
+   17/04/2017 11:51:19   aramirez   SOPORTE-PC   Infracción de la restricción PRIMARY KEY 'PK_TblCl   consultarTabla      en PV.ClsDb.consultarTabla(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\DB\ClsDb.cs:línea 187
+   en PV.BL.ClsVenta.grabarModificar(String idVenta, String idvehiculo, String valorVenta, String enganche, String cantidadCuotas, String cuota, String diaPago, String r1Nombre, String r1Telefono, String r1Direccion, String r2Nombre, String r2Telefono, String r2Direccion, String r3Nombre, String r3Telefono, String r3Direccion, String rutaDocumento1, String rutaDocumento2, String clNombre, String clNit, String clDPI, String clDireccion, String clTelefono, String clCorreo, String clDPIUp, String fecha) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\BL\ClsVenta.cs:línea 58
+   en PV.FrmNuevaVenta.guardar() en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\movimientos\Ventas\FrmNuevaVenta.cs:línea 1003
+   en PV.FrmNuevaVenta.btngrabar_Click(Object sender, EventArgs e) en c:\Users\Soporte\Documents\GitHub\PVGenesis\PV\Vistas\movimientos\Ventas\FrmNuevaVenta.cs:línea 941
+

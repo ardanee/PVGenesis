@@ -156,6 +156,7 @@ C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\bin\Debug\de\DevExpress.XtraEdito
 C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\bin\Debug\es\DevExpress.XtraEditors.v16.1.resources.dll
 C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\bin\Debug\ja\DevExpress.XtraEditors.v16.1.resources.dll
 C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\bin\Debug\ru\DevExpress.XtraEditors.v16.1.resources.dll
+C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\obj\Debug\PV.csprojResolveAssemblyReference.cache
 C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\obj\Debug\Interop.WIA.dll
 C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\obj\Debug\PV.csproj.ResolveComReference.cache
 C:\Users\Soporte\Documents\GitHub\PVGenesis\PV\obj\Debug\PV.Form1.resources

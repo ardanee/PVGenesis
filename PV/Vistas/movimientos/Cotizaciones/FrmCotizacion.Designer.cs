@@ -228,18 +228,22 @@
             // 
             // numeroCotizacionCol
             // 
+            this.numeroCotizacionCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.numeroCotizacionCol.DataPropertyName = "numeroCotizacion";
-            this.numeroCotizacionCol.FillWeight = 43.75145F;
+            this.numeroCotizacionCol.FillWeight = 406.3375F;
+            this.numeroCotizacionCol.Frozen = true;
             this.numeroCotizacionCol.HeaderText = "Numero";
             this.numeroCotizacionCol.MaxInputLength = 10;
             this.numeroCotizacionCol.MinimumWidth = 30;
             this.numeroCotizacionCol.Name = "numeroCotizacionCol";
             this.numeroCotizacionCol.ReadOnly = true;
+            this.numeroCotizacionCol.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.numeroCotizacionCol.Width = 70;
             // 
             // clienteCol
             // 
             this.clienteCol.DataPropertyName = "cliente";
-            this.clienteCol.FillWeight = 150F;
+            this.clienteCol.FillWeight = 100.5474F;
             this.clienteCol.HeaderText = "Cliente";
             this.clienteCol.MaxInputLength = 60;
             this.clienteCol.Name = "clienteCol";
@@ -248,7 +252,7 @@
             // sucursalCol
             // 
             this.sucursalCol.DataPropertyName = "sucursal";
-            this.sucursalCol.FillWeight = 199.7983F;
+            this.sucursalCol.FillWeight = 133.928F;
             this.sucursalCol.HeaderText = "Sucursal";
             this.sucursalCol.MaxInputLength = 60;
             this.sucursalCol.Name = "sucursalCol";
@@ -257,6 +261,7 @@
             // telefonoCol
             // 
             this.telefonoCol.DataPropertyName = "telefono";
+            this.telefonoCol.FillWeight = 67.03159F;
             this.telefonoCol.HeaderText = "Teléfono";
             this.telefonoCol.MaxInputLength = 20;
             this.telefonoCol.Name = "telefonoCol";
@@ -265,6 +270,7 @@
             // formaPagoCol
             // 
             this.formaPagoCol.DataPropertyName = "formaPago";
+            this.formaPagoCol.FillWeight = 67.03159F;
             this.formaPagoCol.HeaderText = "Forma pago";
             this.formaPagoCol.MaxInputLength = 20;
             this.formaPagoCol.Name = "formaPagoCol";
@@ -273,6 +279,7 @@
             // descripcionCol
             // 
             this.descripcionCol.DataPropertyName = "descripcion";
+            this.descripcionCol.FillWeight = 67.03159F;
             this.descripcionCol.HeaderText = "Descripcion Vehiculo";
             this.descripcionCol.MaxInputLength = 120;
             this.descripcionCol.Name = "descripcionCol";
@@ -281,6 +288,7 @@
             // precioVentaCol
             // 
             this.precioVentaCol.DataPropertyName = "precioVenta";
+            this.precioVentaCol.FillWeight = 67.03159F;
             this.precioVentaCol.HeaderText = "Precio Venta";
             this.precioVentaCol.MaxInputLength = 20;
             this.precioVentaCol.Name = "precioVentaCol";
@@ -289,6 +297,7 @@
             // precioNegociadoCol
             // 
             this.precioNegociadoCol.DataPropertyName = "precioNegociado";
+            this.precioNegociadoCol.FillWeight = 67.03159F;
             this.precioNegociadoCol.HeaderText = "Precio Negociado";
             this.precioNegociadoCol.MaxInputLength = 20;
             this.precioNegociadoCol.Name = "precioNegociadoCol";
@@ -297,6 +306,7 @@
             // totalCol
             // 
             this.totalCol.DataPropertyName = "totalFinanciado";
+            this.totalCol.FillWeight = 67.03159F;
             this.totalCol.HeaderText = "Total Financiado";
             this.totalCol.MaxInputLength = 20;
             this.totalCol.Name = "totalCol";
@@ -305,7 +315,7 @@
             // diazValidezCol
             // 
             this.diazValidezCol.DataPropertyName = "validez";
-            this.diazValidezCol.FillWeight = 150F;
+            this.diazValidezCol.FillWeight = 100.5474F;
             this.diazValidezCol.HeaderText = "Dias Validez";
             this.diazValidezCol.MaxInputLength = 5;
             this.diazValidezCol.Name = "diazValidezCol";

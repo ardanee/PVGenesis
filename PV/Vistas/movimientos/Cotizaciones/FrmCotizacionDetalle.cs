@@ -167,6 +167,7 @@ namespace PV
             {
                 calcular();
                 btnImprimir.Enabled = true;
+                btnVenta.Enabled = true;
             }
             catch (Exception ex)
             {
@@ -199,7 +200,7 @@ namespace PV
                     {
 
                         FrmNuevaVenta frmVenta = new FrmNuevaVenta();
-                        frmVenta.setVehiculo(idVehiculo, lblTipoAuto.Text + "," + lblMarca.Text + ", " + lblLinea.Text +
+                        frmVenta.setVehiculo(this.idVehiculo, lblTipoAuto.Text + "," + lblMarca.Text + ", " + lblLinea.Text +
                                 lblModelo.Text + ", cc: " + lblCilindros.Text + ", cc:" + lblCc.Text, lblPlaca.Text, lblPrecio.Text);
                         frmVenta.agregarFinanciamiento(cmbForma.SelectedIndex.ToString(), txtEnganche.Text.Trim(), txtCuotas.Text.Trim());
                         frmVenta.ventaDesdeCotizacion();
@@ -329,8 +330,11 @@ namespace PV
 
         private void txtPrecioNegociado_TextChanged(object sender, EventArgs e)
         {
-            if(cmbForma.SelectedIndex == 1)
+            if (cmbForma.SelectedIndex == 1)
+            {
                 btnImprimir.Enabled = false;
+                btnVenta.Enabled = false;
+            }
         }
     }
        

@@ -124,7 +124,7 @@ namespace PV
         {
             try
             {
-                switch (e.ColumnIndex)
+               /* switch (e.ColumnIndex)
                 {
                     case 0:
                         this.idVehiculoo = grdExistentes.SelectedRows[0].Cells["idVehiculoCol"].Value.ToString();
@@ -132,7 +132,7 @@ namespace PV
                         MessageBox.Show("vehiculo: " + idVehiculoo);
                         //this.padre.cargarParcialCotizacion(this.idVehiculoo);
                         break;
-                }
+                }*/
             }
             catch (Exception ex)
             {
