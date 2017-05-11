@@ -168,7 +168,7 @@ namespace PV
             {
                 if (dt.Rows.Count <= 0)
                 {
-                    tablaHtml += "<h1>No hay Registros de Vehiculos</h1>";
+                    tablaHtml += "<h3>No hay Registros de Vehiculos, para venta</h3>";
                 }
                 else
                 {
