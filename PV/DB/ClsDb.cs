@@ -314,6 +314,46 @@ namespace PV
         }
 
 
+        public void ejecutarSPTPV(string spNombre, SqlConnection cn = null, DataTable dt = null, string nombreTVP = "", params SqlParameter[] arrParam)
+        {
+            SqlCommand cmd = new SqlCommand();
+            try
+            {
+                if (cn == null) { cn = conexion; }
+                if (cn.State == ConnectionState.Open) cn.Close();
+                cn.Open();
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = spNombre;
+                cmd.Connection = cn;
+                if (dt != null)
+                {
+                    //cmd.Parameters.Add("@tvp", SqlDbType.Structured).Value = dt;
+                    SqlParameter paramtvp = cmd.Parameters.AddWithValue(
+                        nombreTVP, dt);
+                    paramtvp.SqlDbType = SqlDbType.Structured;
+                    paramtvp.TypeName = dt.TableName;
+                    /*paramTvp.Value = dt; 
+                    paramTvp.SqlDbType = SqlDbType.Structured;
+                    paramTvp.TypeName = dt.TableName;*/
+                    //cmd.Parameters.Add(paramtvp);
+                }
+
+                if (arrParam.Length > 0)
+                {
+                    foreach (SqlParameter param in arrParam)
+                    {
+                        cmd.Parameters.Add(param);
+                    }
+                }
+                cmd.ExecuteNonQuery();
+                if (cn.State == ConnectionState.Open) cn.Close();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
 
     }//EOCls
 }

@@ -65,7 +65,7 @@ namespace PV.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap account_settings_variant {
             get {
-                object obj = ResourceManager.GetObject("account-settings-variant", resourceCulture);
+                object obj = ResourceManager.GetObject("account_settings_variant", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,69 @@ namespace PV.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Add_Database_28 {
+            get {
+                object obj = ResourceManager.GetObject("Add Database-28", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Add_List_24px {
+            get {
+                object obj = ResourceManager.GetObject("Add_List_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Add_Property_24px {
+            get {
+                object obj = ResourceManager.GetObject("Add_Property_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Add_Rule_24px {
+            get {
+                object obj = ResourceManager.GetObject("Add Rule_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Add_Shopping_Cart_24px {
+            get {
+                object obj = ResourceManager.GetObject("Add_Shopping_Cart_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Advertising_48px {
             get {
                 object obj = ResourceManager.GetObject("Advertising_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap anadir {
+            get {
+                object obj = ResourceManager.GetObject("anadir", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,6 +163,16 @@ namespace PV.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Back_24px {
+            get {
+                object obj = ResourceManager.GetObject("Back_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap backup_48px {
             get {
                 object obj = ResourceManager.GetObject("backup_48px", resourceCulture);
@@ -113,9 +183,49 @@ namespace PV.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Broom_24px {
+            get {
+                object obj = ResourceManager.GetObject("Broom_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Buy_24px1 {
+            get {
+                object obj = ResourceManager.GetObject("Buy_24px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Calculator_24px {
+            get {
+                object obj = ResourceManager.GetObject("Calculator_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cancel_File_24px {
             get {
-                object obj = ResourceManager.GetObject("Cancel File_24px", resourceCulture);
+                object obj = ResourceManager.GetObject("Cancel_File_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Card_in_Use_24px {
+            get {
+                object obj = ResourceManager.GetObject("Card in Use_24px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -125,7 +235,67 @@ namespace PV.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Cash_In_Hand_24px {
             get {
-                object obj = ResourceManager.GetObject("Cash In Hand_24px", resourceCulture);
+                object obj = ResourceManager.GetObject("Cash_In_Hand_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Checked_Checkbox_24px {
+            get {
+                object obj = ResourceManager.GetObject("Checked Checkbox_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Checkmark_24px {
+            get {
+                object obj = ResourceManager.GetObject("Checkmark_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Circled_Chevron_Right_48px {
+            get {
+                object obj = ResourceManager.GetObject("Circled_Chevron_Right_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Circled_Left_48px {
+            get {
+                object obj = ResourceManager.GetObject("Circled_Left_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Circled_Right_24px {
+            get {
+                object obj = ResourceManager.GetObject("Circled_Right_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Clear_Filters_24px {
+            get {
+                object obj = ResourceManager.GetObject("Clear_Filters_24px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -165,7 +335,7 @@ namespace PV.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Close_Window_24px {
             get {
-                object obj = ResourceManager.GetObject("Close Window_24px", resourceCulture);
+                object obj = ResourceManager.GetObject("Close_Window_24px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,9 +373,109 @@ namespace PV.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Delete_Property_24px {
+            get {
+                object obj = ResourceManager.GetObject("Delete_Property_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Deletee_24px {
+            get {
+                object obj = ResourceManager.GetObject("Deletee_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Detective_24px {
+            get {
+                object obj = ResourceManager.GetObject("Detective_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Error_24px {
+            get {
+                object obj = ResourceManager.GetObject("Error_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap espalda {
+            get {
+                object obj = ResourceManager.GetObject("espalda", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Exit_24px {
+            get {
+                object obj = ResourceManager.GetObject("Exit_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Ferrari_Badge_96px {
             get {
-                object obj = ResourceManager.GetObject("Ferrari Badge_96px", resourceCulture);
+                object obj = ResourceManager.GetObject("Ferrari_Badge_96px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap flecha_derecha {
+            get {
+                object obj = ResourceManager.GetObject("flecha-derecha", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap flecha_derecha__1_ {
+            get {
+                object obj = ResourceManager.GetObject("flecha-derecha (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap flecha_hacia_la_izquierda {
+            get {
+                object obj = ResourceManager.GetObject("flecha-hacia-la-izquierda", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Forward_24px {
+            get {
+                object obj = ResourceManager.GetObject("Forward_24px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -215,7 +485,7 @@ namespace PV.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap High_Priority_24px {
             get {
-                object obj = ResourceManager.GetObject("High Priority_24px", resourceCulture);
+                object obj = ResourceManager.GetObject("High_Priority_24px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -226,6 +496,16 @@ namespace PV.Properties {
         internal static System.Drawing.Bitmap ingresoVehiculos_48px {
             get {
                 object obj = ResourceManager.GetObject("ingresoVehiculos_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap jugar {
+            get {
+                object obj = ResourceManager.GetObject("jugar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -253,6 +533,36 @@ namespace PV.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Lock_24px {
+            get {
+                object obj = ResourceManager.GetObject("Lock_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap login {
+            get {
+                object obj = ResourceManager.GetObject("login", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap login__1_ {
+            get {
+                object obj = ResourceManager.GetObject("login (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap marca_48px {
             get {
                 object obj = ResourceManager.GetObject("marca_48px", resourceCulture);
@@ -263,9 +573,19 @@ namespace PV.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Message_48px {
+            get {
+                object obj = ResourceManager.GetObject("Message_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Microsoft_Excel_24px {
             get {
-                object obj = ResourceManager.GetObject("Microsoft Excel_24px", resourceCulture);
+                object obj = ResourceManager.GetObject("Microsoft_Excel_24px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -275,7 +595,7 @@ namespace PV.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap No_Cash_24px {
             get {
-                object obj = ResourceManager.GetObject("No Cash_24px", resourceCulture);
+                object obj = ResourceManager.GetObject("No_Cash_24px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -305,7 +625,27 @@ namespace PV.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Pencil_Tip_24px {
             get {
-                object obj = ResourceManager.GetObject("Pencil Tip_24px", resourceCulture);
+                object obj = ResourceManager.GetObject("Pencil_Tip_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Plus_24px {
+            get {
+                object obj = ResourceManager.GetObject("Plus_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap POS_Terminal_24px {
+            get {
+                object obj = ResourceManager.GetObject("POS_Terminal_24px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -323,9 +663,29 @@ namespace PV.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Print_24px1 {
+            get {
+                object obj = ResourceManager.GetObject("Print_24px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap reporteVenta_48px {
             get {
                 object obj = ResourceManager.GetObject("reporteVenta_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Restart_24px {
+            get {
+                object obj = ResourceManager.GetObject("Restart_24px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -345,7 +705,7 @@ namespace PV.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Right_Squared_24px {
             get {
-                object obj = ResourceManager.GetObject("Right Squared_24px", resourceCulture);
+                object obj = ResourceManager.GetObject("Right_Squared_24px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -365,7 +725,17 @@ namespace PV.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Save_as_24px {
             get {
-                object obj = ResourceManager.GetObject("Save as_24px", resourceCulture);
+                object obj = ResourceManager.GetObject("Save_as_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Scanner_24px {
+            get {
+                object obj = ResourceManager.GetObject("Scanner_24px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -376,6 +746,16 @@ namespace PV.Properties {
         internal static System.Drawing.Bitmap Search_24px {
             get {
                 object obj = ResourceManager.GetObject("Search_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Shipped_96px {
+            get {
+                object obj = ResourceManager.GetObject("Shipped_96px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -415,7 +795,7 @@ namespace PV.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Todo_List_24px {
             get {
-                object obj = ResourceManager.GetObject("Todo List_24px", resourceCulture);
+                object obj = ResourceManager.GetObject("Todo_List_24px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -425,7 +805,7 @@ namespace PV.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Traffic_Jam_48px {
             get {
-                object obj = ResourceManager.GetObject("Traffic Jam_48px", resourceCulture);
+                object obj = ResourceManager.GetObject("Traffic_Jam_48px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -446,6 +826,26 @@ namespace PV.Properties {
         internal static System.Drawing.Bitmap venta_48px {
             get {
                 object obj = ResourceManager.GetObject("venta_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap venta_48px1 {
+            get {
+                object obj = ResourceManager.GetObject("venta_48px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Visible_24px {
+            get {
+                object obj = ResourceManager.GetObject("Visible_24px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -38,7 +38,22 @@ namespace PV.BL
                 throw;
             }
         }
-        
+
+        public DataTable seleccionarLineaMarca(string idMarca)
+        {
+            DataTable res = new DataTable();
+            try
+            {
+                res = consultarTabla("SpsLineaMarca", null, Parametro("@idMarca", idMarca));
+                return res;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
         public void eliminar(string idLinea)
         {
             try

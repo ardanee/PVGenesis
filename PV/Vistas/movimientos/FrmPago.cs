@@ -119,7 +119,7 @@ namespace PV
                 {
                     case 0:
                         {//Muestra el archivo adjunto
-                            String rutaAdjunto = grdPago.SelectedRows[0].Cells["rutaAdjuntoCol"].Value.ToString();
+                            String rutaAdjunto = ClsGlobals.rutaAdjuntos + grdPago.SelectedRows[0].Cells["rutaAdjuntoCol"].Value.ToString();
                             if (String.IsNullOrEmpty(rutaAdjunto))
                             {
                                 ClsHelper.MensajeSistema("No hay archivo adjunto para mostrar");

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraBars.Alerter.AlertButton alertButton2 = new DevExpress.XtraBars.Alerter.AlertButton();
+            DevExpress.XtraBars.Alerter.AlertButton alertButton1 = new DevExpress.XtraBars.Alerter.AlertButton();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.skinRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
@@ -51,6 +51,7 @@
             this.mnuRol = new DevExpress.XtraBars.BarButtonItem();
             this.mnuBackup = new DevExpress.XtraBars.BarButtonItem();
             this.mnuRestaurar = new DevExpress.XtraBars.BarButtonItem();
+            this.mnuReporteCorreo = new DevExpress.XtraBars.BarButtonItem();
             this.rbpMaestros = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -93,9 +94,10 @@
             this.mnuUsuario,
             this.mnuRol,
             this.mnuBackup,
-            this.mnuRestaurar});
+            this.mnuRestaurar,
+            this.mnuReporteCorreo});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.MaxItemId = 20;
+            this.ribbon.MaxItemId = 21;
             this.ribbon.Name = "ribbon";
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.rbpMaestros,
@@ -276,6 +278,15 @@
             this.mnuRestaurar.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
             this.mnuRestaurar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mnuRestaurar_ItemClick);
             // 
+            // mnuReporteCorreo
+            // 
+            this.mnuReporteCorreo.Caption = "Reporte Correo";
+            this.mnuReporteCorreo.Glyph = global::PV.Properties.Resources.Message_48px;
+            this.mnuReporteCorreo.Id = 20;
+            this.mnuReporteCorreo.Name = "mnuReporteCorreo";
+            this.mnuReporteCorreo.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.mnuReporteCorreo.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            // 
             // rbpMaestros
             // 
             this.rbpMaestros.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -352,6 +363,7 @@
             // 
             this.ribbonPageGroup7.ItemLinks.Add(this.mnuBackup);
             this.ribbonPageGroup7.ItemLinks.Add(this.mnuRestaurar);
+            this.ribbonPageGroup7.ItemLinks.Add(this.mnuReporteCorreo);
             this.ribbonPageGroup7.Name = "ribbonPageGroup7";
             this.ribbonPageGroup7.Text = "Base de Datos";
             // 
@@ -376,17 +388,17 @@
             // 
             // alertControl1
             // 
-            this.alertControl1.AppearanceCaption.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold);
+            this.alertControl1.AppearanceCaption.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.alertControl1.AppearanceCaption.ForeColor = System.Drawing.Color.Maroon;
             this.alertControl1.AppearanceCaption.Options.UseFont = true;
             this.alertControl1.AppearanceCaption.Options.UseForeColor = true;
             this.alertControl1.AppearanceCaption.Options.UseTextOptions = true;
             this.alertControl1.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.alertControl1.AppearanceHotTrackedText.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.alertControl1.AppearanceHotTrackedText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.alertControl1.AppearanceHotTrackedText.ForeColor = System.Drawing.Color.Maroon;
             this.alertControl1.AppearanceHotTrackedText.Options.UseFont = true;
             this.alertControl1.AppearanceHotTrackedText.Options.UseForeColor = true;
-            this.alertControl1.AppearanceText.Font = new System.Drawing.Font("Roboto", 9F);
+            this.alertControl1.AppearanceText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.alertControl1.AppearanceText.ForeColor = System.Drawing.Color.Maroon;
             this.alertControl1.AppearanceText.Image = global::PV.Properties.Resources.High_Priority_24px;
             this.alertControl1.AppearanceText.Options.UseFont = true;
@@ -396,9 +408,9 @@
             this.alertControl1.AppearanceText.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.alertControl1.AppearanceText.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.alertControl1.AutoHeight = true;
-            alertButton2.Image = global::PV.Properties.Resources.Clock_24px;
-            alertButton2.Name = "btnListado";
-            this.alertControl1.Buttons.Add(alertButton2);
+            alertButton1.Image = global::PV.Properties.Resources.Clock_24px;
+            alertButton1.Name = "btnListado";
+            this.alertControl1.Buttons.Add(alertButton1);
             this.alertControl1.ControlBoxPosition = DevExpress.XtraBars.Alerter.AlertFormControlBoxPosition.Right;
             this.alertControl1.FormDisplaySpeed = DevExpress.XtraBars.Alerter.AlertFormDisplaySpeed.Fast;
             this.alertControl1.FormLocation = DevExpress.XtraBars.Alerter.AlertFormLocation.TopRight;
@@ -421,6 +433,7 @@
             this.StatusBar = this.ribbonStatusBar1;
             this.Text = "Importadora Génesis";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmMain_FormClosed);
             this.Load += new System.EventHandler(this.FrmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
@@ -465,5 +478,6 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup7;
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
         private DevExpress.XtraBars.Alerter.AlertControl alertControl1;
+        private DevExpress.XtraBars.BarButtonItem mnuReporteCorreo;
     }
 }

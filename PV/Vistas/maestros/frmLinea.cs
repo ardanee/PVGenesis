@@ -8,14 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PV.Vistas.maestros
+namespace PV
 {
-    public partial class frmLinea : Form
+    public partial class FrmLinea : Form
     {
         private BL.ClsLinea clsLinea = new BL.ClsLinea();
         private string idLinea = "0";
 
-        public frmLinea()
+        public FrmLinea()
         {
             InitializeComponent();
             txtNombre.Enabled = false;
@@ -86,12 +86,19 @@ namespace PV.Vistas.maestros
 
         private void limpiarControles()
         {
-            this.cmbMarca.SelectedValue = 0;
-            this.txtNombre.Enabled = false;
-            this.txtNombre.Clear();
-            idLinea = "";
-            buscar();
-            txtNombre.Focus();
+            try
+            {
+                this.cmbMarca.SelectedValue = 0;
+                this.txtNombre.Enabled = false;
+                this.txtNombre.Clear();
+                idLinea = "";
+                buscar();
+                txtNombre.Focus();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
             
         }
 

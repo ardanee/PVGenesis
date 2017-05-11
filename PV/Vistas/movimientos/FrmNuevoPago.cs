@@ -160,7 +160,13 @@ namespace PV
         {
             try
             {
-                SaveFileDialog sfd = new SaveFileDialog();
+                ClsScanner scan = new ClsScanner();
+                adjunto = scan.scanv2();
+                if (!adjunto.Equals(""))
+                    ClsHelper.MensajeSistema("Adjuntado Correctamente");
+                else
+                    ClsHelper.MensajeSistema("No se pudo realizar la operación");
+                /*SaveFileDialog sfd = new SaveFileDialog();
                 sfd.Filter = "txt files (*.jpg)|*.jpg";
                 sfd.FilterIndex = 2;
                 sfd.RestoreDirectory = true;
@@ -182,7 +188,7 @@ namespace PV
                         }
 
                     }
-                }
+                }*/
             }
             catch (Exception ex)
             {
